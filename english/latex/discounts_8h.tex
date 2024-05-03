@@ -1,0 +1,75 @@
+\doxysection{user/discounts/discounts.h File Reference}
+\hypertarget{discounts_8h}{}\label{discounts_8h}\index{user/discounts/discounts.h@{user/discounts/discounts.h}}
+
+
+This file contains the declaration of various discount handling functions.  
+
+
+{\ttfamily \#include "{}../user.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{discounts_8h_a73fa6942a90a923779125a96bee81275}{Get\+Discount}} (std\+::string choice)
+\begin{DoxyCompactList}\small\item\em Gets the discount based on a choice. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discounts_8h_a6e21bc314a05bae281c9237fc50d5f24}{Handle\+Discount\+Choice}} (\mbox{\hyperlink{class_user}{User}} \&user, std\+::string choice)
+\begin{DoxyCompactList}\small\item\em Handles the discount choice of a user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{discounts_8h_a246e9a712d4afb3d79a3c653050acd02}{Print\+Discount\+Card}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Prints a discount card for a user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of various discount handling functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{discounts_8h_a73fa6942a90a923779125a96bee81275}\label{discounts_8h_a73fa6942a90a923779125a96bee81275} 
+\index{discounts.h@{discounts.h}!GetDiscount@{GetDiscount}}
+\index{GetDiscount@{GetDiscount}!discounts.h@{discounts.h}}
+\doxysubsubsection{\texorpdfstring{GetDiscount()}{GetDiscount()}}
+{\footnotesize\ttfamily double Get\+Discount (\begin{DoxyParamCaption}\item[{std\+::string}]{choice }\end{DoxyParamCaption})}
+
+
+
+Gets the discount based on a choice. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em choice} & The choice of the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The discount as a double. 
+\end{DoxyReturn}
+\Hypertarget{discounts_8h_a6e21bc314a05bae281c9237fc50d5f24}\label{discounts_8h_a6e21bc314a05bae281c9237fc50d5f24} 
+\index{discounts.h@{discounts.h}!HandleDiscountChoice@{HandleDiscountChoice}}
+\index{HandleDiscountChoice@{HandleDiscountChoice}!discounts.h@{discounts.h}}
+\doxysubsubsection{\texorpdfstring{HandleDiscountChoice()}{HandleDiscountChoice()}}
+{\footnotesize\ttfamily void Handle\+Discount\+Choice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user,  }\item[{std\+::string}]{choice }\end{DoxyParamCaption})}
+
+
+
+Handles the discount choice of a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user making the choice. \\
+\hline
+{\em choice} & The choice of the user. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{discounts_8h_a246e9a712d4afb3d79a3c653050acd02}\label{discounts_8h_a246e9a712d4afb3d79a3c653050acd02} 
+\index{discounts.h@{discounts.h}!PrintDiscountCard@{PrintDiscountCard}}
+\index{PrintDiscountCard@{PrintDiscountCard}!discounts.h@{discounts.h}}
+\doxysubsubsection{\texorpdfstring{PrintDiscountCard()}{PrintDiscountCard()}}
+{\footnotesize\ttfamily void Print\+Discount\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Prints a discount card for a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user for whom the discount card is printed. \\
+\hline
+\end{DoxyParams}

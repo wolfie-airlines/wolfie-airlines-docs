@@ -1,0 +1,123 @@
+\doxysection{admin/admin\+\_\+functions/admin\+\_\+functions.h File Reference}
+\hypertarget{admin__functions_8h}{}\label{admin__functions_8h}\index{admin/admin\_functions/admin\_functions.h@{admin/admin\_functions/admin\_functions.h}}
+
+
+This file contains the declarations of functions used in the admin dashboard.  
+
+
+{\ttfamily \#include "{}../../user/user.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{admin__functions_8h_ae5bdc41b772180ec6d17757b6cf42606}{Handle\+Admin\+Dashboard}} (\mbox{\hyperlink{class_admin}{Admin}} \&admin, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Handles the admin dashboard. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__functions_8h_abad6652e8a1e20aff906290a679aba54}{Process\+Adding\+Flight}} ()
+\begin{DoxyCompactList}\small\item\em Processes the addition of a flight. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__functions_8h_a08a39b9b7f90eafe791ab8db0b5dadaa}{Capture\+Input\+With\+Validation}} (const std\+::string \&title, const std\+::string \&message, const std\+::function$<$ bool(const std\+::string \&)$>$ \&validator)
+\begin{DoxyCompactList}\small\item\em Captures user input with validation. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__functions_8h_a8af688e043b30529aa079b3e410f2ac1}{Capture\+Line\+With\+Validation}} (const std\+::string \&title, const std\+::string \&message, const std\+::function$<$ bool(const std\+::string \&)$>$ \&validator)
+\begin{DoxyCompactList}\small\item\em Captures a line of input with validation. \end{DoxyCompactList}\item 
+std\+::optional$<$ bool $>$ \mbox{\hyperlink{admin__functions_8h_a3d4a5f43fd5c0a37ba0c11a6f6f8f7b4}{Capture\+Bool\+With\+Validation}} (const std\+::string \&title, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Captures a boolean value with validation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declarations of functions used in the admin dashboard. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{admin__functions_8h_a3d4a5f43fd5c0a37ba0c11a6f6f8f7b4}\label{admin__functions_8h_a3d4a5f43fd5c0a37ba0c11a6f6f8f7b4} 
+\index{admin\_functions.h@{admin\_functions.h}!CaptureBoolWithValidation@{CaptureBoolWithValidation}}
+\index{CaptureBoolWithValidation@{CaptureBoolWithValidation}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{CaptureBoolWithValidation()}{CaptureBoolWithValidation()}}
+{\footnotesize\ttfamily std\+::optional$<$ bool $>$ Capture\+Bool\+With\+Validation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Captures a boolean value with validation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the input field. \\
+\hline
+{\em message} & The message to display to the user. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An optional boolean value. If the input is valid, the value is the captured input. If the input is invalid, the value is std\+::nullopt. 
+\end{DoxyReturn}
+\Hypertarget{admin__functions_8h_a08a39b9b7f90eafe791ab8db0b5dadaa}\label{admin__functions_8h_a08a39b9b7f90eafe791ab8db0b5dadaa} 
+\index{admin\_functions.h@{admin\_functions.h}!CaptureInputWithValidation@{CaptureInputWithValidation}}
+\index{CaptureInputWithValidation@{CaptureInputWithValidation}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{CaptureInputWithValidation()}{CaptureInputWithValidation()}}
+{\footnotesize\ttfamily std\+::string Capture\+Input\+With\+Validation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const std\+::string \&}]{message,  }\item[{const std\+::function$<$ bool(const std\+::string \&)$>$ \&}]{validator }\end{DoxyParamCaption})}
+
+
+
+Captures user input with validation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the input field. \\
+\hline
+{\em message} & The message to display to the user. \\
+\hline
+{\em validator} & A function to validate the input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The captured input. 
+\end{DoxyReturn}
+\Hypertarget{admin__functions_8h_a8af688e043b30529aa079b3e410f2ac1}\label{admin__functions_8h_a8af688e043b30529aa079b3e410f2ac1} 
+\index{admin\_functions.h@{admin\_functions.h}!CaptureLineWithValidation@{CaptureLineWithValidation}}
+\index{CaptureLineWithValidation@{CaptureLineWithValidation}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{CaptureLineWithValidation()}{CaptureLineWithValidation()}}
+{\footnotesize\ttfamily std\+::string Capture\+Line\+With\+Validation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const std\+::string \&}]{message,  }\item[{const std\+::function$<$ bool(const std\+::string \&)$>$ \&}]{validator }\end{DoxyParamCaption})}
+
+
+
+Captures a line of input with validation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title} & The title of the input field. \\
+\hline
+{\em message} & The message to display to the user. \\
+\hline
+{\em validator} & A function to validate the input. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The captured input. 
+\end{DoxyReturn}
+\Hypertarget{admin__functions_8h_ae5bdc41b772180ec6d17757b6cf42606}\label{admin__functions_8h_ae5bdc41b772180ec6d17757b6cf42606} 
+\index{admin\_functions.h@{admin\_functions.h}!HandleAdminDashboard@{HandleAdminDashboard}}
+\index{HandleAdminDashboard@{HandleAdminDashboard}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{HandleAdminDashboard()}{HandleAdminDashboard()}}
+{\footnotesize\ttfamily void Handle\+Admin\+Dashboard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_admin}{Admin}} \&}]{admin,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Handles the admin dashboard. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em admin} & The admin object. \\
+\hline
+{\em user} & The user object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{admin__functions_8h_abad6652e8a1e20aff906290a679aba54}\label{admin__functions_8h_abad6652e8a1e20aff906290a679aba54} 
+\index{admin\_functions.h@{admin\_functions.h}!ProcessAddingFlight@{ProcessAddingFlight}}
+\index{ProcessAddingFlight@{ProcessAddingFlight}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{ProcessAddingFlight()}{ProcessAddingFlight()}}
+{\footnotesize\ttfamily std\+::string Process\+Adding\+Flight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Processes the addition of a flight. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the result of the operation. 
+\end{DoxyReturn}

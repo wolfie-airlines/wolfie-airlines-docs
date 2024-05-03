@@ -1,0 +1,24 @@
+\doxysection{user\+\_\+authentication.\+h}
+\hypertarget{user__authentication_8h_source}{}\label{user__authentication_8h_source}\index{authentication/auth\_functions/user\_authentication.h@{authentication/auth\_functions/user\_authentication.h}}
+\mbox{\hyperlink{user__authentication_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ AIRPORT\_AUTHPRINTHANDLER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ AIRPORT\_AUTHPRINTHANDLER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <tuple>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}../../user/user.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../authentication.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ std::tuple<std::string,\ std::string,\ std::string,\ bool>\ \mbox{\hyperlink{user__authentication_8h_a4b2081e00900f457804f1f7a9af1a17f}{RegisterUser}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00024\ std::tuple<std::string,\ std::string,\ bool>\ \mbox{\hyperlink{user__authentication_8h_a527534ae3212e5fccbb3ce39053f554b}{Login}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00030\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{user__authentication_8h_ac42578d18394839b5aeafbfa00c952a1}{HandleRegistration}}(\mbox{\hyperlink{class_authentication}{Authentication}}\ \&auth);}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00038\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{user__authentication_8h_a303bb231c1628f9eaaf18516dd3748a8}{HandleLogin}}(\mbox{\hyperlink{class_authentication}{Authentication}}\ \&auth,\ \mbox{\hyperlink{class_user}{User}}\ \&user);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ AIRPORT\_AUTHPRINTHANDLER\_H}}
+
+\end{DoxyCode}

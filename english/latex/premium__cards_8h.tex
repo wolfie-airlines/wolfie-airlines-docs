@@ -1,0 +1,97 @@
+\doxysection{user/premium\+\_\+cards/premium\+\_\+cards.h File Reference}
+\hypertarget{premium__cards_8h}{}\label{premium__cards_8h}\index{user/premium\_cards/premium\_cards.h@{user/premium\_cards/premium\_cards.h}}
+
+
+This file contains the declaration of various premium card handling functions.  
+
+
+{\ttfamily \#include "{}../user.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{premium__cards_8h_aefe406e037b378679f25dbbf67b0e6b5}{Handle\+Premium\+Card}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Handles the premium card of a user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{premium__cards_8h_a4b9ee0890652327858d6b0aa60b1dac4}{Handle\+Card\+Choice}} (const std\+::string \&card, int price, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Handles the card choice of a user. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{premium__cards_8h_a5035256cfbf9da9c491fd84cd46e573e}{Get\+Card\+Discount}} (const std\+::string \&card)
+\begin{DoxyCompactList}\small\item\em Gets the discount of a card. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{premium__cards_8h_a2be8b1863be6bba5d8a52415ccce0fc8}{Recognize\+Discount\+Card}} (double discount)
+\begin{DoxyCompactList}\small\item\em Recognizes a discount card based on a discount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of various premium card handling functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{premium__cards_8h_a5035256cfbf9da9c491fd84cd46e573e}\label{premium__cards_8h_a5035256cfbf9da9c491fd84cd46e573e} 
+\index{premium\_cards.h@{premium\_cards.h}!GetCardDiscount@{GetCardDiscount}}
+\index{GetCardDiscount@{GetCardDiscount}!premium\_cards.h@{premium\_cards.h}}
+\doxysubsubsection{\texorpdfstring{GetCardDiscount()}{GetCardDiscount()}}
+{\footnotesize\ttfamily double Get\+Card\+Discount (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{card }\end{DoxyParamCaption})}
+
+
+
+Gets the discount of a card. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card to get the discount for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The discount as a double. 
+\end{DoxyReturn}
+\Hypertarget{premium__cards_8h_a4b9ee0890652327858d6b0aa60b1dac4}\label{premium__cards_8h_a4b9ee0890652327858d6b0aa60b1dac4} 
+\index{premium\_cards.h@{premium\_cards.h}!HandleCardChoice@{HandleCardChoice}}
+\index{HandleCardChoice@{HandleCardChoice}!premium\_cards.h@{premium\_cards.h}}
+\doxysubsubsection{\texorpdfstring{HandleCardChoice()}{HandleCardChoice()}}
+{\footnotesize\ttfamily void Handle\+Card\+Choice (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{card,  }\item[{int}]{price,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Handles the card choice of a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em card} & The card chosen by the user. \\
+\hline
+{\em price} & The price of the card. \\
+\hline
+{\em user} & The user making the choice. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{premium__cards_8h_aefe406e037b378679f25dbbf67b0e6b5}\label{premium__cards_8h_aefe406e037b378679f25dbbf67b0e6b5} 
+\index{premium\_cards.h@{premium\_cards.h}!HandlePremiumCard@{HandlePremiumCard}}
+\index{HandlePremiumCard@{HandlePremiumCard}!premium\_cards.h@{premium\_cards.h}}
+\doxysubsubsection{\texorpdfstring{HandlePremiumCard()}{HandlePremiumCard()}}
+{\footnotesize\ttfamily void Handle\+Premium\+Card (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Handles the premium card of a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user with the premium card. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{premium__cards_8h_a2be8b1863be6bba5d8a52415ccce0fc8}\label{premium__cards_8h_a2be8b1863be6bba5d8a52415ccce0fc8} 
+\index{premium\_cards.h@{premium\_cards.h}!RecognizeDiscountCard@{RecognizeDiscountCard}}
+\index{RecognizeDiscountCard@{RecognizeDiscountCard}!premium\_cards.h@{premium\_cards.h}}
+\doxysubsubsection{\texorpdfstring{RecognizeDiscountCard()}{RecognizeDiscountCard()}}
+{\footnotesize\ttfamily std\+::string Recognize\+Discount\+Card (\begin{DoxyParamCaption}\item[{double}]{discount }\end{DoxyParamCaption})}
+
+
+
+Recognizes a discount card based on a discount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em discount} & The discount to recognize the card from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The recognized card as a string. 
+\end{DoxyReturn}

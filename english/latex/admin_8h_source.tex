@@ -1,0 +1,45 @@
+\doxysection{admin.\+h}
+\hypertarget{admin_8h_source}{}\label{admin_8h_source}\index{admin/admin.h@{admin/admin.h}}
+\mbox{\hyperlink{admin_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ AIRPORT\_ADMIN\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ AIRPORT\_ADMIN\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../user/user.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_admin}{Admin}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_user}{User}}\ \{}
+\DoxyCodeLine{00017\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \mbox{\hyperlink{class_admin}{Admin}}(\textcolor{keyword}{const}\ std::string\ \&username,}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&email,}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ discount,}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&discount\_type,}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&premium\_card,}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&payment\_method,}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ mongocxx::client\ \&client,}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&profession,}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&registration\_date,}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ money\_spent,}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ money\_saved,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ ticket\_bought,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<bsoncxx::document::value>\ \&user\_flights,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ is\_admin,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ std::string\ hashed\_admin\_password);}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00056\ \ \ \mbox{\hyperlink{class_admin_a373c2e628c82fac5f75bfb5d34bc9411}{Admin}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_user}{User}}\ \&user)}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_user}{User}}(user),\ \mbox{\hyperlink{class_admin_a56dfe28e922c4f0e09f8897d4f994f05}{hashed\_admin\_password\_}}(\textcolor{stringliteral}{"{}"{}})\ \{\}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ std::string\ \mbox{\hyperlink{class_admin_a56dfe28e922c4f0e09f8897d4f994f05}{hashed\_admin\_password\_}};\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_admin_a126de85f9265d14327b7bd233f3d7ea0}{AddFlight}}(\mbox{\hyperlink{class_user}{User}}\ \&user);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_admin_a8f5182db2b6ae3573476225089cf429f}{AddVerificationQuestion}}(\mbox{\hyperlink{class_user}{User}}\ \&user);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_admin_ac0dbb345134f9f8e82578f66554be9b9}{ManageUsers}}(\mbox{\hyperlink{class_user}{User}}\ \&user);}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_admin_aeb9d077d171911c2d72a2f294f9809d1}{AddLuggageItem}}(\mbox{\hyperlink{class_user}{User}}\ \&user);}
+\DoxyCodeLine{00084\ \};}
+\DoxyCodeLine{00085\ }
+\DoxyCodeLine{00086\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ AIRPORT\_ADMIN\_H}}
+
+\end{DoxyCode}

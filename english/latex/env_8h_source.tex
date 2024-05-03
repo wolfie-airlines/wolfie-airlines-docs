@@ -1,0 +1,26 @@
+\doxysection{env.\+h}
+\hypertarget{env_8h_source}{}\label{env_8h_source}\index{env/env.h@{env/env.h}}
+\mbox{\hyperlink{env_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ ENVPARSER\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ ENVPARSER\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <unordered\_map>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_env_parser}{EnvParser}}\ \{}
+\DoxyCodeLine{00017\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00018\ \ \ std::unordered\_map<std::string,\ std::string>\ \_env\_map\_;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00024\ \ \ \mbox{\hyperlink{class_env_parser_ad4996f4262ea25d62e0c165b2af98e08}{EnvParser}}();}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_env_parser_a0688466180f446587c226b4587249114}{ParseEnvFile}}();}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00036\ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{class_env_parser_a9a014262d640085cb5c8f4f511b1971a}{GetValue}}(\textcolor{keyword}{const}\ std::string\ \&key)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00037\ \};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ ENVPARSER\_H}}
+
+\end{DoxyCode}

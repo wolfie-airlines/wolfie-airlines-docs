@@ -1,0 +1,115 @@
+\doxysection{user/professions/profession\+\_\+handler.h File Reference}
+\hypertarget{profession__handler_8h}{}\label{profession__handler_8h}\index{user/professions/profession\_handler.h@{user/professions/profession\_handler.h}}
+
+
+This file contains the declaration of various profession related question handling functions.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}../user.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{profession__handler_8h_a49acd07971f54953da850ccacef522f6}{Guess\+Music\+Author}} (const std\+::string \&music\+\_\+link)
+\begin{DoxyCompactList}\small\item\em Guesses the author of a music piece given a link. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_a82034183a5cbe6738775643a79f5004e}{Guess\+Doctor\+Question}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Guesses the answer to a doctor related question. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_ae44803cb78425f23895dbb196f41833f}{Guess\+Informatic\+Question}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Guesses the answer to an informatics related question. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_a12f044b67d50ec3488ed7e8c4affc5d7}{Guess\+Math\+Question}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Guesses the answer to a math related question. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_ad375f53cedd1c3dd5d3ec6d8eee0b765}{Display\+Police\+Profession}} ()
+\begin{DoxyCompactList}\small\item\em Displays information related to the police profession. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of various profession related question handling functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{profession__handler_8h_ad375f53cedd1c3dd5d3ec6d8eee0b765}\label{profession__handler_8h_ad375f53cedd1c3dd5d3ec6d8eee0b765} 
+\index{profession\_handler.h@{profession\_handler.h}!DisplayPoliceProfession@{DisplayPoliceProfession}}
+\index{DisplayPoliceProfession@{DisplayPoliceProfession}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{DisplayPoliceProfession()}{DisplayPoliceProfession()}}
+{\footnotesize\ttfamily bool Display\+Police\+Profession (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays information related to the police profession. 
+
+\begin{DoxyReturn}{Returns}
+True if the operation is successful, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_a82034183a5cbe6738775643a79f5004e}\label{profession__handler_8h_a82034183a5cbe6738775643a79f5004e} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessDoctorQuestion@{GuessDoctorQuestion}}
+\index{GuessDoctorQuestion@{GuessDoctorQuestion}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessDoctorQuestion()}{GuessDoctorQuestion()}}
+{\footnotesize\ttfamily bool Guess\+Doctor\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Guesses the answer to a doctor related question. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user making the guess. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the guess is correct, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_ae44803cb78425f23895dbb196f41833f}\label{profession__handler_8h_ae44803cb78425f23895dbb196f41833f} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessInformaticQuestion@{GuessInformaticQuestion}}
+\index{GuessInformaticQuestion@{GuessInformaticQuestion}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessInformaticQuestion()}{GuessInformaticQuestion()}}
+{\footnotesize\ttfamily bool Guess\+Informatic\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Guesses the answer to an informatics related question. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user making the guess. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the guess is correct, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_a12f044b67d50ec3488ed7e8c4affc5d7}\label{profession__handler_8h_a12f044b67d50ec3488ed7e8c4affc5d7} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessMathQuestion@{GuessMathQuestion}}
+\index{GuessMathQuestion@{GuessMathQuestion}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessMathQuestion()}{GuessMathQuestion()}}
+{\footnotesize\ttfamily bool Guess\+Math\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Guesses the answer to a math related question. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user making the guess. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the guess is correct, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_a49acd07971f54953da850ccacef522f6}\label{profession__handler_8h_a49acd07971f54953da850ccacef522f6} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessMusicAuthor@{GuessMusicAuthor}}
+\index{GuessMusicAuthor@{GuessMusicAuthor}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessMusicAuthor()}{GuessMusicAuthor()}}
+{\footnotesize\ttfamily bool Guess\+Music\+Author (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{music\+\_\+link }\end{DoxyParamCaption})}
+
+
+
+Guesses the author of a music piece given a link. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em music\+\_\+link} & The link to the music piece. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the guess is correct, false otherwise. 
+\end{DoxyReturn}

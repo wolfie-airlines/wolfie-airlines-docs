@@ -1,0 +1,159 @@
+\doxysection{admin/admin\+\_\+functions/validators.h File Reference}
+\hypertarget{validators_8h}{}\label{validators_8h}\index{admin/admin\_functions/validators.h@{admin/admin\_functions/validators.h}}
+
+
+This file contains the declarations of validation functions used in the admin dashboard.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{validators_8h_ab1283510669750c383b10560f6ebac33}{Validate\+Flight\+Id}} (const std\+::string \&flight\+\_\+id)
+\begin{DoxyCompactList}\small\item\em Validates a flight ID. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validators_8h_ad855631a090fc859655407c1c0e6c5c1}{Validate\+City}} (const std\+::string \&city)
+\begin{DoxyCompactList}\small\item\em Validates a city name. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validators_8h_a575aa407ea0eebce6343ba97018c8910}{Validate\+Date}} (const std\+::string \&date)
+\begin{DoxyCompactList}\small\item\em Validates a date. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validators_8h_ab55230a03a9d89ae8bf38c09b914d55a}{Validate\+Time}} (const std\+::string \&time)
+\begin{DoxyCompactList}\small\item\em Validates a time. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validators_8h_a4161ab873defb7c74e3bb5513e5bab4a}{Validate\+Price}} (const std\+::string \&price)
+\begin{DoxyCompactList}\small\item\em Validates a price. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validators_8h_afa2134a3e59e071fad8ae7049167709e}{Validate\+Non\+Empty}} (const std\+::string \&input)
+\begin{DoxyCompactList}\small\item\em Validates that an input is not empty. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{validators_8h_a8c5f1f03903e3b9801571a2313a3f428}{Validate\+Solution}} (const std\+::string \&solution)
+\begin{DoxyCompactList}\small\item\em Validates a solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declarations of validation functions used in the admin dashboard. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{validators_8h_ad855631a090fc859655407c1c0e6c5c1}\label{validators_8h_ad855631a090fc859655407c1c0e6c5c1} 
+\index{validators.h@{validators.h}!ValidateCity@{ValidateCity}}
+\index{ValidateCity@{ValidateCity}!validators.h@{validators.h}}
+\doxysubsubsection{\texorpdfstring{ValidateCity()}{ValidateCity()}}
+{\footnotesize\ttfamily bool Validate\+City (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{city }\end{DoxyParamCaption})}
+
+
+
+Validates a city name. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & The city name to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the city name is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{validators_8h_a575aa407ea0eebce6343ba97018c8910}\label{validators_8h_a575aa407ea0eebce6343ba97018c8910} 
+\index{validators.h@{validators.h}!ValidateDate@{ValidateDate}}
+\index{ValidateDate@{ValidateDate}!validators.h@{validators.h}}
+\doxysubsubsection{\texorpdfstring{ValidateDate()}{ValidateDate()}}
+{\footnotesize\ttfamily bool Validate\+Date (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{date }\end{DoxyParamCaption})}
+
+
+
+Validates a date. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em date} & The date to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the date is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{validators_8h_ab1283510669750c383b10560f6ebac33}\label{validators_8h_ab1283510669750c383b10560f6ebac33} 
+\index{validators.h@{validators.h}!ValidateFlightId@{ValidateFlightId}}
+\index{ValidateFlightId@{ValidateFlightId}!validators.h@{validators.h}}
+\doxysubsubsection{\texorpdfstring{ValidateFlightId()}{ValidateFlightId()}}
+{\footnotesize\ttfamily bool Validate\+Flight\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{flight\+\_\+id }\end{DoxyParamCaption})}
+
+
+
+Validates a flight ID. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight\+\_\+id} & The flight ID to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the flight ID is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{validators_8h_afa2134a3e59e071fad8ae7049167709e}\label{validators_8h_afa2134a3e59e071fad8ae7049167709e} 
+\index{validators.h@{validators.h}!ValidateNonEmpty@{ValidateNonEmpty}}
+\index{ValidateNonEmpty@{ValidateNonEmpty}!validators.h@{validators.h}}
+\doxysubsubsection{\texorpdfstring{ValidateNonEmpty()}{ValidateNonEmpty()}}
+{\footnotesize\ttfamily bool Validate\+Non\+Empty (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{input }\end{DoxyParamCaption})}
+
+
+
+Validates that an input is not empty. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & The input to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the input is not empty, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{validators_8h_a4161ab873defb7c74e3bb5513e5bab4a}\label{validators_8h_a4161ab873defb7c74e3bb5513e5bab4a} 
+\index{validators.h@{validators.h}!ValidatePrice@{ValidatePrice}}
+\index{ValidatePrice@{ValidatePrice}!validators.h@{validators.h}}
+\doxysubsubsection{\texorpdfstring{ValidatePrice()}{ValidatePrice()}}
+{\footnotesize\ttfamily bool Validate\+Price (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{price }\end{DoxyParamCaption})}
+
+
+
+Validates a price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em price} & The price to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the price is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{validators_8h_a8c5f1f03903e3b9801571a2313a3f428}\label{validators_8h_a8c5f1f03903e3b9801571a2313a3f428} 
+\index{validators.h@{validators.h}!ValidateSolution@{ValidateSolution}}
+\index{ValidateSolution@{ValidateSolution}!validators.h@{validators.h}}
+\doxysubsubsection{\texorpdfstring{ValidateSolution()}{ValidateSolution()}}
+{\footnotesize\ttfamily bool Validate\+Solution (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{solution }\end{DoxyParamCaption})}
+
+
+
+Validates a solution. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em solution} & The solution to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the solution is valid, false otherwise. 
+\end{DoxyReturn}
+\Hypertarget{validators_8h_ab55230a03a9d89ae8bf38c09b914d55a}\label{validators_8h_ab55230a03a9d89ae8bf38c09b914d55a} 
+\index{validators.h@{validators.h}!ValidateTime@{ValidateTime}}
+\index{ValidateTime@{ValidateTime}!validators.h@{validators.h}}
+\doxysubsubsection{\texorpdfstring{ValidateTime()}{ValidateTime()}}
+{\footnotesize\ttfamily bool Validate\+Time (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{time }\end{DoxyParamCaption})}
+
+
+
+Validates a time. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & The time to validate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the time is valid, false otherwise. 
+\end{DoxyReturn}

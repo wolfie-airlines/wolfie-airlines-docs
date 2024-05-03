@@ -1,0 +1,32 @@
+\doxysection{user\+\_\+tickets\+\_\+prints.\+h}
+\hypertarget{user__tickets__prints_8h_source}{}\label{user__tickets__prints_8h_source}\index{user/user\_functions/user\_tickets/user\_tickets\_prints.h@{user/user\_functions/user\_tickets/user\_tickets\_prints.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ AIRPORT\_USER\_TICKETS\_PRINT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ AIRPORT\_USER\_TICKETS\_PRINT\_FUNCTIONS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}../../user.h"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{const}\ \textcolor{keywordtype}{int}\ PAGE\_SIZE\ =\ 4;}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_flight_info}{FlightInfo}}\ \{}
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_flight_info_aee25b877b786e5b94dcf0ad1ef5c4389}{flight\_number}};\ }
+\DoxyCodeLine{00023\ \ \ std::string\ \mbox{\hyperlink{struct_flight_info_acf09514fb7a19df2bbccec0b8ff0766f}{flight\_id}};\ }
+\DoxyCodeLine{00024\ \ \ std::string\ \mbox{\hyperlink{struct_flight_info_afcc03e5d08b11504b52944c1833d49a2}{departure}};\ }
+\DoxyCodeLine{00025\ \ \ std::string\ \mbox{\hyperlink{struct_flight_info_a2266ce71a3931db3293e8f4a4e411658}{destination}};\ }
+\DoxyCodeLine{00026\ \ \ std::string\ \mbox{\hyperlink{struct_flight_info_a081741958fa09aa800ea75acaa3085a4}{departure\_time}};\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_flight_info_ab1ffc9952f6ff50596087786699d5278}{price}};\ }
+\DoxyCodeLine{00028\ \ \ std::vector<int>\ \mbox{\hyperlink{struct_flight_info_adbbc4d49a588ea050b356eae1513d871}{seats}};\ }
+\DoxyCodeLine{00029\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_flight_info_af4223c2ad5826f665ee06ebc0be7d96b}{checkin}};\ }
+\DoxyCodeLine{00030\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_flight_info_a45771a7104e1019efaf41034563bc046}{luggage\_checkin}};\ }
+\DoxyCodeLine{00031\ \};}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00039\ std::optional<std::string>\ CreateTicketsScreen(\mbox{\hyperlink{class_user}{User}}\ \&user,\ \textcolor{keywordtype}{bool}\ is\_checkin\ =\ \textcolor{keyword}{false});}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ AIRPORT\_USER\_TICKETS\_PRINT\_FUNCTIONS\_H}}
+
+\end{DoxyCode}

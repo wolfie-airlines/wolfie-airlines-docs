@@ -1,0 +1,101 @@
+\doxysection{luggage/luggage\+\_\+prints/luggage\+\_\+prints.h File Reference}
+\hypertarget{luggage__prints_8h}{}\label{luggage__prints_8h}\index{luggage/luggage\_prints/luggage\_prints.h@{luggage/luggage\_prints/luggage\_prints.h}}
+
+
+This file contains the declaration of various luggage handling functions.  
+
+
+{\ttfamily \#include "{}../../user/user.\+h"{}}\newline
+{\ttfamily \#include "{}../item/item.\+h"{}}\newline
+{\ttfamily \#include "{}ftxui/component/component.\+hpp"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ ftxui\+::\+Component $>$ \mbox{\hyperlink{luggage__prints_8h_af30d4cb1e05f8648e409726580c8b435}{Create\+Groups}} (const std\+::vector$<$ ftxui\+::\+Component $>$ \&checkbox\+\_\+components)
+\begin{DoxyCompactList}\small\item\em Creates groups of components. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{luggage__prints_8h_af54e7bbd6a5fc2ad002bb549f1e4b7ab}{Print\+All\+Items}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Prints all items for a user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{luggage__prints_8h_ab413c32536926717270ed3d3e985b93b}{Print\+Specific\+Item}} (\mbox{\hyperlink{class_item}{Item}} \&item)
+\begin{DoxyCompactList}\small\item\em Prints a specific item. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{luggage__prints_8h_a237071827cf0e4c571be68ab7ba8a531}{Print\+Welcome\+In\+Check\+In}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Prints a welcome message in the check-\/in. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{luggage__prints_8h_a9d58e004fda8fe1c1da0d108e5a0dafa}\label{luggage__prints_8h_a9d58e004fda8fe1c1da0d108e5a0dafa} 
+const std\+::string {\bfseries AIRPORT\+\_\+\+NAME} = "{}WOLFI AIRPORT ️ ✈"{}
+\begin{DoxyCompactList}\small\item\em The name of the airport. \end{DoxyCompactList}\item 
+\Hypertarget{luggage__prints_8h_a0142c91ef5461d710da7c350dc58c175}\label{luggage__prints_8h_a0142c91ef5461d710da7c350dc58c175} 
+const std\+::string {\bfseries ITEM\+\_\+\+CARD} = "{}KARTA PRZEDMIOTU"{}
+\begin{DoxyCompactList}\small\item\em The item card. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of various luggage handling functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{luggage__prints_8h_af30d4cb1e05f8648e409726580c8b435}\label{luggage__prints_8h_af30d4cb1e05f8648e409726580c8b435} 
+\index{luggage\_prints.h@{luggage\_prints.h}!CreateGroups@{CreateGroups}}
+\index{CreateGroups@{CreateGroups}!luggage\_prints.h@{luggage\_prints.h}}
+\doxysubsubsection{\texorpdfstring{CreateGroups()}{CreateGroups()}}
+{\footnotesize\ttfamily std\+::vector$<$ ftxui\+::\+Component $>$ Create\+Groups (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ ftxui\+::\+Component $>$ \&}]{checkbox\+\_\+components }\end{DoxyParamCaption})}
+
+
+
+Creates groups of components. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em checkbox\+\_\+components} & The components to group. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The groups of components. 
+\end{DoxyReturn}
+\Hypertarget{luggage__prints_8h_af54e7bbd6a5fc2ad002bb549f1e4b7ab}\label{luggage__prints_8h_af54e7bbd6a5fc2ad002bb549f1e4b7ab} 
+\index{luggage\_prints.h@{luggage\_prints.h}!PrintAllItems@{PrintAllItems}}
+\index{PrintAllItems@{PrintAllItems}!luggage\_prints.h@{luggage\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintAllItems()}{PrintAllItems()}}
+{\footnotesize\ttfamily void Print\+All\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Prints all items for a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to print the items for. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{luggage__prints_8h_ab413c32536926717270ed3d3e985b93b}\label{luggage__prints_8h_ab413c32536926717270ed3d3e985b93b} 
+\index{luggage\_prints.h@{luggage\_prints.h}!PrintSpecificItem@{PrintSpecificItem}}
+\index{PrintSpecificItem@{PrintSpecificItem}!luggage\_prints.h@{luggage\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintSpecificItem()}{PrintSpecificItem()}}
+{\footnotesize\ttfamily void Print\+Specific\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_item}{Item}} \&}]{item }\end{DoxyParamCaption})}
+
+
+
+Prints a specific item. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The item to print. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{luggage__prints_8h_a237071827cf0e4c571be68ab7ba8a531}\label{luggage__prints_8h_a237071827cf0e4c571be68ab7ba8a531} 
+\index{luggage\_prints.h@{luggage\_prints.h}!PrintWelcomeInCheckIn@{PrintWelcomeInCheckIn}}
+\index{PrintWelcomeInCheckIn@{PrintWelcomeInCheckIn}!luggage\_prints.h@{luggage\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintWelcomeInCheckIn()}{PrintWelcomeInCheckIn()}}
+{\footnotesize\ttfamily void Print\+Welcome\+In\+Check\+In (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Prints a welcome message in the check-\/in. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to print the welcome message for. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,107 @@
+\doxysection{luggage/item/item\+\_\+handler.h File Reference}
+\hypertarget{item__handler_8h}{}\label{item__handler_8h}\index{luggage/item/item\_handler.h@{luggage/item/item\_handler.h}}
+
+
+This file contains the declaration of various item handling functions.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include "{}../../user/user.\+h"{}}\newline
+{\ttfamily \#include "{}item.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{item__handler_8h_ac69c9010104b958d03f50af4cb92a9fb}{Get\+Double\+Value}} (const bsoncxx\+::document\+::view \&item, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Gets a double value from a BSON document. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{item__handler_8h_a6e4e434663e1d29e7b4c760f81349514}{Get\+Array\+Value}} (const bsoncxx\+::document\+::view \&item, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Gets an array value from a BSON document. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{item__handler_8h_adcf01df754775c1a5f509f1283dbac08}{Get\+String\+Value}} (const bsoncxx\+::document\+::view \&item, const std\+::string \&key)
+\begin{DoxyCompactList}\small\item\em Gets a string value from a BSON document. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \mbox{\hyperlink{item__handler_8h_a4ccaf255e2414506f83d609fbeb58372}{Get\+Items}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Gets the items for a user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of various item handling functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{item__handler_8h_a6e4e434663e1d29e7b4c760f81349514}\label{item__handler_8h_a6e4e434663e1d29e7b4c760f81349514} 
+\index{item\_handler.h@{item\_handler.h}!GetArrayValue@{GetArrayValue}}
+\index{GetArrayValue@{GetArrayValue}!item\_handler.h@{item\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GetArrayValue()}{GetArrayValue()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Get\+Array\+Value (\begin{DoxyParamCaption}\item[{const bsoncxx\+::document\+::view \&}]{item,  }\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Gets an array value from a BSON document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The BSON document. \\
+\hline
+{\em key} & The key of the value to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The array value. 
+\end{DoxyReturn}
+\Hypertarget{item__handler_8h_ac69c9010104b958d03f50af4cb92a9fb}\label{item__handler_8h_ac69c9010104b958d03f50af4cb92a9fb} 
+\index{item\_handler.h@{item\_handler.h}!GetDoubleValue@{GetDoubleValue}}
+\index{GetDoubleValue@{GetDoubleValue}!item\_handler.h@{item\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GetDoubleValue()}{GetDoubleValue()}}
+{\footnotesize\ttfamily double Get\+Double\+Value (\begin{DoxyParamCaption}\item[{const bsoncxx\+::document\+::view \&}]{item,  }\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Gets a double value from a BSON document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The BSON document. \\
+\hline
+{\em key} & The key of the value to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The double value. 
+\end{DoxyReturn}
+\Hypertarget{item__handler_8h_a4ccaf255e2414506f83d609fbeb58372}\label{item__handler_8h_a4ccaf255e2414506f83d609fbeb58372} 
+\index{item\_handler.h@{item\_handler.h}!GetItems@{GetItems}}
+\index{GetItems@{GetItems}!item\_handler.h@{item\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GetItems()}{GetItems()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ Get\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Gets the items for a user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user to get the items for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The items for the user. 
+\end{DoxyReturn}
+\Hypertarget{item__handler_8h_adcf01df754775c1a5f509f1283dbac08}\label{item__handler_8h_adcf01df754775c1a5f509f1283dbac08} 
+\index{item\_handler.h@{item\_handler.h}!GetStringValue@{GetStringValue}}
+\index{GetStringValue@{GetStringValue}!item\_handler.h@{item\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GetStringValue()}{GetStringValue()}}
+{\footnotesize\ttfamily std\+::string Get\+String\+Value (\begin{DoxyParamCaption}\item[{const bsoncxx\+::document\+::view \&}]{item,  }\item[{const std\+::string \&}]{key }\end{DoxyParamCaption})}
+
+
+
+Gets a string value from a BSON document. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em item} & The BSON document. \\
+\hline
+{\em key} & The key of the value to get. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The string value. 
+\end{DoxyReturn}

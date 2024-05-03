@@ -1,0 +1,59 @@
+\doxysection{qr\+\_\+code/qrcode\+\_\+prints.h File Reference}
+\hypertarget{qrcode__prints_8h}{}\label{qrcode__prints_8h}\index{qr\_code/qrcode\_prints.h@{qr\_code/qrcode\_prints.h}}
+
+
+This file contains the declaration of QR code creation and printing functions.  
+
+
+{\ttfamily \#include "{}qrcodegen.\+hpp"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{qrcode__prints_8h_aa602133eab4f5e43f67422289808d77a}{Create\+Qr}} (const std\+::string \&email, const std\+::string \&username, const std\+::string \&flight\+\_\+id, std\+::vector$<$ int $>$ seats)
+\begin{DoxyCompactList}\small\item\em Creates a QR code based on user and flight information. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{qrcode__prints_8h_acaff92a2727b8494d88510dbaf1f43a3}{Print\+Qr}} (const Qr\+Code \&qr)
+\begin{DoxyCompactList}\small\item\em Prints a QR code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of QR code creation and printing functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{qrcode__prints_8h_aa602133eab4f5e43f67422289808d77a}\label{qrcode__prints_8h_aa602133eab4f5e43f67422289808d77a} 
+\index{qrcode\_prints.h@{qrcode\_prints.h}!CreateQr@{CreateQr}}
+\index{CreateQr@{CreateQr}!qrcode\_prints.h@{qrcode\_prints.h}}
+\doxysubsubsection{\texorpdfstring{CreateQr()}{CreateQr()}}
+{\footnotesize\ttfamily void Create\+Qr (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{email,  }\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{flight\+\_\+id,  }\item[{std\+::vector$<$ int $>$}]{seats }\end{DoxyParamCaption})}
+
+
+
+Creates a QR code based on user and flight information. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & The email of the user. \\
+\hline
+{\em username} & The username of the user. \\
+\hline
+{\em flight\+\_\+id} & The ID of the flight. \\
+\hline
+{\em seats} & The seats selected by the user. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{qrcode__prints_8h_acaff92a2727b8494d88510dbaf1f43a3}\label{qrcode__prints_8h_acaff92a2727b8494d88510dbaf1f43a3} 
+\index{qrcode\_prints.h@{qrcode\_prints.h}!PrintQr@{PrintQr}}
+\index{PrintQr@{PrintQr}!qrcode\_prints.h@{qrcode\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintQr()}{PrintQr()}}
+{\footnotesize\ttfamily void Print\+Qr (\begin{DoxyParamCaption}\item[{const Qr\+Code \&}]{qr }\end{DoxyParamCaption})}
+
+
+
+Prints a QR code. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em qr} & The QR code to print. \\
+\hline
+\end{DoxyParams}

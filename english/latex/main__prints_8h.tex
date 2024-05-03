@@ -1,0 +1,158 @@
+\doxysection{functions/main\+\_\+prints/main\+\_\+prints.h File Reference}
+\hypertarget{main__prints_8h}{}\label{main__prints_8h}\index{functions/main\_prints/main\_prints.h@{functions/main\_prints/main\_prints.h}}
+
+
+This file contains the declaration of various display and input capture functions.  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include "{}ftxui/dom/elements.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../user/user.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main__prints_8h_a61835ae6dc3882361865c5deb46a070d}{Print\+Screen}} (const std\+::shared\+\_\+ptr$<$ ftxui\+::\+Element $>$ \&screen)
+\begin{DoxyCompactList}\small\item\em Prints a screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main__prints_8h_adca2f05fcfb614ebd95ee0ced9dd3d14}{Print\+Full\+Width\+Screen}} (std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$ container)
+\begin{DoxyCompactList}\small\item\em Prints a full width screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main__prints_8h_aebd05ee78b8b274fb8863e7eb0d58e87}{Print\+Node\+Screen}} (std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$ container)
+\begin{DoxyCompactList}\small\item\em Prints a node screen. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{main__prints_8h_ad600a03f17a1ffe470057b4a5cb9737a}{Display\+Message\+And\+Capture\+String\+Input}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Displays a message and captures string input. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{main__prints_8h_a7b5548e9e6df2b025e34ad476ff3c6f0}{Display\+Message\+And\+Capture\+Double\+Input}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Displays a message and captures double input. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{main__prints_8h_a121cdafd52349b7973548faebdb6c290}{Display\+Warning\+And\+Capture\+Input}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Displays a warning and captures input. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main__prints_8h_ad05f3f8ccf0df265c9cbb2ba9700be35}{Display\+User\+Menu}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Displays the user menu. \end{DoxyCompactList}\item 
+\Hypertarget{main__prints_8h_a41ff9290a9a345af10f8faa5902219ba}\label{main__prints_8h_a41ff9290a9a345af10f8faa5902219ba} 
+void {\bfseries Display\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Displays the main menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of various display and input capture functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main__prints_8h_a7b5548e9e6df2b025e34ad476ff3c6f0}\label{main__prints_8h_a7b5548e9e6df2b025e34ad476ff3c6f0} 
+\index{main\_prints.h@{main\_prints.h}!DisplayMessageAndCaptureDoubleInput@{DisplayMessageAndCaptureDoubleInput}}
+\index{DisplayMessageAndCaptureDoubleInput@{DisplayMessageAndCaptureDoubleInput}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayMessageAndCaptureDoubleInput()}{DisplayMessageAndCaptureDoubleInput()}}
+{\footnotesize\ttfamily double Display\+Message\+And\+Capture\+Double\+Input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Displays a message and captures double input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title\+\_\+message} & The title of the message. \\
+\hline
+{\em text\+\_\+message} & The text of the message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The captured double input. 
+\end{DoxyReturn}
+\Hypertarget{main__prints_8h_ad600a03f17a1ffe470057b4a5cb9737a}\label{main__prints_8h_ad600a03f17a1ffe470057b4a5cb9737a} 
+\index{main\_prints.h@{main\_prints.h}!DisplayMessageAndCaptureStringInput@{DisplayMessageAndCaptureStringInput}}
+\index{DisplayMessageAndCaptureStringInput@{DisplayMessageAndCaptureStringInput}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayMessageAndCaptureStringInput()}{DisplayMessageAndCaptureStringInput()}}
+{\footnotesize\ttfamily std\+::string Display\+Message\+And\+Capture\+String\+Input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Displays a message and captures string input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title\+\_\+message} & The title of the message. \\
+\hline
+{\em text\+\_\+message} & The text of the message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The captured string input. 
+\end{DoxyReturn}
+\Hypertarget{main__prints_8h_ad05f3f8ccf0df265c9cbb2ba9700be35}\label{main__prints_8h_ad05f3f8ccf0df265c9cbb2ba9700be35} 
+\index{main\_prints.h@{main\_prints.h}!DisplayUserMenu@{DisplayUserMenu}}
+\index{DisplayUserMenu@{DisplayUserMenu}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayUserMenu()}{DisplayUserMenu()}}
+{\footnotesize\ttfamily void Display\+User\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Displays the user menu. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em user} & The user for whom the menu is displayed. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main__prints_8h_a121cdafd52349b7973548faebdb6c290}\label{main__prints_8h_a121cdafd52349b7973548faebdb6c290} 
+\index{main\_prints.h@{main\_prints.h}!DisplayWarningAndCaptureInput@{DisplayWarningAndCaptureInput}}
+\index{DisplayWarningAndCaptureInput@{DisplayWarningAndCaptureInput}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayWarningAndCaptureInput()}{DisplayWarningAndCaptureInput()}}
+{\footnotesize\ttfamily std\+::string Display\+Warning\+And\+Capture\+Input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Displays a warning and captures input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title\+\_\+message} & The title of the message. \\
+\hline
+{\em text\+\_\+message} & The text of the message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The captured input. 
+\end{DoxyReturn}
+\Hypertarget{main__prints_8h_adca2f05fcfb614ebd95ee0ced9dd3d14}\label{main__prints_8h_adca2f05fcfb614ebd95ee0ced9dd3d14} 
+\index{main\_prints.h@{main\_prints.h}!PrintFullWidthScreen@{PrintFullWidthScreen}}
+\index{PrintFullWidthScreen@{PrintFullWidthScreen}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintFullWidthScreen()}{PrintFullWidthScreen()}}
+{\footnotesize\ttfamily void Print\+Full\+Width\+Screen (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$}]{container }\end{DoxyParamCaption})}
+
+
+
+Prints a full width screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container to print. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main__prints_8h_aebd05ee78b8b274fb8863e7eb0d58e87}\label{main__prints_8h_aebd05ee78b8b274fb8863e7eb0d58e87} 
+\index{main\_prints.h@{main\_prints.h}!PrintNodeScreen@{PrintNodeScreen}}
+\index{PrintNodeScreen@{PrintNodeScreen}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintNodeScreen()}{PrintNodeScreen()}}
+{\footnotesize\ttfamily void Print\+Node\+Screen (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$}]{container }\end{DoxyParamCaption})}
+
+
+
+Prints a node screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em container} & The container to print. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main__prints_8h_a61835ae6dc3882361865c5deb46a070d}\label{main__prints_8h_a61835ae6dc3882361865c5deb46a070d} 
+\index{main\_prints.h@{main\_prints.h}!PrintScreen@{PrintScreen}}
+\index{PrintScreen@{PrintScreen}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintScreen()}{PrintScreen()}}
+{\footnotesize\ttfamily void Print\+Screen (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ ftxui\+::\+Element $>$ \&}]{screen }\end{DoxyParamCaption})}
+
+
+
+Prints a screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & The screen to print. \\
+\hline
+\end{DoxyParams}

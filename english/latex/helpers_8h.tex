@@ -1,0 +1,103 @@
+\doxysection{functions/helpers.h File Reference}
+\hypertarget{helpers_8h}{}\label{helpers_8h}\index{functions/helpers.h@{functions/helpers.h}}
+
+
+This file contains the declaration of various helper functions.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}ftxui/dom/table.\+hpp"{}}\newline
+{\ttfamily \#include "{}ftxui/screen/color.\+hpp"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{helpers_8h_a19f2a9200b0a719eb40545c9b0ccc703}{Extract\+File\+Name}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Extracts the file name from a path. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8h_a7ae6aedfc08cd7f6dabd083ce0a8ee4a}{Countdown}} (int seconds, const std\+::string \&type)
+\begin{DoxyCompactList}\small\item\em Performs a countdown. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{helpers_8h_a728e742402ca16b9254150be442cd2dc}{Hash\+String}} (const std\+::string \&string\+\_\+to\+\_\+hash)
+\begin{DoxyCompactList}\small\item\em Hashes a string. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8h_a727d1fb0a358dc58ddf7909929c88f17}{Set\+Cell\+Color}} (ftxui\+::\+Table \&table, int col, int row, ftxui\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Sets the color of a cell in a table. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declaration of various helper functions. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{helpers_8h_a7ae6aedfc08cd7f6dabd083ce0a8ee4a}\label{helpers_8h_a7ae6aedfc08cd7f6dabd083ce0a8ee4a} 
+\index{helpers.h@{helpers.h}!Countdown@{Countdown}}
+\index{Countdown@{Countdown}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{Countdown()}{Countdown()}}
+{\footnotesize\ttfamily void Countdown (\begin{DoxyParamCaption}\item[{int}]{seconds,  }\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Performs a countdown. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em seconds} & The number of seconds to countdown. \\
+\hline
+{\em type} & The type of countdown. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{helpers_8h_a19f2a9200b0a719eb40545c9b0ccc703}\label{helpers_8h_a19f2a9200b0a719eb40545c9b0ccc703} 
+\index{helpers.h@{helpers.h}!ExtractFileName@{ExtractFileName}}
+\index{ExtractFileName@{ExtractFileName}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{ExtractFileName()}{ExtractFileName()}}
+{\footnotesize\ttfamily std\+::string Extract\+File\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Extracts the file name from a path. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & The path to extract the file name from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The extracted file name. 
+\end{DoxyReturn}
+\Hypertarget{helpers_8h_a728e742402ca16b9254150be442cd2dc}\label{helpers_8h_a728e742402ca16b9254150be442cd2dc} 
+\index{helpers.h@{helpers.h}!HashString@{HashString}}
+\index{HashString@{HashString}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{HashString()}{HashString()}}
+{\footnotesize\ttfamily std\+::string Hash\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{string\+\_\+to\+\_\+hash }\end{DoxyParamCaption})}
+
+
+
+Hashes a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string\+\_\+to\+\_\+hash} & The string to hash. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The hashed string. 
+\end{DoxyReturn}
+\Hypertarget{helpers_8h_a727d1fb0a358dc58ddf7909929c88f17}\label{helpers_8h_a727d1fb0a358dc58ddf7909929c88f17} 
+\index{helpers.h@{helpers.h}!SetCellColor@{SetCellColor}}
+\index{SetCellColor@{SetCellColor}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{SetCellColor()}{SetCellColor()}}
+{\footnotesize\ttfamily void Set\+Cell\+Color (\begin{DoxyParamCaption}\item[{ftxui\+::\+Table \&}]{table,  }\item[{int}]{col,  }\item[{int}]{row,  }\item[{ftxui\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the color of a cell in a table. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em table} & The table containing the cell. \\
+\hline
+{\em col} & The column of the cell. \\
+\hline
+{\em row} & The row of the cell. \\
+\hline
+{\em color} & The color to set the cell to. \\
+\hline
+\end{DoxyParams}

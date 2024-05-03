@@ -1,0 +1,71 @@
+\doxysection{admin/admin\+\_\+prints/admin\+\_\+prints.h File Reference}
+\hypertarget{admin__prints_8h}{}\label{admin__prints_8h}\index{admin/admin\_prints/admin\_prints.h@{admin/admin\_prints/admin\_prints.h}}
+
+
+This file contains the declarations of functions used for displaying admin related information.  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{admin__prints_8h_ae60a1aa0218681e129c2a8879edc6f53}\label{admin__prints_8h_ae60a1aa0218681e129c2a8879edc6f53} 
+void {\bfseries Display\+Admin\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Displays the admin menu. \end{DoxyCompactList}\item 
+\Hypertarget{admin__prints_8h_aa80906b1d234ebff02321030c00c5864}\label{admin__prints_8h_aa80906b1d234ebff02321030c00c5864} 
+void {\bfseries Display\+Adding\+Flight\+Info} ()
+\begin{DoxyCompactList}\small\item\em Displays information related to adding a flight. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__prints_8h_a5fc3d45148988d8290aa36d28fd0e4fb}{Display\+Admin\+Message\+And\+Capture\+Input}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Displays a message to the admin and captures their input. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__prints_8h_a7d22d402909e7c8595d392a88b1c47d9}{Display\+Admin\+Message\+And\+Capture\+Line}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Displays a message to the admin and captures a line of their input. \end{DoxyCompactList}\item 
+\Hypertarget{admin__prints_8h_a31ec3eb7e35d8f2a6dc4f0cbffc12e9d}\label{admin__prints_8h_a31ec3eb7e35d8f2a6dc4f0cbffc12e9d} 
+void {\bfseries Display\+Manage\+Users\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Displays the manage users menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file contains the declarations of functions used for displaying admin related information. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{admin__prints_8h_a5fc3d45148988d8290aa36d28fd0e4fb}\label{admin__prints_8h_a5fc3d45148988d8290aa36d28fd0e4fb} 
+\index{admin\_prints.h@{admin\_prints.h}!DisplayAdminMessageAndCaptureInput@{DisplayAdminMessageAndCaptureInput}}
+\index{DisplayAdminMessageAndCaptureInput@{DisplayAdminMessageAndCaptureInput}!admin\_prints.h@{admin\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayAdminMessageAndCaptureInput()}{DisplayAdminMessageAndCaptureInput()}}
+{\footnotesize\ttfamily std\+::string Display\+Admin\+Message\+And\+Capture\+Input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Displays a message to the admin and captures their input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title\+\_\+message} & The title of the message. \\
+\hline
+{\em text\+\_\+message} & The text of the message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The input captured from the admin. 
+\end{DoxyReturn}
+\Hypertarget{admin__prints_8h_a7d22d402909e7c8595d392a88b1c47d9}\label{admin__prints_8h_a7d22d402909e7c8595d392a88b1c47d9} 
+\index{admin\_prints.h@{admin\_prints.h}!DisplayAdminMessageAndCaptureLine@{DisplayAdminMessageAndCaptureLine}}
+\index{DisplayAdminMessageAndCaptureLine@{DisplayAdminMessageAndCaptureLine}!admin\_prints.h@{admin\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayAdminMessageAndCaptureLine()}{DisplayAdminMessageAndCaptureLine()}}
+{\footnotesize\ttfamily std\+::string Display\+Admin\+Message\+And\+Capture\+Line (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Displays a message to the admin and captures a line of their input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em title\+\_\+message} & The title of the message. \\
+\hline
+{\em text\+\_\+message} & The text of the message. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The line of input captured from the admin. 
+\end{DoxyReturn}
