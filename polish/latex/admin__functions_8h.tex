@@ -1,0 +1,123 @@
+\doxysection{Dokumentacja pliku admin/admin\+\_\+functions/admin\+\_\+functions.h}
+\hypertarget{admin__functions_8h}{}\label{admin__functions_8h}\index{admin/admin\_functions/admin\_functions.h@{admin/admin\_functions/admin\_functions.h}}
+
+
+Ten plik zawiera deklaracje funkcji używanych w panelu administratora.  
+
+
+{\ttfamily \#include "{}../../user/user.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{admin__functions_8h_ae5bdc41b772180ec6d17757b6cf42606}{Handle\+Admin\+Dashboard}} (\mbox{\hyperlink{class_admin}{Admin}} \&admin, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje panel administratora. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__functions_8h_abad6652e8a1e20aff906290a679aba54}{Process\+Adding\+Flight}} ()
+\begin{DoxyCompactList}\small\item\em Przetwarza dodanie lotu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__functions_8h_a08a39b9b7f90eafe791ab8db0b5dadaa}{Capture\+Input\+With\+Validation}} (const std\+::string \&title, const std\+::string \&message, const std\+::function$<$ bool(const std\+::string \&)$>$ \&validator)
+\begin{DoxyCompactList}\small\item\em Przechwytuje dane wejściowe użytkownika z walidacją. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{admin__functions_8h_a8af688e043b30529aa079b3e410f2ac1}{Capture\+Line\+With\+Validation}} (const std\+::string \&title, const std\+::string \&message, const std\+::function$<$ bool(const std\+::string \&)$>$ \&validator)
+\begin{DoxyCompactList}\small\item\em Przechwytuje linię danych wejściowych z walidacją. \end{DoxyCompactList}\item 
+std\+::optional$<$ bool $>$ \mbox{\hyperlink{admin__functions_8h_a3d4a5f43fd5c0a37ba0c11a6f6f8f7b4}{Capture\+Bool\+With\+Validation}} (const std\+::string \&title, const std\+::string \&message)
+\begin{DoxyCompactList}\small\item\em Przechwytuje wartość logiczną z walidacją. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje funkcji używanych w panelu administratora. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{admin__functions_8h_a3d4a5f43fd5c0a37ba0c11a6f6f8f7b4}\label{admin__functions_8h_a3d4a5f43fd5c0a37ba0c11a6f6f8f7b4} 
+\index{admin\_functions.h@{admin\_functions.h}!CaptureBoolWithValidation@{CaptureBoolWithValidation}}
+\index{CaptureBoolWithValidation@{CaptureBoolWithValidation}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{CaptureBoolWithValidation()}{CaptureBoolWithValidation()}}
+{\footnotesize\ttfamily std\+::optional$<$ bool $>$ Capture\+Bool\+With\+Validation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Przechwytuje wartość logiczną z walidacją. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em title} & Tytuł pola wejściowego. \\
+\hline
+{\em message} & Wiadomość do wyświetlenia użytkownikowi. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Opcjonalna wartość logiczna. Jeśli dane wejściowe są prawidłowe, wartością jest przechwycone dane wejściowe. Jeśli dane wejściowe są nieprawidłowe, wartością jest std\+::nullopt. 
+\end{DoxyReturn}
+\Hypertarget{admin__functions_8h_a08a39b9b7f90eafe791ab8db0b5dadaa}\label{admin__functions_8h_a08a39b9b7f90eafe791ab8db0b5dadaa} 
+\index{admin\_functions.h@{admin\_functions.h}!CaptureInputWithValidation@{CaptureInputWithValidation}}
+\index{CaptureInputWithValidation@{CaptureInputWithValidation}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{CaptureInputWithValidation()}{CaptureInputWithValidation()}}
+{\footnotesize\ttfamily std\+::string Capture\+Input\+With\+Validation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const std\+::string \&}]{message,  }\item[{const std\+::function$<$ bool(const std\+::string \&)$>$ \&}]{validator }\end{DoxyParamCaption})}
+
+
+
+Przechwytuje dane wejściowe użytkownika z walidacją. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em title} & Tytuł pola wejściowego. \\
+\hline
+{\em message} & Wiadomość do wyświetlenia użytkownikowi. \\
+\hline
+{\em validator} & Funkcja do walidacji danych wejściowych. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Przechwycone dane wejściowe. 
+\end{DoxyReturn}
+\Hypertarget{admin__functions_8h_a8af688e043b30529aa079b3e410f2ac1}\label{admin__functions_8h_a8af688e043b30529aa079b3e410f2ac1} 
+\index{admin\_functions.h@{admin\_functions.h}!CaptureLineWithValidation@{CaptureLineWithValidation}}
+\index{CaptureLineWithValidation@{CaptureLineWithValidation}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{CaptureLineWithValidation()}{CaptureLineWithValidation()}}
+{\footnotesize\ttfamily std\+::string Capture\+Line\+With\+Validation (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title,  }\item[{const std\+::string \&}]{message,  }\item[{const std\+::function$<$ bool(const std\+::string \&)$>$ \&}]{validator }\end{DoxyParamCaption})}
+
+
+
+Przechwytuje linię danych wejściowych z walidacją. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em title} & Tytuł pola wejściowego. \\
+\hline
+{\em message} & Wiadomość do wyświetlenia użytkownikowi. \\
+\hline
+{\em validator} & Funkcja do walidacji danych wejściowych. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Przechwycone dane wejściowe. 
+\end{DoxyReturn}
+\Hypertarget{admin__functions_8h_ae5bdc41b772180ec6d17757b6cf42606}\label{admin__functions_8h_ae5bdc41b772180ec6d17757b6cf42606} 
+\index{admin\_functions.h@{admin\_functions.h}!HandleAdminDashboard@{HandleAdminDashboard}}
+\index{HandleAdminDashboard@{HandleAdminDashboard}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{HandleAdminDashboard()}{HandleAdminDashboard()}}
+{\footnotesize\ttfamily void Handle\+Admin\+Dashboard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_admin}{Admin}} \&}]{admin,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje panel administratora. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em admin} & Obiekt administratora. \\
+\hline
+{\em user} & Obiekt użytkownika. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{admin__functions_8h_abad6652e8a1e20aff906290a679aba54}\label{admin__functions_8h_abad6652e8a1e20aff906290a679aba54} 
+\index{admin\_functions.h@{admin\_functions.h}!ProcessAddingFlight@{ProcessAddingFlight}}
+\index{ProcessAddingFlight@{ProcessAddingFlight}!admin\_functions.h@{admin\_functions.h}}
+\doxysubsubsection{\texorpdfstring{ProcessAddingFlight()}{ProcessAddingFlight()}}
+{\footnotesize\ttfamily std\+::string Process\+Adding\+Flight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przetwarza dodanie lotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Ciąg znaków reprezentujący wynik operacji. 
+\end{DoxyReturn}

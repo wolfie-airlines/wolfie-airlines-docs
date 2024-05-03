@@ -1,0 +1,76 @@
+\doxysection{item.\+h}
+\hypertarget{item_8h_source}{}\label{item_8h_source}\index{luggage/item/item.h@{luggage/item/item.h}}
+\mbox{\hyperlink{item_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ AIRPORT\_ITEM\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ AIRPORT\_ITEM\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_user}{User}};}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_item}{Item}}\ \{}
+\DoxyCodeLine{00019\ \ \ std::string\ item\_name\_;\ }
+\DoxyCodeLine{00020\ \ \ std::string\ description\_;\ }
+\DoxyCodeLine{00021\ \ \ std::vector<std::string>\ hints\_;\ }
+\DoxyCodeLine{00022\ \ \ \textcolor{keywordtype}{bool}\ forbidden\_;\ }
+\DoxyCodeLine{00023\ \ \ \textcolor{keywordtype}{bool}\ registered\_luggage\_;\ }
+\DoxyCodeLine{00024\ \ \ \textcolor{keywordtype}{bool}\ hand\_luggage\_;\ }
+\DoxyCodeLine{00025\ \ \ \textcolor{keywordtype}{bool}\ pilot\_allowance\_;\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{double}\ max\_count\_;\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{double}\ weight\_;\ }
+\DoxyCodeLine{00028\ \ \ std::string\ profession\_;\ }
+\DoxyCodeLine{00029\ \ \ std::string\ category\_\ =\ \textcolor{stringliteral}{"{}special"{}};\ }
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00046\ \ \ \mbox{\hyperlink{class_item}{Item}}(\textcolor{keyword}{const}\ std::string\ \&item\_name,}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&description,}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\ \&hints,}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ forbidden,}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ registered\_luggage,}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ hand\_luggage,}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ pilot\_allowance,}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ max\_count,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ weight,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ std::string\ \&profession,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ std::string\ \&category);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00071\ \ \ \mbox{\hyperlink{class_item}{Item}}(\textcolor{keyword}{const}\ std::string\ \&item\_name,}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&description,}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::vector<std::string>\ \&hints,}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ forbidden,}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ registered\_luggage,}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ hand\_luggage,}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ pilot\_allowance,}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ max\_count,}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ weight,}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ std::string\ \&category);}
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00086\ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_item_a7c78556e5276f5a8660d48232087a27b}{GetItemName}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00092\ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_item_a66b654e1fdb84208a8d19d0bf544c292}{GetDescription}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00098\ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ std::string\ \&\mbox{\hyperlink{class_item_ac8724a58e2a42c7c3ff508f00b4304f8}{GetProfession}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00104\ \ \ [[nodiscard]]\ \textcolor{keyword}{const}\ std::vector<std::string>\ \&\mbox{\hyperlink{class_item_aa3569a91ba8a993ba8babaf22e3b5021}{GetHints}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00110\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_item_a95a38d537b0e09a3610c3736ea0f818f}{IsForbidden}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00111\ }
+\DoxyCodeLine{00116\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_item_ad05c631742091936d73e7e708067bc3d}{IsRegisteredLuggage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00122\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_item_a52cc034c5b3810c35979dfcb2f5b42f6}{IsHandLuggage}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00128\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_item_accba92c163d1931a9f6c1445671e3b84}{IsPilotAllowance}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00129\ }
+\DoxyCodeLine{00134\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_item_af38ed6e20df2d770fe249a35c049b71d}{GetMaxCount}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00135\ }
+\DoxyCodeLine{00140\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_item_a7c4b1912fe59e4c0e3d45fa6f2444509}{GetWeight}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00141\ }
+\DoxyCodeLine{00146\ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{class_item_a696e4fd97f91820dc254545177aca109}{GetCategory}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00147\ \};}
+\DoxyCodeLine{00148\ }
+\DoxyCodeLine{00149\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ AIRPORT\_ITEM\_H}}
+
+\end{DoxyCode}

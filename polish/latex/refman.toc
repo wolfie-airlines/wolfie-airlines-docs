@@ -1,0 +1,264 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\babel@toc {polish}{}\relax 
+\contentsline {chapter}{\numberline {1}Indeks hierarchiczny}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Hierarchia klas}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Indeks klas}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Lista klas}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Indeks plików}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Lista plików}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Dokumentacja klas}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Dokumentacja klasy Admin}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Opis szczegółowy}{9}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Dokumentacja konstruktora i destruktora}{10}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Admin()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{10}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}Admin()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{10}{subsubsection.4.1.2.2}%
+\contentsline {subsection}{\numberline {4.1.3}Dokumentacja funkcji składowych}{11}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}AddFlight()}{11}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}AddLuggageItem()}{11}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}AddVerificationQuestion()}{11}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}ManageUsers()}{11}{subsubsection.4.1.3.4}%
+\contentsline {section}{\numberline {4.2}Dokumentacja klasy Authentication}{12}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Opis szczegółowy}{12}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Dokumentacja konstruktora i destruktora}{12}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Authentication()}{12}{subsubsection.4.2.2.1}%
+\contentsline {subsection}{\numberline {4.2.3}Dokumentacja funkcji składowych}{13}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}AuthenticateUser()}{13}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}HashPassword()}{13}{subsubsection.4.2.3.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}RegisterUser()}{13}{subsubsection.4.2.3.3}%
+\contentsline {section}{\numberline {4.3}Dokumentacja klasy Env\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parser}{14}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Opis szczegółowy}{14}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Dokumentacja funkcji składowych}{14}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}GetValue()}{14}{subsubsection.4.3.2.1}%
+\contentsline {section}{\numberline {4.4}Dokumentacja klasy Flight\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Connection}{15}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Opis szczegółowy}{16}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Dokumentacja konstruktora i destruktora}{16}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}FlightConnection()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{16}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}FlightConnection()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{16}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Dokumentacja funkcji składowych}{17}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}FindAllConnections()}{17}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}FindConnection()}{17}{subsubsection.4.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.4.3.3}FindConnectionById()}{17}{subsubsection.4.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.4}FindConnectionByPrice()}{17}{subsubsection.4.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.4.3.5}FindConnectionsByDeparture()}{18}{subsubsection.4.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.4.3.6}FindConnectionsByDestination()}{18}{subsubsection.4.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.4.3.7}GetArrivalTime()}{18}{subsubsection.4.4.3.7}%
+\contentsline {subsubsection}{\numberline {4.4.3.8}GetAvailableSeats()}{19}{subsubsection.4.4.3.8}%
+\contentsline {subsubsection}{\numberline {4.4.3.9}GetDepartureCity()}{19}{subsubsection.4.4.3.9}%
+\contentsline {subsubsection}{\numberline {4.4.3.10}GetDepartureTime()}{19}{subsubsection.4.4.3.10}%
+\contentsline {subsubsection}{\numberline {4.4.3.11}GetDestinationCity()}{19}{subsubsection.4.4.3.11}%
+\contentsline {subsubsection}{\numberline {4.4.3.12}GetIdentifier()}{20}{subsubsection.4.4.3.12}%
+\contentsline {subsubsection}{\numberline {4.4.3.13}GetPrice()}{20}{subsubsection.4.4.3.13}%
+\contentsline {subsubsection}{\numberline {4.4.3.14}GetSeatsTaken()}{20}{subsubsection.4.4.3.14}%
+\contentsline {subsubsection}{\numberline {4.4.3.15}UpdateSeatsTaken()}{20}{subsubsection.4.4.3.15}%
+\contentsline {section}{\numberline {4.5}Dokumentacja struktury Flight\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info}{21}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Opis szczegółowy}{21}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Dokumentacja klasy Item}{21}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Opis szczegółowy}{22}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Dokumentacja konstruktora i destruktora}{22}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Item()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{22}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}Item()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{23}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Dokumentacja funkcji składowych}{23}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}GetCategory()}{23}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}GetDescription()}{24}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}GetHints()}{24}{subsubsection.4.6.3.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.4}GetItemName()}{24}{subsubsection.4.6.3.4}%
+\contentsline {subsubsection}{\numberline {4.6.3.5}GetMaxCount()}{24}{subsubsection.4.6.3.5}%
+\contentsline {subsubsection}{\numberline {4.6.3.6}GetProfession()}{25}{subsubsection.4.6.3.6}%
+\contentsline {subsubsection}{\numberline {4.6.3.7}GetWeight()}{25}{subsubsection.4.6.3.7}%
+\contentsline {subsubsection}{\numberline {4.6.3.8}IsForbidden()}{25}{subsubsection.4.6.3.8}%
+\contentsline {subsubsection}{\numberline {4.6.3.9}IsHandLuggage()}{25}{subsubsection.4.6.3.9}%
+\contentsline {subsubsection}{\numberline {4.6.3.10}IsPilotAllowance()}{25}{subsubsection.4.6.3.10}%
+\contentsline {subsubsection}{\numberline {4.6.3.11}IsRegisteredLuggage()}{26}{subsubsection.4.6.3.11}%
+\contentsline {section}{\numberline {4.7}Dokumentacja klasy Luggage}{26}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Opis szczegółowy}{26}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Dokumentacja konstruktora i destruktora}{26}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}Luggage()}{26}{subsubsection.4.7.2.1}%
+\contentsline {subsection}{\numberline {4.7.3}Dokumentacja funkcji składowych}{27}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}CalculateOverweightFee()}{27}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}ConfirmItems()}{27}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}ProcessItemsAndGetWeight()}{27}{subsubsection.4.7.3.3}%
+\contentsline {section}{\numberline {4.8}Dokumentacja klasy User}{28}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Opis szczegółowy}{30}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Dokumentacja konstruktora i destruktora}{30}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}User()}{30}{subsubsection.4.8.2.1}%
+\contentsline {subsection}{\numberline {4.8.3}Dokumentacja funkcji składowych}{30}{subsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.1}UpdateUserInDatabase()}{30}{subsubsection.4.8.3.1}%
+\contentsline {chapter}{\numberline {5}Dokumentacja plików}{33}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Dokumentacja pliku admin/admin.h}{33}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Opis szczegółowy}{33}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}admin.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{33}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dokumentacja pliku admin/admin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions/admin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.h}{34}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Opis szczegółowy}{34}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Dokumentacja funkcji}{34}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}CaptureBoolWithValidation()}{34}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}CaptureInputWithValidation()}{35}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}CaptureLineWithValidation()}{35}{subsubsection.5.3.2.3}%
+\contentsline {subsubsection}{\numberline {5.3.2.4}HandleAdminDashboard()}{36}{subsubsection.5.3.2.4}%
+\contentsline {subsubsection}{\numberline {5.3.2.5}ProcessAddingFlight()}{36}{subsubsection.5.3.2.5}%
+\contentsline {section}{\numberline {5.4}admin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{36}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Dokumentacja pliku admin/admin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions/validators.h}{36}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Opis szczegółowy}{37}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Dokumentacja funkcji}{37}{subsection.5.5.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.1}ValidateCity()}{37}{subsubsection.5.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.5.2.2}ValidateDate()}{37}{subsubsection.5.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.5.2.3}ValidateFlightId()}{38}{subsubsection.5.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.5.2.4}ValidateNonEmpty()}{38}{subsubsection.5.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.5.2.5}ValidatePrice()}{38}{subsubsection.5.5.2.5}%
+\contentsline {subsubsection}{\numberline {5.5.2.6}ValidateSolution()}{39}{subsubsection.5.5.2.6}%
+\contentsline {subsubsection}{\numberline {5.5.2.7}ValidateTime()}{39}{subsubsection.5.5.2.7}%
+\contentsline {section}{\numberline {5.6}validators.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{39}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Dokumentacja pliku admin/admin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints/admin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.h}{40}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Opis szczegółowy}{40}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Dokumentacja funkcji}{40}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}DisplayAdminMessageAndCaptureInput()}{40}{subsubsection.5.7.2.1}%
+\contentsline {subsubsection}{\numberline {5.7.2.2}DisplayAdminMessageAndCaptureLine()}{41}{subsubsection.5.7.2.2}%
+\contentsline {section}{\numberline {5.8}admin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{41}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Dokumentacja pliku authentication/auth\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions/user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}authentication.h}{41}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Opis szczegółowy}{42}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Dokumentacja funkcji}{42}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}HandleLogin()}{42}{subsubsection.5.9.2.1}%
+\contentsline {subsubsection}{\numberline {5.9.2.2}HandleRegistration()}{42}{subsubsection.5.9.2.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.3}Login()}{43}{subsubsection.5.9.2.3}%
+\contentsline {subsubsection}{\numberline {5.9.2.4}RegisterUser()}{43}{subsubsection.5.9.2.4}%
+\contentsline {section}{\numberline {5.10}user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}authentication.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{43}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Dokumentacja pliku authentication/authentication.h}{43}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Opis szczegółowy}{44}{subsection.5.11.1}%
+\contentsline {section}{\numberline {5.12}authentication.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{44}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Dokumentacja pliku checkin/checkin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.h}{44}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Opis szczegółowy}{45}{subsection.5.13.1}%
+\contentsline {subsection}{\numberline {5.13.2}Dokumentacja funkcji}{45}{subsection.5.13.2}%
+\contentsline {subsubsection}{\numberline {5.13.2.1}PrintCheckinScreen()}{45}{subsubsection.5.13.2.1}%
+\contentsline {section}{\numberline {5.14}checkin\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{45}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Dokumentacja pliku env/env.h}{45}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Opis szczegółowy}{45}{subsection.5.15.1}%
+\contentsline {section}{\numberline {5.16}env.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.5.16}%
+\contentsline {section}{\numberline {5.17}Dokumentacja pliku flights/flight\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}connection.h}{46}{section.5.17}%
+\contentsline {subsection}{\numberline {5.17.1}Opis szczegółowy}{46}{subsection.5.17.1}%
+\contentsline {section}{\numberline {5.18}flight\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}connection.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{46}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Dokumentacja pliku functions/helpers.h}{47}{section.5.19}%
+\contentsline {subsection}{\numberline {5.19.1}Opis szczegółowy}{48}{subsection.5.19.1}%
+\contentsline {subsection}{\numberline {5.19.2}Dokumentacja funkcji}{48}{subsection.5.19.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.1}Countdown()}{48}{subsubsection.5.19.2.1}%
+\contentsline {subsubsection}{\numberline {5.19.2.2}ExtractFileName()}{48}{subsubsection.5.19.2.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.3}HashString()}{48}{subsubsection.5.19.2.3}%
+\contentsline {subsubsection}{\numberline {5.19.2.4}SetCellColor()}{49}{subsubsection.5.19.2.4}%
+\contentsline {section}{\numberline {5.20}helpers.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.5.20}%
+\contentsline {section}{\numberline {5.21}info\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{49}{section.5.21}%
+\contentsline {section}{\numberline {5.22}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{50}{section.5.22}%
+\contentsline {section}{\numberline {5.23}Dokumentacja pliku functions/main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints/main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.h}{50}{section.5.23}%
+\contentsline {subsection}{\numberline {5.23.1}Opis szczegółowy}{50}{subsection.5.23.1}%
+\contentsline {subsection}{\numberline {5.23.2}Dokumentacja funkcji}{50}{subsection.5.23.2}%
+\contentsline {subsubsection}{\numberline {5.23.2.1}DisplayMessageAndCaptureDoubleInput()}{50}{subsubsection.5.23.2.1}%
+\contentsline {subsubsection}{\numberline {5.23.2.2}DisplayMessageAndCaptureStringInput()}{51}{subsubsection.5.23.2.2}%
+\contentsline {subsubsection}{\numberline {5.23.2.3}DisplayUserMenu()}{51}{subsubsection.5.23.2.3}%
+\contentsline {subsubsection}{\numberline {5.23.2.4}DisplayWarningAndCaptureInput()}{51}{subsubsection.5.23.2.4}%
+\contentsline {subsubsection}{\numberline {5.23.2.5}PrintFullWidthScreen()}{52}{subsubsection.5.23.2.5}%
+\contentsline {subsubsection}{\numberline {5.23.2.6}PrintNodeScreen()}{52}{subsubsection.5.23.2.6}%
+\contentsline {subsubsection}{\numberline {5.23.2.7}PrintScreen()}{52}{subsubsection.5.23.2.7}%
+\contentsline {section}{\numberline {5.24}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{53}{section.5.24}%
+\contentsline {section}{\numberline {5.25}Dokumentacja pliku luggage/item/item.h}{53}{section.5.25}%
+\contentsline {subsection}{\numberline {5.25.1}Opis szczegółowy}{53}{subsection.5.25.1}%
+\contentsline {section}{\numberline {5.26}item.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{53}{section.5.26}%
+\contentsline {section}{\numberline {5.27}Dokumentacja pliku luggage/item/item\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.h}{54}{section.5.27}%
+\contentsline {subsection}{\numberline {5.27.1}Opis szczegółowy}{55}{subsection.5.27.1}%
+\contentsline {subsection}{\numberline {5.27.2}Dokumentacja funkcji}{55}{subsection.5.27.2}%
+\contentsline {subsubsection}{\numberline {5.27.2.1}GetArrayValue()}{55}{subsubsection.5.27.2.1}%
+\contentsline {subsubsection}{\numberline {5.27.2.2}GetDoubleValue()}{55}{subsubsection.5.27.2.2}%
+\contentsline {subsubsection}{\numberline {5.27.2.3}GetItems()}{56}{subsubsection.5.27.2.3}%
+\contentsline {subsubsection}{\numberline {5.27.2.4}GetStringValue()}{56}{subsubsection.5.27.2.4}%
+\contentsline {section}{\numberline {5.28}item\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{56}{section.5.28}%
+\contentsline {section}{\numberline {5.29}Dokumentacja pliku luggage/luggage.h}{57}{section.5.29}%
+\contentsline {subsection}{\numberline {5.29.1}Opis szczegółowy}{57}{subsection.5.29.1}%
+\contentsline {section}{\numberline {5.30}luggage.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{57}{section.5.30}%
+\contentsline {section}{\numberline {5.31}Dokumentacja pliku luggage/luggage\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.h}{58}{section.5.31}%
+\contentsline {subsection}{\numberline {5.31.1}Opis szczegółowy}{58}{subsection.5.31.1}%
+\contentsline {subsection}{\numberline {5.31.2}Dokumentacja funkcji}{58}{subsection.5.31.2}%
+\contentsline {subsubsection}{\numberline {5.31.2.1}CheckIn()}{58}{subsubsection.5.31.2.1}%
+\contentsline {section}{\numberline {5.32}luggage\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{58}{section.5.32}%
+\contentsline {section}{\numberline {5.33}Dokumentacja pliku luggage/luggage\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints/luggage\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.h}{58}{section.5.33}%
+\contentsline {subsection}{\numberline {5.33.1}Opis szczegółowy}{59}{subsection.5.33.1}%
+\contentsline {subsection}{\numberline {5.33.2}Dokumentacja funkcji}{59}{subsection.5.33.2}%
+\contentsline {subsubsection}{\numberline {5.33.2.1}CreateGroups()}{59}{subsubsection.5.33.2.1}%
+\contentsline {subsubsection}{\numberline {5.33.2.2}PrintAllItems()}{60}{subsubsection.5.33.2.2}%
+\contentsline {subsubsection}{\numberline {5.33.2.3}PrintSpecificItem()}{60}{subsubsection.5.33.2.3}%
+\contentsline {subsubsection}{\numberline {5.33.2.4}PrintWelcomeInCheckIn()}{60}{subsubsection.5.33.2.4}%
+\contentsline {section}{\numberline {5.34}luggage\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{60}{section.5.34}%
+\contentsline {section}{\numberline {5.35}Dokumentacja pliku plane/plane.h}{61}{section.5.35}%
+\contentsline {subsection}{\numberline {5.35.1}Opis szczegółowy}{61}{subsection.5.35.1}%
+\contentsline {subsection}{\numberline {5.35.2}Dokumentacja funkcji}{61}{subsection.5.35.2}%
+\contentsline {subsubsection}{\numberline {5.35.2.1}ProcessSeatSelectionAndPurchase()}{61}{subsubsection.5.35.2.1}%
+\contentsline {section}{\numberline {5.36}plane.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{61}{section.5.36}%
+\contentsline {section}{\numberline {5.37}Dokumentacja pliku qr\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}code/qrcode\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.h}{62}{section.5.37}%
+\contentsline {subsection}{\numberline {5.37.1}Opis szczegółowy}{62}{subsection.5.37.1}%
+\contentsline {subsection}{\numberline {5.37.2}Dokumentacja funkcji}{62}{subsection.5.37.2}%
+\contentsline {subsubsection}{\numberline {5.37.2.1}CreateQr()}{62}{subsubsection.5.37.2.1}%
+\contentsline {subsubsection}{\numberline {5.37.2.2}PrintQr()}{63}{subsubsection.5.37.2.2}%
+\contentsline {section}{\numberline {5.38}qrcode\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{63}{section.5.38}%
+\contentsline {section}{\numberline {5.39}Dokumentacja pliku tickets/tickets.h}{63}{section.5.39}%
+\contentsline {subsection}{\numberline {5.39.1}Opis szczegółowy}{64}{subsection.5.39.1}%
+\contentsline {subsection}{\numberline {5.39.2}Dokumentacja funkcji}{64}{subsection.5.39.2}%
+\contentsline {subsubsection}{\numberline {5.39.2.1}HandleBuyTicket()}{64}{subsubsection.5.39.2.1}%
+\contentsline {subsubsection}{\numberline {5.39.2.2}HandleFlightByData()}{64}{subsubsection.5.39.2.2}%
+\contentsline {subsubsection}{\numberline {5.39.2.3}HandleFlightById()}{64}{subsubsection.5.39.2.3}%
+\contentsline {subsubsection}{\numberline {5.39.2.4}HandleTicketChoice()}{65}{subsubsection.5.39.2.4}%
+\contentsline {subsubsection}{\numberline {5.39.2.5}ProcessPurchase()}{65}{subsubsection.5.39.2.5}%
+\contentsline {section}{\numberline {5.40}tickets.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{65}{section.5.40}%
+\contentsline {section}{\numberline {5.41}Dokumentacja pliku user/discounts/discounts.h}{66}{section.5.41}%
+\contentsline {subsection}{\numberline {5.41.1}Opis szczegółowy}{66}{subsection.5.41.1}%
+\contentsline {subsection}{\numberline {5.41.2}Dokumentacja funkcji}{66}{subsection.5.41.2}%
+\contentsline {subsubsection}{\numberline {5.41.2.1}GetDiscount()}{66}{subsubsection.5.41.2.1}%
+\contentsline {subsubsection}{\numberline {5.41.2.2}HandleDiscountChoice()}{67}{subsubsection.5.41.2.2}%
+\contentsline {subsubsection}{\numberline {5.41.2.3}PrintDiscountCard()}{67}{subsubsection.5.41.2.3}%
+\contentsline {section}{\numberline {5.42}discounts.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{67}{section.5.42}%
+\contentsline {section}{\numberline {5.43}Dokumentacja pliku user/premium\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cards/premium\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cards.h}{67}{section.5.43}%
+\contentsline {subsection}{\numberline {5.43.1}Opis szczegółowy}{68}{subsection.5.43.1}%
+\contentsline {subsection}{\numberline {5.43.2}Dokumentacja funkcji}{68}{subsection.5.43.2}%
+\contentsline {subsubsection}{\numberline {5.43.2.1}GetCardDiscount()}{68}{subsubsection.5.43.2.1}%
+\contentsline {subsubsection}{\numberline {5.43.2.2}HandleCardChoice()}{68}{subsubsection.5.43.2.2}%
+\contentsline {subsubsection}{\numberline {5.43.2.3}HandlePremiumCard()}{69}{subsubsection.5.43.2.3}%
+\contentsline {subsubsection}{\numberline {5.43.2.4}RecognizeDiscountCard()}{69}{subsubsection.5.43.2.4}%
+\contentsline {section}{\numberline {5.44}premium\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cards.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{69}{section.5.44}%
+\contentsline {section}{\numberline {5.45}Dokumentacja pliku user/professions/profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}choice.h}{69}{section.5.45}%
+\contentsline {subsection}{\numberline {5.45.1}Opis szczegółowy}{70}{subsection.5.45.1}%
+\contentsline {subsection}{\numberline {5.45.2}Dokumentacja funkcji}{70}{subsection.5.45.2}%
+\contentsline {subsubsection}{\numberline {5.45.2.1}DoctorProfession()}{70}{subsubsection.5.45.2.1}%
+\contentsline {subsubsection}{\numberline {5.45.2.2}InformaticProfession()}{70}{subsubsection.5.45.2.2}%
+\contentsline {subsubsection}{\numberline {5.45.2.3}MathProfession()}{70}{subsubsection.5.45.2.3}%
+\contentsline {subsubsection}{\numberline {5.45.2.4}MusicProfession()}{72}{subsubsection.5.45.2.4}%
+\contentsline {subsubsection}{\numberline {5.45.2.5}PoliceProfession()}{72}{subsubsection.5.45.2.5}%
+\contentsline {section}{\numberline {5.46}profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}choice.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{72}{section.5.46}%
+\contentsline {section}{\numberline {5.47}Dokumentacja pliku user/professions/profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.h}{72}{section.5.47}%
+\contentsline {subsection}{\numberline {5.47.1}Opis szczegółowy}{73}{subsection.5.47.1}%
+\contentsline {subsection}{\numberline {5.47.2}Dokumentacja funkcji}{73}{subsection.5.47.2}%
+\contentsline {subsubsection}{\numberline {5.47.2.1}DisplayPoliceProfession()}{73}{subsubsection.5.47.2.1}%
+\contentsline {subsubsection}{\numberline {5.47.2.2}GuessDoctorQuestion()}{73}{subsubsection.5.47.2.2}%
+\contentsline {subsubsection}{\numberline {5.47.2.3}GuessInformaticQuestion()}{74}{subsubsection.5.47.2.3}%
+\contentsline {subsubsection}{\numberline {5.47.2.4}GuessMathQuestion()}{74}{subsubsection.5.47.2.4}%
+\contentsline {subsubsection}{\numberline {5.47.2.5}GuessMusicAuthor()}{74}{subsubsection.5.47.2.5}%
+\contentsline {section}{\numberline {5.48}profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{75}{section.5.48}%
+\contentsline {section}{\numberline {5.49}Dokumentacja pliku user/professions/profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints/profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.h}{75}{section.5.49}%
+\contentsline {subsection}{\numberline {5.49.1}Opis szczegółowy}{75}{subsection.5.49.1}%
+\contentsline {subsection}{\numberline {5.49.2}Dokumentacja funkcji}{76}{subsection.5.49.2}%
+\contentsline {subsubsection}{\numberline {5.49.2.1}CreateProfessionScreen()}{76}{subsubsection.5.49.2.1}%
+\contentsline {subsubsection}{\numberline {5.49.2.2}DisplayProfessionInfo()}{76}{subsubsection.5.49.2.2}%
+\contentsline {subsubsection}{\numberline {5.49.2.3}ValidAnswer()}{76}{subsubsection.5.49.2.3}%
+\contentsline {section}{\numberline {5.50}profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{76}{section.5.50}%
+\contentsline {section}{\numberline {5.51}Dokumentacja pliku user/professions/user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.h}{77}{section.5.51}%
+\contentsline {subsection}{\numberline {5.51.1}Opis szczegółowy}{77}{subsection.5.51.1}%
+\contentsline {subsection}{\numberline {5.51.2}Dokumentacja funkcji}{77}{subsection.5.51.2}%
+\contentsline {subsubsection}{\numberline {5.51.2.1}HandleProfession()}{77}{subsubsection.5.51.2.1}%
+\contentsline {subsubsection}{\numberline {5.51.2.2}HandleProfessionChoice()}{77}{subsubsection.5.51.2.2}%
+\contentsline {section}{\numberline {5.52}user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}profession\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{78}{section.5.52}%
+\contentsline {section}{\numberline {5.53}Dokumentacja pliku user/user.h}{78}{section.5.53}%
+\contentsline {subsection}{\numberline {5.53.1}Opis szczegółowy}{78}{subsection.5.53.1}%
+\contentsline {section}{\numberline {5.54}user.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{78}{section.5.54}%
+\contentsline {section}{\numberline {5.55}Dokumentacja pliku user/user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions/user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}payments/user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}payment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.h}{80}{section.5.55}%
+\contentsline {subsection}{\numberline {5.55.1}Opis szczegółowy}{80}{subsection.5.55.1}%
+\contentsline {subsection}{\numberline {5.55.2}Dokumentacja funkcji}{80}{subsection.5.55.2}%
+\contentsline {subsubsection}{\numberline {5.55.2.1}AuthenticatePayment()}{80}{subsubsection.5.55.2.1}%
+\contentsline {subsubsection}{\numberline {5.55.2.2}HandlePaymentOption()}{81}{subsubsection.5.55.2.2}%
+\contentsline {section}{\numberline {5.56}user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}payment\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}functions.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{81}{section.5.56}%
+\contentsline {section}{\numberline {5.57}user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{81}{section.5.57}%
+\contentsline {section}{\numberline {5.58}user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}settings\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}handler.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{81}{section.5.58}%
+\contentsline {section}{\numberline {5.59}user\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}tickets\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}prints.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{82}{section.5.59}%
+\contentsline {chapter}{Skorowidz}{83}{section*.49}%

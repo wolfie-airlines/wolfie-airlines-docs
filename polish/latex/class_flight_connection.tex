@@ -1,0 +1,342 @@
+\doxysection{Dokumentacja klasy Flight\+Connection}
+\hypertarget{class_flight_connection}{}\label{class_flight_connection}\index{FlightConnection@{FlightConnection}}
+
+
+Ta klasa obsługuje połączenia lotnicze.  
+
+
+
+
+{\ttfamily \#include $<$flight\+\_\+connection.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flight_connection_abae7c928f376b28abc6a75a27ed2b41e}{Flight\+Connection}} (const std\+::string \&uri\+\_\+str, const std\+::string \&db\+\_\+name, const std\+::string \&collection\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_flight_connection}{Flight\+Connection}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flight_connection_a3f03d76e70ef908f46a7fd08ff22e370}{Flight\+Connection}} (std\+::string flight\+\_\+id, std\+::string departure\+\_\+city, std\+::string destination\+\_\+city, std\+::string departure\+\_\+time, std\+::string arrival\+\_\+time, int available\+\_\+seats, double price)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_flight_connection}{Flight\+Connection}. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_flight_connection_a07fec412d94b10104ebb8f84fec7cfd7}{Get\+Departure\+City}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera miasto odlotu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_flight_connection_a48f29a35c392a0af33031e6208230387}{Get\+Destination\+City}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera miasto docelowe. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_flight_connection_aea9eee83e5d9cc122d61ca5044473d84}{Get\+Departure\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera czas odlotu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_flight_connection_a9addf26f039ba990c6e32ff910390d54}{Get\+Arrival\+Time}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera czas przyjazdu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_flight_connection_af806fabc775b9491578ad783e669a4dc}{Get\+Identifier}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera identyfikator lotu. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_flight_connection_ad259af2301bc28d6ecc0e72d1e34057a}{Get\+Available\+Seats}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera liczbę dostępnych miejsc. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_flight_connection_a0902d8665add95d1d9d501e36f0ee7ad}{Get\+Price}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera cenę lotu. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ \mbox{\hyperlink{class_flight_connection_a4e019e96fc5873b667d09721799e219d}{Find\+All\+Connections}} ()
+\begin{DoxyCompactList}\small\item\em Znajduje wszystkie połączenia lotnicze. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \mbox{\hyperlink{class_flight_connection_adf471c3357422eab20ee440cc2abd53a}{Find\+Connection}} (const std\+::string \&departure\+\_\+city, const std\+::string \&destination\+\_\+city)
+\begin{DoxyCompactList}\small\item\em Znajduje połączenie lotnicze według miasta odlotu i docelowego. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ \mbox{\hyperlink{class_flight_connection_a29d3dc5f4b558ae477ec81653f49fa39}{Find\+Connection\+By\+Price}} (double \&min\+\_\+price, double \&max\+\_\+price)
+\begin{DoxyCompactList}\small\item\em Znajduje połączenia lotnicze w zakresie cenowym. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \mbox{\hyperlink{class_flight_connection_a9ee4b95ce93f18797a6891c9f45e7915}{Find\+Connection\+By\+Id}} (const std\+::string \&id)
+\begin{DoxyCompactList}\small\item\em Znajduje połączenie lotnicze według ID. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ \mbox{\hyperlink{class_flight_connection_abaae5a550b9146cb08e999e8ae211ea9}{Find\+Connections\+By\+Departure}} (const std\+::string \&departure\+\_\+city)
+\begin{DoxyCompactList}\small\item\em Znajduje połączenia lotnicze według miasta odlotu. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ \mbox{\hyperlink{class_flight_connection_ae8d580f687a923e2c15f897dcf2d2fce}{Find\+Connections\+By\+Destination}} (const std\+::string \&destination\+\_\+city)
+\begin{DoxyCompactList}\small\item\em Znajduje połączenia lotnicze według miasta docelowego. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{class_flight_connection_a8306206bec8cbaed5812457a987dab7a}{Get\+Seats\+Taken}} (const std\+::string \&flight\+\_\+identifier)
+\begin{DoxyCompactList}\small\item\em Pobiera zajęte miejsca dla określonego lotu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flight_connection_ad8dd501b55b734998f26c0abbc5df1f2}{Update\+Seats\+Taken}} (const std\+::string \&flight\+\_\+identifier, const std\+::vector$<$ int $>$ \&seats\+\_\+taken)
+\begin{DoxyCompactList}\small\item\em Aktualizuje zajęte miejsca dla określonego lotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ta klasa obsługuje połączenia lotnicze. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_flight_connection_abae7c928f376b28abc6a75a27ed2b41e}\label{class_flight_connection_abae7c928f376b28abc6a75a27ed2b41e} 
+\index{FlightConnection@{FlightConnection}!FlightConnection@{FlightConnection}}
+\index{FlightConnection@{FlightConnection}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FlightConnection()}{FlightConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Flight\+Connection\+::\+Flight\+Connection (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uri\+\_\+str,  }\item[{const std\+::string \&}]{db\+\_\+name,  }\item[{const std\+::string \&}]{collection\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_flight_connection}{Flight\+Connection}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em uri\+\_\+str} & Ciąg URI. \\
+\hline
+{\em db\+\_\+name} & Nazwa bazy danych. \\
+\hline
+{\em collection\+\_\+name} & Nazwa kolekcji. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_flight_connection_a3f03d76e70ef908f46a7fd08ff22e370}\label{class_flight_connection_a3f03d76e70ef908f46a7fd08ff22e370} 
+\index{FlightConnection@{FlightConnection}!FlightConnection@{FlightConnection}}
+\index{FlightConnection@{FlightConnection}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FlightConnection()}{FlightConnection()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Flight\+Connection\+::\+Flight\+Connection (\begin{DoxyParamCaption}\item[{std\+::string}]{flight\+\_\+id,  }\item[{std\+::string}]{departure\+\_\+city,  }\item[{std\+::string}]{destination\+\_\+city,  }\item[{std\+::string}]{departure\+\_\+time,  }\item[{std\+::string}]{arrival\+\_\+time,  }\item[{int}]{available\+\_\+seats,  }\item[{double}]{price }\end{DoxyParamCaption})}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_flight_connection}{Flight\+Connection}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em flight\+\_\+id} & ID lotu. \\
+\hline
+{\em departure\+\_\+city} & Miasto odlotu. \\
+\hline
+{\em destination\+\_\+city} & Miasto docelowe. \\
+\hline
+{\em departure\+\_\+time} & Czas odlotu. \\
+\hline
+{\em arrival\+\_\+time} & Czas przyjazdu. \\
+\hline
+{\em available\+\_\+seats} & Liczba dostępnych miejsc. \\
+\hline
+{\em price} & Cena lotu. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_flight_connection_a4e019e96fc5873b667d09721799e219d}\label{class_flight_connection_a4e019e96fc5873b667d09721799e219d} 
+\index{FlightConnection@{FlightConnection}!FindAllConnections@{FindAllConnections}}
+\index{FindAllConnections@{FindAllConnections}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FindAllConnections()}{FindAllConnections()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ Flight\+Connection\+::\+Find\+All\+Connections (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Znajduje wszystkie połączenia lotnicze. 
+
+\begin{DoxyReturn}{Zwraca}
+Wektor wszystkich połączeń lotniczych. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_adf471c3357422eab20ee440cc2abd53a}\label{class_flight_connection_adf471c3357422eab20ee440cc2abd53a} 
+\index{FlightConnection@{FlightConnection}!FindConnection@{FindConnection}}
+\index{FindConnection@{FindConnection}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FindConnection()}{FindConnection()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} Flight\+Connection\+::\+Find\+Connection (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{departure\+\_\+city,  }\item[{const std\+::string \&}]{destination\+\_\+city }\end{DoxyParamCaption})}
+
+
+
+Znajduje połączenie lotnicze według miasta odlotu i docelowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em departure\+\_\+city} & Miasto odlotu. \\
+\hline
+{\em destination\+\_\+city} & Miasto docelowe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Znalezione połączenie lotnicze. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_a9ee4b95ce93f18797a6891c9f45e7915}\label{class_flight_connection_a9ee4b95ce93f18797a6891c9f45e7915} 
+\index{FlightConnection@{FlightConnection}!FindConnectionById@{FindConnectionById}}
+\index{FindConnectionById@{FindConnectionById}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FindConnectionById()}{FindConnectionById()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} Flight\+Connection\+::\+Find\+Connection\+By\+Id (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{id }\end{DoxyParamCaption})}
+
+
+
+Znajduje połączenie lotnicze według ID. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em id} & ID lotu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Znalezione połączenie lotnicze. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_a29d3dc5f4b558ae477ec81653f49fa39}\label{class_flight_connection_a29d3dc5f4b558ae477ec81653f49fa39} 
+\index{FlightConnection@{FlightConnection}!FindConnectionByPrice@{FindConnectionByPrice}}
+\index{FindConnectionByPrice@{FindConnectionByPrice}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FindConnectionByPrice()}{FindConnectionByPrice()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ Flight\+Connection\+::\+Find\+Connection\+By\+Price (\begin{DoxyParamCaption}\item[{double \&}]{min\+\_\+price,  }\item[{double \&}]{max\+\_\+price }\end{DoxyParamCaption})}
+
+
+
+Znajduje połączenia lotnicze w zakresie cenowym. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em min\+\_\+price} & Minimalna cena. \\
+\hline
+{\em max\+\_\+price} & Maksymalna cena. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wektor znalezionych połączeń lotniczych. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_abaae5a550b9146cb08e999e8ae211ea9}\label{class_flight_connection_abaae5a550b9146cb08e999e8ae211ea9} 
+\index{FlightConnection@{FlightConnection}!FindConnectionsByDeparture@{FindConnectionsByDeparture}}
+\index{FindConnectionsByDeparture@{FindConnectionsByDeparture}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FindConnectionsByDeparture()}{FindConnectionsByDeparture()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ Flight\+Connection\+::\+Find\+Connections\+By\+Departure (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{departure\+\_\+city }\end{DoxyParamCaption})}
+
+
+
+Znajduje połączenia lotnicze według miasta odlotu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em departure\+\_\+city} & Miasto odlotu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wektor znalezionych połączeń lotniczych. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_ae8d580f687a923e2c15f897dcf2d2fce}\label{class_flight_connection_ae8d580f687a923e2c15f897dcf2d2fce} 
+\index{FlightConnection@{FlightConnection}!FindConnectionsByDestination@{FindConnectionsByDestination}}
+\index{FindConnectionsByDestination@{FindConnectionsByDestination}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{FindConnectionsByDestination()}{FindConnectionsByDestination()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} $>$ Flight\+Connection\+::\+Find\+Connections\+By\+Destination (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{destination\+\_\+city }\end{DoxyParamCaption})}
+
+
+
+Znajduje połączenia lotnicze według miasta docelowego. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em destination\+\_\+city} & Miasto docelowe. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wektor znalezionych połączeń lotniczych. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_a9addf26f039ba990c6e32ff910390d54}\label{class_flight_connection_a9addf26f039ba990c6e32ff910390d54} 
+\index{FlightConnection@{FlightConnection}!GetArrivalTime@{GetArrivalTime}}
+\index{GetArrivalTime@{GetArrivalTime}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetArrivalTime()}{GetArrivalTime()}}
+{\footnotesize\ttfamily std\+::string Flight\+Connection\+::\+Get\+Arrival\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera czas przyjazdu. 
+
+\begin{DoxyReturn}{Zwraca}
+Czas przyjazdu. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_ad259af2301bc28d6ecc0e72d1e34057a}\label{class_flight_connection_ad259af2301bc28d6ecc0e72d1e34057a} 
+\index{FlightConnection@{FlightConnection}!GetAvailableSeats@{GetAvailableSeats}}
+\index{GetAvailableSeats@{GetAvailableSeats}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetAvailableSeats()}{GetAvailableSeats()}}
+{\footnotesize\ttfamily int Flight\+Connection\+::\+Get\+Available\+Seats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera liczbę dostępnych miejsc. 
+
+\begin{DoxyReturn}{Zwraca}
+Liczba dostępnych miejsc. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_a07fec412d94b10104ebb8f84fec7cfd7}\label{class_flight_connection_a07fec412d94b10104ebb8f84fec7cfd7} 
+\index{FlightConnection@{FlightConnection}!GetDepartureCity@{GetDepartureCity}}
+\index{GetDepartureCity@{GetDepartureCity}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetDepartureCity()}{GetDepartureCity()}}
+{\footnotesize\ttfamily std\+::string Flight\+Connection\+::\+Get\+Departure\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera miasto odlotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Miasto odlotu. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_aea9eee83e5d9cc122d61ca5044473d84}\label{class_flight_connection_aea9eee83e5d9cc122d61ca5044473d84} 
+\index{FlightConnection@{FlightConnection}!GetDepartureTime@{GetDepartureTime}}
+\index{GetDepartureTime@{GetDepartureTime}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetDepartureTime()}{GetDepartureTime()}}
+{\footnotesize\ttfamily std\+::string Flight\+Connection\+::\+Get\+Departure\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera czas odlotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Czas odlotu. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_a48f29a35c392a0af33031e6208230387}\label{class_flight_connection_a48f29a35c392a0af33031e6208230387} 
+\index{FlightConnection@{FlightConnection}!GetDestinationCity@{GetDestinationCity}}
+\index{GetDestinationCity@{GetDestinationCity}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetDestinationCity()}{GetDestinationCity()}}
+{\footnotesize\ttfamily std\+::string Flight\+Connection\+::\+Get\+Destination\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera miasto docelowe. 
+
+\begin{DoxyReturn}{Zwraca}
+Miasto docelowe. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_af806fabc775b9491578ad783e669a4dc}\label{class_flight_connection_af806fabc775b9491578ad783e669a4dc} 
+\index{FlightConnection@{FlightConnection}!GetIdentifier@{GetIdentifier}}
+\index{GetIdentifier@{GetIdentifier}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetIdentifier()}{GetIdentifier()}}
+{\footnotesize\ttfamily std\+::string Flight\+Connection\+::\+Get\+Identifier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera identyfikator lotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Identyfikator lotu. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_a0902d8665add95d1d9d501e36f0ee7ad}\label{class_flight_connection_a0902d8665add95d1d9d501e36f0ee7ad} 
+\index{FlightConnection@{FlightConnection}!GetPrice@{GetPrice}}
+\index{GetPrice@{GetPrice}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetPrice()}{GetPrice()}}
+{\footnotesize\ttfamily double Flight\+Connection\+::\+Get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera cenę lotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Cena lotu. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_a8306206bec8cbaed5812457a987dab7a}\label{class_flight_connection_a8306206bec8cbaed5812457a987dab7a} 
+\index{FlightConnection@{FlightConnection}!GetSeatsTaken@{GetSeatsTaken}}
+\index{GetSeatsTaken@{GetSeatsTaken}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{GetSeatsTaken()}{GetSeatsTaken()}}
+{\footnotesize\ttfamily std\+::vector$<$ int $>$ Flight\+Connection\+::\+Get\+Seats\+Taken (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{flight\+\_\+identifier }\end{DoxyParamCaption})}
+
+
+
+Pobiera zajęte miejsca dla określonego lotu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em flight\+\_\+identifier} & Identyfikator lotu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wektor zajętych miejsc. 
+\end{DoxyReturn}
+\Hypertarget{class_flight_connection_ad8dd501b55b734998f26c0abbc5df1f2}\label{class_flight_connection_ad8dd501b55b734998f26c0abbc5df1f2} 
+\index{FlightConnection@{FlightConnection}!UpdateSeatsTaken@{UpdateSeatsTaken}}
+\index{UpdateSeatsTaken@{UpdateSeatsTaken}!FlightConnection@{FlightConnection}}
+\doxysubsubsection{\texorpdfstring{UpdateSeatsTaken()}{UpdateSeatsTaken()}}
+{\footnotesize\ttfamily void Flight\+Connection\+::\+Update\+Seats\+Taken (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{flight\+\_\+identifier,  }\item[{const std\+::vector$<$ int $>$ \&}]{seats\+\_\+taken }\end{DoxyParamCaption})}
+
+
+
+Aktualizuje zajęte miejsca dla określonego lotu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em flight\+\_\+identifier} & Identyfikator lotu. \\
+\hline
+{\em seats\+\_\+taken} & Wektor zajętych miejsc. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+flights/\mbox{\hyperlink{flight__connection_8h}{flight\+\_\+connection.\+h}}\item 
+flights/flight\+\_\+connection.\+cpp\end{DoxyCompactItemize}

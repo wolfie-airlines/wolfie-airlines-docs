@@ -1,0 +1,52 @@
+\doxysection{Dokumentacja klasy Env\+Parser}
+\hypertarget{class_env_parser}{}\label{class_env_parser}\index{EnvParser@{EnvParser}}
+
+
+Ta klasa służy do analizy zmiennych środowiskowych.  
+
+
+
+
+{\ttfamily \#include $<$env.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_env_parser_ad4996f4262ea25d62e0c165b2af98e08}\label{class_env_parser_ad4996f4262ea25d62e0c165b2af98e08} 
+{\bfseries Env\+Parser} ()
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_env_parser}{Env\+Parser}. \end{DoxyCompactList}\item 
+\Hypertarget{class_env_parser_a0688466180f446587c226b4587249114}\label{class_env_parser_a0688466180f446587c226b4587249114} 
+void {\bfseries Parse\+Env\+File} ()
+\begin{DoxyCompactList}\small\item\em Analizuje plik środowiskowy. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_env_parser_a9a014262d640085cb5c8f4f511b1971a}{Get\+Value}} (const std\+::string \&key) const
+\begin{DoxyCompactList}\small\item\em Pobiera wartość określonej zmiennej środowiskowej. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ta klasa służy do analizy zmiennych środowiskowych. 
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_env_parser_a9a014262d640085cb5c8f4f511b1971a}\label{class_env_parser_a9a014262d640085cb5c8f4f511b1971a} 
+\index{EnvParser@{EnvParser}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!EnvParser@{EnvParser}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily std\+::string Env\+Parser\+::\+Get\+Value (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{key }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera wartość określonej zmiennej środowiskowej. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em key} & Klucz zmiennej środowiskowej. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wartość zmiennej środowiskowej. 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+env/\mbox{\hyperlink{env_8h}{env.\+h}}\item 
+env/env.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,72 @@
+\doxysection{Dokumentacja pliku user/professions/profession\+\_\+prints/profession\+\_\+prints.h}
+\hypertarget{profession__prints_8h}{}\label{profession__prints_8h}\index{user/professions/profession\_prints/profession\_prints.h@{user/professions/profession\_prints/profession\_prints.h}}
+
+
+Ten plik zawiera deklaracje funkcji wyświetlania informacji o zawodzie i walidacji odpowiedzi.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}../../user.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{profession__prints_8h_a9289bc4e8ba57d8ad8a45e6b646f7224}{Create\+Profession\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Tworzy ekran zawodu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{profession__prints_8h_aebcd83808100c856259423279b0c5de4}{Display\+Profession\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla informacje o zawodzie. \end{DoxyCompactList}\item 
+\Hypertarget{profession__prints_8h_a97a1c5f9e1d9b355530986f12a3ab9d0}\label{profession__prints_8h_a97a1c5f9e1d9b355530986f12a3ab9d0} 
+void {\bfseries Invalid\+Answer} ()
+\begin{DoxyCompactList}\small\item\em Obsługuje nieprawidłową odpowiedź. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{profession__prints_8h_a49d2e43dca92a50dbc5c416cdb86fbbf}{Valid\+Answer}} (const std\+::string \&category, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje prawidłową odpowiedź. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje funkcji wyświetlania informacji o zawodzie i walidacji odpowiedzi. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{profession__prints_8h_a9289bc4e8ba57d8ad8a45e6b646f7224}\label{profession__prints_8h_a9289bc4e8ba57d8ad8a45e6b646f7224} 
+\index{profession\_prints.h@{profession\_prints.h}!CreateProfessionScreen@{CreateProfessionScreen}}
+\index{CreateProfessionScreen@{CreateProfessionScreen}!profession\_prints.h@{profession\_prints.h}}
+\doxysubsubsection{\texorpdfstring{CreateProfessionScreen()}{CreateProfessionScreen()}}
+{\footnotesize\ttfamily int Create\+Profession\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tworzy ekran zawodu. 
+
+\begin{DoxyReturn}{Zwraca}
+Liczba całkowita reprezentująca status operacji. 
+\end{DoxyReturn}
+\Hypertarget{profession__prints_8h_aebcd83808100c856259423279b0c5de4}\label{profession__prints_8h_aebcd83808100c856259423279b0c5de4} 
+\index{profession\_prints.h@{profession\_prints.h}!DisplayProfessionInfo@{DisplayProfessionInfo}}
+\index{DisplayProfessionInfo@{DisplayProfessionInfo}!profession\_prints.h@{profession\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayProfessionInfo()}{DisplayProfessionInfo()}}
+{\footnotesize\ttfamily std\+::string Display\+Profession\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wyświetla informacje o zawodzie. 
+
+\begin{DoxyReturn}{Zwraca}
+Ciąg znaków zawierający informacje o zawodzie. 
+\end{DoxyReturn}
+\Hypertarget{profession__prints_8h_a49d2e43dca92a50dbc5c416cdb86fbbf}\label{profession__prints_8h_a49d2e43dca92a50dbc5c416cdb86fbbf} 
+\index{profession\_prints.h@{profession\_prints.h}!ValidAnswer@{ValidAnswer}}
+\index{ValidAnswer@{ValidAnswer}!profession\_prints.h@{profession\_prints.h}}
+\doxysubsubsection{\texorpdfstring{ValidAnswer()}{ValidAnswer()}}
+{\footnotesize\ttfamily void Valid\+Answer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{category,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje prawidłową odpowiedź. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em category} & Kategoria odpowiedzi. \\
+\hline
+{\em user} & Użytkownik udzielający odpowiedzi. \\
+\hline
+\end{DoxyParams}

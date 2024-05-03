@@ -1,0 +1,131 @@
+\doxysection{Dokumentacja pliku tickets/tickets.h}
+\hypertarget{tickets_8h}{}\label{tickets_8h}\index{tickets/tickets.h@{tickets/tickets.h}}
+
+
+Ten plik zawiera deklaracje różnych funkcji obsługujących bilety.  
+
+
+{\ttfamily \#include "{}../flights/flight\+\_\+connection.\+h"{}}\newline
+{\ttfamily \#include "{}../user/user.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tickets_8h_ab311dbd7a148d9152e61cb5cb3bee98b}{Handle\+Ticket\+Choice}} (\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&flight\+\_\+connection, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje wybór biletu przez użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tickets_8h_a60519d48e826941568b77d46da7b9b7f}{Handle\+Buy\+Ticket}} (int choice, \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&flight\+\_\+connection, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje zakup biletu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tickets_8h_aa9f3ad66dd9633141988aef2fe100ae7}{Handle\+Flight\+By\+Id}} (\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&flight\+\_\+connection, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje lot według jego ID. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tickets_8h_a929107b917134072d1df459b84ffd678}{Handle\+Flight\+By\+Data}} (\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&flight\+\_\+connection, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje lot według jego danych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{tickets_8h_a95d2513beb637860b55d0b3be4f7631e}{Process\+Purchase}} (\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&flight\+\_\+connection, \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&found\+\_\+connection, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Przetwarza zakup biletu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{tickets_8h_ac1f7d3da452d96927421aeb716b2c583}\label{tickets_8h_ac1f7d3da452d96927421aeb716b2c583} 
+const int {\bfseries MAX\+\_\+\+TICKETS} = 4
+\begin{DoxyCompactList}\small\item\em Maksymalna liczba biletów. \end{DoxyCompactList}\item 
+\Hypertarget{tickets_8h_a425f42e65fae69a78cdd1c3e587b8475}\label{tickets_8h_a425f42e65fae69a78cdd1c3e587b8475} 
+const int {\bfseries EMERGENCY\+\_\+\+SEAT\+\_\+\+ONE} = 37
+\begin{DoxyCompactList}\small\item\em Numer pierwszego miejsca awaryjnego. \end{DoxyCompactList}\item 
+\Hypertarget{tickets_8h_a1b3f6763ad3cf2b4bda761f59e02977b}\label{tickets_8h_a1b3f6763ad3cf2b4bda761f59e02977b} 
+const int {\bfseries EMERGENCY\+\_\+\+SEAT\+\_\+\+TWO} = 45
+\begin{DoxyCompactList}\small\item\em Numer drugiego miejsca awaryjnego. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje różnych funkcji obsługujących bilety. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{tickets_8h_a60519d48e826941568b77d46da7b9b7f}\label{tickets_8h_a60519d48e826941568b77d46da7b9b7f} 
+\index{tickets.h@{tickets.h}!HandleBuyTicket@{HandleBuyTicket}}
+\index{HandleBuyTicket@{HandleBuyTicket}!tickets.h@{tickets.h}}
+\doxysubsubsection{\texorpdfstring{HandleBuyTicket()}{HandleBuyTicket()}}
+{\footnotesize\ttfamily void Handle\+Buy\+Ticket (\begin{DoxyParamCaption}\item[{int}]{choice,  }\item[{\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&}]{flight\+\_\+connection,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje zakup biletu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em choice} & Wybór użytkownika. \\
+\hline
+{\em flight\+\_\+connection} & Połączenie lotnicze. \\
+\hline
+{\em user} & Użytkownik dokonujący zakupu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tickets_8h_a929107b917134072d1df459b84ffd678}\label{tickets_8h_a929107b917134072d1df459b84ffd678} 
+\index{tickets.h@{tickets.h}!HandleFlightByData@{HandleFlightByData}}
+\index{HandleFlightByData@{HandleFlightByData}!tickets.h@{tickets.h}}
+\doxysubsubsection{\texorpdfstring{HandleFlightByData()}{HandleFlightByData()}}
+{\footnotesize\ttfamily void Handle\+Flight\+By\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&}]{flight\+\_\+connection,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje lot według jego danych. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em flight\+\_\+connection} & Połączenie lotnicze. \\
+\hline
+{\em user} & Użytkownik. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tickets_8h_aa9f3ad66dd9633141988aef2fe100ae7}\label{tickets_8h_aa9f3ad66dd9633141988aef2fe100ae7} 
+\index{tickets.h@{tickets.h}!HandleFlightById@{HandleFlightById}}
+\index{HandleFlightById@{HandleFlightById}!tickets.h@{tickets.h}}
+\doxysubsubsection{\texorpdfstring{HandleFlightById()}{HandleFlightById()}}
+{\footnotesize\ttfamily void Handle\+Flight\+By\+Id (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&}]{flight\+\_\+connection,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje lot według jego ID. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em flight\+\_\+connection} & Połączenie lotnicze. \\
+\hline
+{\em user} & Użytkownik. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tickets_8h_ab311dbd7a148d9152e61cb5cb3bee98b}\label{tickets_8h_ab311dbd7a148d9152e61cb5cb3bee98b} 
+\index{tickets.h@{tickets.h}!HandleTicketChoice@{HandleTicketChoice}}
+\index{HandleTicketChoice@{HandleTicketChoice}!tickets.h@{tickets.h}}
+\doxysubsubsection{\texorpdfstring{HandleTicketChoice()}{HandleTicketChoice()}}
+{\footnotesize\ttfamily void Handle\+Ticket\+Choice (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&}]{flight\+\_\+connection,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje wybór biletu przez użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em flight\+\_\+connection} & Połączenie lotnicze. \\
+\hline
+{\em user} & Użytkownik dokonujący wyboru. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{tickets_8h_a95d2513beb637860b55d0b3be4f7631e}\label{tickets_8h_a95d2513beb637860b55d0b3be4f7631e} 
+\index{tickets.h@{tickets.h}!ProcessPurchase@{ProcessPurchase}}
+\index{ProcessPurchase@{ProcessPurchase}!tickets.h@{tickets.h}}
+\doxysubsubsection{\texorpdfstring{ProcessPurchase()}{ProcessPurchase()}}
+{\footnotesize\ttfamily void Process\+Purchase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&}]{flight\+\_\+connection,  }\item[{\mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&}]{found\+\_\+connection,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Przetwarza zakup biletu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em flight\+\_\+connection} & Połączenie lotnicze. \\
+\hline
+{\em found\+\_\+connection} & Znalezione połączenie lotnicze. \\
+\hline
+{\em user} & Użytkownik dokonujący zakupu. \\
+\hline
+\end{DoxyParams}

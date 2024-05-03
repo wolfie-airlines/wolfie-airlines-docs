@@ -1,0 +1,72 @@
+\doxysection{flight\+\_\+connection.\+h}
+\hypertarget{flight__connection_8h_source}{}\label{flight__connection_8h_source}\index{flights/flight\_connection.h@{flights/flight\_connection.h}}
+\mbox{\hyperlink{flight__connection_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}mongocxx/v\_noabi/mongocxx/client.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}mongocxx/v\_noabi/mongocxx/collection.hpp"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}mongocxx/v\_noabi/mongocxx/database.hpp"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flight_connection}{FlightConnection}}\ \{}
+\DoxyCodeLine{00019\ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ std::string\ \_flight\_id\_;\ }
+\DoxyCodeLine{00021\ \ \ std::string\ \_departureCity\_;\ }
+\DoxyCodeLine{00022\ \ \ std::string\ \_destinationTime\_;\ }
+\DoxyCodeLine{00023\ \ \ std::string\ \_arrivalTime\_;\ }
+\DoxyCodeLine{00024\ \ \ std::string\ \_departureTime\_;\ }
+\DoxyCodeLine{00025\ \ \ std::string\ \_destinationCity\_;\ }
+\DoxyCodeLine{00026\ \ \ \textcolor{keywordtype}{int}\ \_availableSeats\_\{\};\ }
+\DoxyCodeLine{00027\ \ \ \textcolor{keywordtype}{double}\ \_price\_\{\};\ }
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ mongocxx::client\ \_client\_;\ }
+\DoxyCodeLine{00030\ \ \ mongocxx::database\ \_db\_;\ }
+\DoxyCodeLine{00031\ \ \ mongocxx::collection\ \_collection\_;\ }
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00040\ \ \ \mbox{\hyperlink{class_flight_connection_abae7c928f376b28abc6a75a27ed2b41e}{FlightConnection}}(\textcolor{keyword}{const}\ std::string\ \&uri\_str,\ \textcolor{keyword}{const}\ std::string\ \&db\_name,\ \textcolor{keyword}{const}\ std::string\ \&collection\_name);}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00052\ \ \ \mbox{\hyperlink{class_flight_connection}{FlightConnection}}(}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ std::string\ flight\_id,}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ std::string\ departure\_city,}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ std::string\ destination\_city,}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ std::string\ departure\_time,}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ std::string\ arrival\_time,}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ available\_seats,}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ price);}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00065\ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{class_flight_connection_a07fec412d94b10104ebb8f84fec7cfd7}{GetDepartureCity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{class_flight_connection_a48f29a35c392a0af33031e6208230387}{GetDestinationCity}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{class_flight_connection_aea9eee83e5d9cc122d61ca5044473d84}{GetDepartureTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00083\ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{class_flight_connection_a9addf26f039ba990c6e32ff910390d54}{GetArrivalTime}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00089\ \ \ [[nodiscard]]\ std::string\ \mbox{\hyperlink{class_flight_connection_af806fabc775b9491578ad783e669a4dc}{GetIdentifier}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00090\ }
+\DoxyCodeLine{00095\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_flight_connection_ad259af2301bc28d6ecc0e72d1e34057a}{GetAvailableSeats}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00101\ \ \ [[nodiscard]]\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flight_connection_a0902d8665add95d1d9d501e36f0ee7ad}{GetPrice}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00102\ }
+\DoxyCodeLine{00107\ \ \ std::vector<FlightConnection>\ \mbox{\hyperlink{class_flight_connection_a4e019e96fc5873b667d09721799e219d}{FindAllConnections}}();}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00115\ \ \ \mbox{\hyperlink{class_flight_connection}{FlightConnection}}\ \mbox{\hyperlink{class_flight_connection_adf471c3357422eab20ee440cc2abd53a}{FindConnection}}(\textcolor{keyword}{const}\ std::string\ \&departure\_city,\ \textcolor{keyword}{const}\ std::string\ \&destination\_city);}
+\DoxyCodeLine{00116\ }
+\DoxyCodeLine{00123\ \ \ std::vector<FlightConnection>\ \mbox{\hyperlink{class_flight_connection_a29d3dc5f4b558ae477ec81653f49fa39}{FindConnectionByPrice}}(\textcolor{keywordtype}{double}\ \&min\_price,\ \textcolor{keywordtype}{double}\ \&max\_price);}
+\DoxyCodeLine{00124\ }
+\DoxyCodeLine{00130\ \ \ \mbox{\hyperlink{class_flight_connection}{FlightConnection}}\ \mbox{\hyperlink{class_flight_connection_a9ee4b95ce93f18797a6891c9f45e7915}{FindConnectionById}}(\textcolor{keyword}{const}\ std::string\ \&\textcolor{keywordtype}{id});}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00137\ \ \ std::vector<FlightConnection>\ \mbox{\hyperlink{class_flight_connection_abaae5a550b9146cb08e999e8ae211ea9}{FindConnectionsByDeparture}}(\textcolor{keyword}{const}\ std::string\ \&departure\_city);}
+\DoxyCodeLine{00138\ }
+\DoxyCodeLine{00144\ \ \ std::vector<FlightConnection>\ \mbox{\hyperlink{class_flight_connection_ae8d580f687a923e2c15f897dcf2d2fce}{FindConnectionsByDestination}}(\textcolor{keyword}{const}\ std::string\ \&destination\_city);}
+\DoxyCodeLine{00145\ }
+\DoxyCodeLine{00151\ \ \ std::vector<int>\ \mbox{\hyperlink{class_flight_connection_a8306206bec8cbaed5812457a987dab7a}{GetSeatsTaken}}(\textcolor{keyword}{const}\ std::string\ \&flight\_identifier);}
+\DoxyCodeLine{00152\ }
+\DoxyCodeLine{00158\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flight_connection_ad8dd501b55b734998f26c0abbc5df1f2}{UpdateSeatsTaken}}(\textcolor{keyword}{const}\ std::string\ \&flight\_identifier,\ \textcolor{keyword}{const}\ std::vector<int>\ \&seats\_taken);}
+\DoxyCodeLine{00159\ \};}
+
+\end{DoxyCode}

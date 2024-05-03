@@ -1,0 +1,158 @@
+\doxysection{Dokumentacja pliku functions/main\+\_\+prints/main\+\_\+prints.h}
+\hypertarget{main__prints_8h}{}\label{main__prints_8h}\index{functions/main\_prints/main\_prints.h@{functions/main\_prints/main\_prints.h}}
+
+
+Ten plik zawiera deklaracje różnych funkcji wyświetlających i przechwytujących dane wejściowe.  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include "{}ftxui/dom/elements.\+hpp"{}}\newline
+{\ttfamily \#include "{}../../user/user.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main__prints_8h_a61835ae6dc3882361865c5deb46a070d}{Print\+Screen}} (const std\+::shared\+\_\+ptr$<$ ftxui\+::\+Element $>$ \&screen)
+\begin{DoxyCompactList}\small\item\em Drukuje ekran. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main__prints_8h_adca2f05fcfb614ebd95ee0ced9dd3d14}{Print\+Full\+Width\+Screen}} (std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$ container)
+\begin{DoxyCompactList}\small\item\em Drukuje ekran o pełnej szerokości. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main__prints_8h_aebd05ee78b8b274fb8863e7eb0d58e87}{Print\+Node\+Screen}} (std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$ container)
+\begin{DoxyCompactList}\small\item\em Drukuje ekran węzła. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{main__prints_8h_ad600a03f17a1ffe470057b4a5cb9737a}{Display\+Message\+And\+Capture\+String\+Input}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Wyświetla wiadomość i przechwytuje dane wejściowe typu string. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{main__prints_8h_a7b5548e9e6df2b025e34ad476ff3c6f0}{Display\+Message\+And\+Capture\+Double\+Input}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Wyświetla wiadomość i przechwytuje dane wejściowe typu double. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{main__prints_8h_a121cdafd52349b7973548faebdb6c290}{Display\+Warning\+And\+Capture\+Input}} (const std\+::string \&title\+\_\+message, const std\+::string \&text\+\_\+message)
+\begin{DoxyCompactList}\small\item\em Wyświetla ostrzeżenie i przechwytuje dane wejściowe. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main__prints_8h_ad05f3f8ccf0df265c9cbb2ba9700be35}{Display\+User\+Menu}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Wyświetla menu użytkownika. \end{DoxyCompactList}\item 
+\Hypertarget{main__prints_8h_a41ff9290a9a345af10f8faa5902219ba}\label{main__prints_8h_a41ff9290a9a345af10f8faa5902219ba} 
+void {\bfseries Display\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla główne menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje różnych funkcji wyświetlających i przechwytujących dane wejściowe. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{main__prints_8h_a7b5548e9e6df2b025e34ad476ff3c6f0}\label{main__prints_8h_a7b5548e9e6df2b025e34ad476ff3c6f0} 
+\index{main\_prints.h@{main\_prints.h}!DisplayMessageAndCaptureDoubleInput@{DisplayMessageAndCaptureDoubleInput}}
+\index{DisplayMessageAndCaptureDoubleInput@{DisplayMessageAndCaptureDoubleInput}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayMessageAndCaptureDoubleInput()}{DisplayMessageAndCaptureDoubleInput()}}
+{\footnotesize\ttfamily double Display\+Message\+And\+Capture\+Double\+Input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Wyświetla wiadomość i przechwytuje dane wejściowe typu double. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em title\+\_\+message} & Tytuł wiadomości. \\
+\hline
+{\em text\+\_\+message} & Tekst wiadomości. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Przechwycone dane wejściowe typu double. 
+\end{DoxyReturn}
+\Hypertarget{main__prints_8h_ad600a03f17a1ffe470057b4a5cb9737a}\label{main__prints_8h_ad600a03f17a1ffe470057b4a5cb9737a} 
+\index{main\_prints.h@{main\_prints.h}!DisplayMessageAndCaptureStringInput@{DisplayMessageAndCaptureStringInput}}
+\index{DisplayMessageAndCaptureStringInput@{DisplayMessageAndCaptureStringInput}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayMessageAndCaptureStringInput()}{DisplayMessageAndCaptureStringInput()}}
+{\footnotesize\ttfamily std\+::string Display\+Message\+And\+Capture\+String\+Input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Wyświetla wiadomość i przechwytuje dane wejściowe typu string. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em title\+\_\+message} & Tytuł wiadomości. \\
+\hline
+{\em text\+\_\+message} & Tekst wiadomości. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Przechwycone dane wejściowe typu string. 
+\end{DoxyReturn}
+\Hypertarget{main__prints_8h_ad05f3f8ccf0df265c9cbb2ba9700be35}\label{main__prints_8h_ad05f3f8ccf0df265c9cbb2ba9700be35} 
+\index{main\_prints.h@{main\_prints.h}!DisplayUserMenu@{DisplayUserMenu}}
+\index{DisplayUserMenu@{DisplayUserMenu}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayUserMenu()}{DisplayUserMenu()}}
+{\footnotesize\ttfamily void Display\+User\+Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Wyświetla menu użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik, dla którego wyświetlane jest menu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main__prints_8h_a121cdafd52349b7973548faebdb6c290}\label{main__prints_8h_a121cdafd52349b7973548faebdb6c290} 
+\index{main\_prints.h@{main\_prints.h}!DisplayWarningAndCaptureInput@{DisplayWarningAndCaptureInput}}
+\index{DisplayWarningAndCaptureInput@{DisplayWarningAndCaptureInput}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{DisplayWarningAndCaptureInput()}{DisplayWarningAndCaptureInput()}}
+{\footnotesize\ttfamily std\+::string Display\+Warning\+And\+Capture\+Input (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{const std\+::string \&}]{text\+\_\+message }\end{DoxyParamCaption})}
+
+
+
+Wyświetla ostrzeżenie i przechwytuje dane wejściowe. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em title\+\_\+message} & Tytuł wiadomości. \\
+\hline
+{\em text\+\_\+message} & Tekst wiadomości. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Przechwycone dane wejściowe. 
+\end{DoxyReturn}
+\Hypertarget{main__prints_8h_adca2f05fcfb614ebd95ee0ced9dd3d14}\label{main__prints_8h_adca2f05fcfb614ebd95ee0ced9dd3d14} 
+\index{main\_prints.h@{main\_prints.h}!PrintFullWidthScreen@{PrintFullWidthScreen}}
+\index{PrintFullWidthScreen@{PrintFullWidthScreen}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintFullWidthScreen()}{PrintFullWidthScreen()}}
+{\footnotesize\ttfamily void Print\+Full\+Width\+Screen (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$}]{container }\end{DoxyParamCaption})}
+
+
+
+Drukuje ekran o pełnej szerokości. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em container} & Kontener do wydrukowania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main__prints_8h_aebd05ee78b8b274fb8863e7eb0d58e87}\label{main__prints_8h_aebd05ee78b8b274fb8863e7eb0d58e87} 
+\index{main\_prints.h@{main\_prints.h}!PrintNodeScreen@{PrintNodeScreen}}
+\index{PrintNodeScreen@{PrintNodeScreen}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintNodeScreen()}{PrintNodeScreen()}}
+{\footnotesize\ttfamily void Print\+Node\+Screen (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ ftxui\+::\+Node $>$}]{container }\end{DoxyParamCaption})}
+
+
+
+Drukuje ekran węzła. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em container} & Kontener do wydrukowania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{main__prints_8h_a61835ae6dc3882361865c5deb46a070d}\label{main__prints_8h_a61835ae6dc3882361865c5deb46a070d} 
+\index{main\_prints.h@{main\_prints.h}!PrintScreen@{PrintScreen}}
+\index{PrintScreen@{PrintScreen}!main\_prints.h@{main\_prints.h}}
+\doxysubsubsection{\texorpdfstring{PrintScreen()}{PrintScreen()}}
+{\footnotesize\ttfamily void Print\+Screen (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ ftxui\+::\+Element $>$ \&}]{screen }\end{DoxyParamCaption})}
+
+
+
+Drukuje ekran. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em screen} & Ekran do wydrukowania. \\
+\hline
+\end{DoxyParams}

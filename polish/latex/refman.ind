@@ -1,0 +1,458 @@
+\begin{theindex}
+
+  \item {AddFlight}
+    \subitem {Admin}, \hyperpage{11}
+  \item {AddLuggageItem}
+    \subitem {Admin}, \hyperpage{11}
+  \item {AddVerificationQuestion}
+    \subitem {Admin}, \hyperpage{11}
+  \item {Admin}, \hyperpage{7}
+    \subitem {AddFlight}, \hyperpage{11}
+    \subitem {AddLuggageItem}, \hyperpage{11}
+    \subitem {AddVerificationQuestion}, \hyperpage{11}
+    \subitem {Admin}, \hyperpage{10}
+    \subitem {ManageUsers}, \hyperpage{11}
+  \item {admin/admin.h}, \hyperpage{33}
+  \item {admin/admin\_functions/admin\_functions.h}, \hyperpage{34}, 
+		\hyperpage{36}
+  \item {admin/admin\_functions/validators.h}, \hyperpage{36}, 
+		\hyperpage{39}
+  \item {admin/admin\_prints/admin\_prints.h}, \hyperpage{40, 41}
+  \item {admin\_functions.h}
+    \subitem {CaptureBoolWithValidation}, \hyperpage{34}
+    \subitem {CaptureInputWithValidation}, \hyperpage{35}
+    \subitem {CaptureLineWithValidation}, \hyperpage{35}
+    \subitem {HandleAdminDashboard}, \hyperpage{35}
+    \subitem {ProcessAddingFlight}, \hyperpage{36}
+  \item {admin\_prints.h}
+    \subitem {DisplayAdminMessageAndCaptureInput}, \hyperpage{40}
+    \subitem {DisplayAdminMessageAndCaptureLine}, \hyperpage{41}
+  \item {AuthenticatePayment}
+    \subitem {user\_payment\_functions.h}, \hyperpage{80}
+  \item {AuthenticateUser}
+    \subitem {Authentication}, \hyperpage{13}
+  \item {Authentication}, \hyperpage{12}
+    \subitem {AuthenticateUser}, \hyperpage{13}
+    \subitem {Authentication}, \hyperpage{12}
+    \subitem {HashPassword}, \hyperpage{13}
+    \subitem {RegisterUser}, \hyperpage{13}
+  \item {authentication/auth\_functions/user\_authentication.h}, 
+		\hyperpage{41}, \hyperpage{43}
+  \item {authentication/authentication.h}, \hyperpage{43, 44}
+
+  \indexspace
+
+  \item {CalculateOverweightFee}
+    \subitem {Luggage}, \hyperpage{27}
+  \item {CaptureBoolWithValidation}
+    \subitem {admin\_functions.h}, \hyperpage{34}
+  \item {CaptureInputWithValidation}
+    \subitem {admin\_functions.h}, \hyperpage{35}
+  \item {CaptureLineWithValidation}
+    \subitem {admin\_functions.h}, \hyperpage{35}
+  \item {CheckIn}
+    \subitem {luggage\_handler.h}, \hyperpage{58}
+  \item {checkin/checkin\_prints.h}, \hyperpage{44, 45}
+  \item {checkin\_prints.h}
+    \subitem {PrintCheckinScreen}, \hyperpage{45}
+  \item {ConfirmItems}
+    \subitem {Luggage}, \hyperpage{27}
+  \item {Countdown}
+    \subitem {helpers.h}, \hyperpage{48}
+  \item {CreateGroups}
+    \subitem {luggage\_prints.h}, \hyperpage{59}
+  \item {CreateProfessionScreen}
+    \subitem {profession\_prints.h}, \hyperpage{76}
+  \item {CreateQr}
+    \subitem {qrcode\_prints.h}, \hyperpage{62}
+
+  \indexspace
+
+  \item {discounts.h}
+    \subitem {GetDiscount}, \hyperpage{66}
+    \subitem {HandleDiscountChoice}, \hyperpage{67}
+    \subitem {PrintDiscountCard}, \hyperpage{67}
+  \item {DisplayAdminMessageAndCaptureInput}
+    \subitem {admin\_prints.h}, \hyperpage{40}
+  \item {DisplayAdminMessageAndCaptureLine}
+    \subitem {admin\_prints.h}, \hyperpage{41}
+  \item {DisplayMessageAndCaptureDoubleInput}
+    \subitem {main\_prints.h}, \hyperpage{50}
+  \item {DisplayMessageAndCaptureStringInput}
+    \subitem {main\_prints.h}, \hyperpage{51}
+  \item {DisplayPoliceProfession}
+    \subitem {profession\_handler.h}, \hyperpage{73}
+  \item {DisplayProfessionInfo}
+    \subitem {profession\_prints.h}, \hyperpage{76}
+  \item {DisplayUserMenu}
+    \subitem {main\_prints.h}, \hyperpage{51}
+  \item {DisplayWarningAndCaptureInput}
+    \subitem {main\_prints.h}, \hyperpage{51}
+  \item {DoctorProfession}
+    \subitem {profession\_choice.h}, \hyperpage{70}
+
+  \indexspace
+
+  \item {env/env.h}, \hyperpage{45, 46}
+  \item {EnvParser}, \hyperpage{14}
+    \subitem {GetValue}, \hyperpage{14}
+  \item {ExtractFileName}
+    \subitem {helpers.h}, \hyperpage{48}
+
+  \indexspace
+
+  \item {FindAllConnections}
+    \subitem {FlightConnection}, \hyperpage{17}
+  \item {FindConnection}
+    \subitem {FlightConnection}, \hyperpage{17}
+  \item {FindConnectionById}
+    \subitem {FlightConnection}, \hyperpage{17}
+  \item {FindConnectionByPrice}
+    \subitem {FlightConnection}, \hyperpage{17}
+  \item {FindConnectionsByDeparture}
+    \subitem {FlightConnection}, \hyperpage{18}
+  \item {FindConnectionsByDestination}
+    \subitem {FlightConnection}, \hyperpage{18}
+  \item {FlightConnection}, \hyperpage{15}
+    \subitem {FindAllConnections}, \hyperpage{17}
+    \subitem {FindConnection}, \hyperpage{17}
+    \subitem {FindConnectionById}, \hyperpage{17}
+    \subitem {FindConnectionByPrice}, \hyperpage{17}
+    \subitem {FindConnectionsByDeparture}, \hyperpage{18}
+    \subitem {FindConnectionsByDestination}, \hyperpage{18}
+    \subitem {FlightConnection}, \hyperpage{16}
+    \subitem {GetArrivalTime}, \hyperpage{18}
+    \subitem {GetAvailableSeats}, \hyperpage{19}
+    \subitem {GetDepartureCity}, \hyperpage{19}
+    \subitem {GetDepartureTime}, \hyperpage{19}
+    \subitem {GetDestinationCity}, \hyperpage{19}
+    \subitem {GetIdentifier}, \hyperpage{19}
+    \subitem {GetPrice}, \hyperpage{20}
+    \subitem {GetSeatsTaken}, \hyperpage{20}
+    \subitem {UpdateSeatsTaken}, \hyperpage{20}
+  \item {FlightInfo}, \hyperpage{21}
+  \item {flights/flight\_connection.h}, \hyperpage{46}
+  \item {functions/helpers.h}, \hyperpage{47}, \hyperpage{49}
+  \item {functions/info\_prints/info\_prints.h}, \hyperpage{49}
+  \item {functions/main\_handler.h}, \hyperpage{50}
+  \item {functions/main\_prints/main\_prints.h}, \hyperpage{50}, 
+		\hyperpage{53}
+
+  \indexspace
+
+  \item {GetArrayValue}
+    \subitem {item\_handler.h}, \hyperpage{55}
+  \item {GetArrivalTime}
+    \subitem {FlightConnection}, \hyperpage{18}
+  \item {GetAvailableSeats}
+    \subitem {FlightConnection}, \hyperpage{19}
+  \item {GetCardDiscount}
+    \subitem {premium\_cards.h}, \hyperpage{68}
+  \item {GetCategory}
+    \subitem {Item}, \hyperpage{23}
+  \item {GetDepartureCity}
+    \subitem {FlightConnection}, \hyperpage{19}
+  \item {GetDepartureTime}
+    \subitem {FlightConnection}, \hyperpage{19}
+  \item {GetDescription}
+    \subitem {Item}, \hyperpage{24}
+  \item {GetDestinationCity}
+    \subitem {FlightConnection}, \hyperpage{19}
+  \item {GetDiscount}
+    \subitem {discounts.h}, \hyperpage{66}
+  \item {GetDoubleValue}
+    \subitem {item\_handler.h}, \hyperpage{55}
+  \item {GetHints}
+    \subitem {Item}, \hyperpage{24}
+  \item {GetIdentifier}
+    \subitem {FlightConnection}, \hyperpage{19}
+  \item {GetItemName}
+    \subitem {Item}, \hyperpage{24}
+  \item {GetItems}
+    \subitem {item\_handler.h}, \hyperpage{56}
+  \item {GetMaxCount}
+    \subitem {Item}, \hyperpage{24}
+  \item {GetPrice}
+    \subitem {FlightConnection}, \hyperpage{20}
+  \item {GetProfession}
+    \subitem {Item}, \hyperpage{24}
+  \item {GetSeatsTaken}
+    \subitem {FlightConnection}, \hyperpage{20}
+  \item {GetStringValue}
+    \subitem {item\_handler.h}, \hyperpage{56}
+  \item {GetValue}
+    \subitem {EnvParser}, \hyperpage{14}
+  \item {GetWeight}
+    \subitem {Item}, \hyperpage{25}
+  \item {GuessDoctorQuestion}
+    \subitem {profession\_handler.h}, \hyperpage{73}
+  \item {GuessInformaticQuestion}
+    \subitem {profession\_handler.h}, \hyperpage{74}
+  \item {GuessMathQuestion}
+    \subitem {profession\_handler.h}, \hyperpage{74}
+  \item {GuessMusicAuthor}
+    \subitem {profession\_handler.h}, \hyperpage{74}
+
+  \indexspace
+
+  \item {HandleAdminDashboard}
+    \subitem {admin\_functions.h}, \hyperpage{35}
+  \item {HandleBuyTicket}
+    \subitem {tickets.h}, \hyperpage{64}
+  \item {HandleCardChoice}
+    \subitem {premium\_cards.h}, \hyperpage{68}
+  \item {HandleDiscountChoice}
+    \subitem {discounts.h}, \hyperpage{67}
+  \item {HandleFlightByData}
+    \subitem {tickets.h}, \hyperpage{64}
+  \item {HandleFlightById}
+    \subitem {tickets.h}, \hyperpage{64}
+  \item {HandleLogin}
+    \subitem {user\_authentication.h}, \hyperpage{42}
+  \item {HandlePaymentOption}
+    \subitem {user\_payment\_functions.h}, \hyperpage{81}
+  \item {HandlePremiumCard}
+    \subitem {premium\_cards.h}, \hyperpage{68}
+  \item {HandleProfession}
+    \subitem {user\_profession\_functions.h}, \hyperpage{77}
+  \item {HandleProfessionChoice}
+    \subitem {user\_profession\_functions.h}, \hyperpage{77}
+  \item {HandleRegistration}
+    \subitem {user\_authentication.h}, \hyperpage{42}
+  \item {HandleTicketChoice}
+    \subitem {tickets.h}, \hyperpage{65}
+  \item {HashPassword}
+    \subitem {Authentication}, \hyperpage{13}
+  \item {HashString}
+    \subitem {helpers.h}, \hyperpage{48}
+  \item {helpers.h}
+    \subitem {Countdown}, \hyperpage{48}
+    \subitem {ExtractFileName}, \hyperpage{48}
+    \subitem {HashString}, \hyperpage{48}
+    \subitem {SetCellColor}, \hyperpage{49}
+
+  \indexspace
+
+  \item {InformaticProfession}
+    \subitem {profession\_choice.h}, \hyperpage{70}
+  \item {IsForbidden}
+    \subitem {Item}, \hyperpage{25}
+  \item {IsHandLuggage}
+    \subitem {Item}, \hyperpage{25}
+  \item {IsPilotAllowance}
+    \subitem {Item}, \hyperpage{25}
+  \item {IsRegisteredLuggage}
+    \subitem {Item}, \hyperpage{25}
+  \item {Item}, \hyperpage{21}
+    \subitem {GetCategory}, \hyperpage{23}
+    \subitem {GetDescription}, \hyperpage{24}
+    \subitem {GetHints}, \hyperpage{24}
+    \subitem {GetItemName}, \hyperpage{24}
+    \subitem {GetMaxCount}, \hyperpage{24}
+    \subitem {GetProfession}, \hyperpage{24}
+    \subitem {GetWeight}, \hyperpage{25}
+    \subitem {IsForbidden}, \hyperpage{25}
+    \subitem {IsHandLuggage}, \hyperpage{25}
+    \subitem {IsPilotAllowance}, \hyperpage{25}
+    \subitem {IsRegisteredLuggage}, \hyperpage{25}
+    \subitem {Item}, \hyperpage{22, 23}
+  \item {item\_handler.h}
+    \subitem {GetArrayValue}, \hyperpage{55}
+    \subitem {GetDoubleValue}, \hyperpage{55}
+    \subitem {GetItems}, \hyperpage{56}
+    \subitem {GetStringValue}, \hyperpage{56}
+
+  \indexspace
+
+  \item {Login}
+    \subitem {user\_authentication.h}, \hyperpage{42}
+  \item {Luggage}, \hyperpage{26}
+    \subitem {CalculateOverweightFee}, \hyperpage{27}
+    \subitem {ConfirmItems}, \hyperpage{27}
+    \subitem {Luggage}, \hyperpage{26}
+    \subitem {ProcessItemsAndGetWeight}, \hyperpage{27}
+  \item {luggage/item/item.h}, \hyperpage{53}
+  \item {luggage/item/item\_handler.h}, \hyperpage{54}, \hyperpage{56}
+  \item {luggage/luggage.h}, \hyperpage{57}
+  \item {luggage/luggage\_handler.h}, \hyperpage{58}
+  \item {luggage/luggage\_prints/luggage\_prints.h}, \hyperpage{58}, 
+		\hyperpage{60}
+  \item {luggage\_handler.h}
+    \subitem {CheckIn}, \hyperpage{58}
+  \item {luggage\_prints.h}
+    \subitem {CreateGroups}, \hyperpage{59}
+    \subitem {PrintAllItems}, \hyperpage{59}
+    \subitem {PrintSpecificItem}, \hyperpage{60}
+    \subitem {PrintWelcomeInCheckIn}, \hyperpage{60}
+
+  \indexspace
+
+  \item {main\_prints.h}
+    \subitem {DisplayMessageAndCaptureDoubleInput}, \hyperpage{50}
+    \subitem {DisplayMessageAndCaptureStringInput}, \hyperpage{51}
+    \subitem {DisplayUserMenu}, \hyperpage{51}
+    \subitem {DisplayWarningAndCaptureInput}, \hyperpage{51}
+    \subitem {PrintFullWidthScreen}, \hyperpage{52}
+    \subitem {PrintNodeScreen}, \hyperpage{52}
+    \subitem {PrintScreen}, \hyperpage{52}
+  \item {ManageUsers}
+    \subitem {Admin}, \hyperpage{11}
+  \item {MathProfession}
+    \subitem {profession\_choice.h}, \hyperpage{70}
+  \item {MusicProfession}
+    \subitem {profession\_choice.h}, \hyperpage{72}
+
+  \indexspace
+
+  \item {plane.h}
+    \subitem {ProcessSeatSelectionAndPurchase}, \hyperpage{61}
+  \item {plane/plane.h}, \hyperpage{61}
+  \item {PoliceProfession}
+    \subitem {profession\_choice.h}, \hyperpage{72}
+  \item {premium\_cards.h}
+    \subitem {GetCardDiscount}, \hyperpage{68}
+    \subitem {HandleCardChoice}, \hyperpage{68}
+    \subitem {HandlePremiumCard}, \hyperpage{68}
+    \subitem {RecognizeDiscountCard}, \hyperpage{69}
+  \item {PrintAllItems}
+    \subitem {luggage\_prints.h}, \hyperpage{59}
+  \item {PrintCheckinScreen}
+    \subitem {checkin\_prints.h}, \hyperpage{45}
+  \item {PrintDiscountCard}
+    \subitem {discounts.h}, \hyperpage{67}
+  \item {PrintFullWidthScreen}
+    \subitem {main\_prints.h}, \hyperpage{52}
+  \item {PrintNodeScreen}
+    \subitem {main\_prints.h}, \hyperpage{52}
+  \item {PrintQr}
+    \subitem {qrcode\_prints.h}, \hyperpage{63}
+  \item {PrintScreen}
+    \subitem {main\_prints.h}, \hyperpage{52}
+  \item {PrintSpecificItem}
+    \subitem {luggage\_prints.h}, \hyperpage{60}
+  \item {PrintWelcomeInCheckIn}
+    \subitem {luggage\_prints.h}, \hyperpage{60}
+  \item {ProcessAddingFlight}
+    \subitem {admin\_functions.h}, \hyperpage{36}
+  \item {ProcessItemsAndGetWeight}
+    \subitem {Luggage}, \hyperpage{27}
+  \item {ProcessPurchase}
+    \subitem {tickets.h}, \hyperpage{65}
+  \item {ProcessSeatSelectionAndPurchase}
+    \subitem {plane.h}, \hyperpage{61}
+  \item {profession\_choice.h}
+    \subitem {DoctorProfession}, \hyperpage{70}
+    \subitem {InformaticProfession}, \hyperpage{70}
+    \subitem {MathProfession}, \hyperpage{70}
+    \subitem {MusicProfession}, \hyperpage{72}
+    \subitem {PoliceProfession}, \hyperpage{72}
+  \item {profession\_handler.h}
+    \subitem {DisplayPoliceProfession}, \hyperpage{73}
+    \subitem {GuessDoctorQuestion}, \hyperpage{73}
+    \subitem {GuessInformaticQuestion}, \hyperpage{74}
+    \subitem {GuessMathQuestion}, \hyperpage{74}
+    \subitem {GuessMusicAuthor}, \hyperpage{74}
+  \item {profession\_prints.h}
+    \subitem {CreateProfessionScreen}, \hyperpage{76}
+    \subitem {DisplayProfessionInfo}, \hyperpage{76}
+    \subitem {ValidAnswer}, \hyperpage{76}
+
+  \indexspace
+
+  \item {qr\_code/qrcode\_prints.h}, \hyperpage{62, 63}
+  \item {qrcode\_prints.h}
+    \subitem {CreateQr}, \hyperpage{62}
+    \subitem {PrintQr}, \hyperpage{63}
+
+  \indexspace
+
+  \item {RecognizeDiscountCard}
+    \subitem {premium\_cards.h}, \hyperpage{69}
+  \item {RegisterUser}
+    \subitem {Authentication}, \hyperpage{13}
+    \subitem {user\_authentication.h}, \hyperpage{43}
+
+  \indexspace
+
+  \item {SetCellColor}
+    \subitem {helpers.h}, \hyperpage{49}
+
+  \indexspace
+
+  \item {tickets.h}
+    \subitem {HandleBuyTicket}, \hyperpage{64}
+    \subitem {HandleFlightByData}, \hyperpage{64}
+    \subitem {HandleFlightById}, \hyperpage{64}
+    \subitem {HandleTicketChoice}, \hyperpage{65}
+    \subitem {ProcessPurchase}, \hyperpage{65}
+  \item {tickets/tickets.h}, \hyperpage{63}, \hyperpage{65}
+
+  \indexspace
+
+  \item {UpdateSeatsTaken}
+    \subitem {FlightConnection}, \hyperpage{20}
+  \item {UpdateUserInDatabase}
+    \subitem {User}, \hyperpage{30}
+  \item {User}, \hyperpage{28}
+    \subitem {UpdateUserInDatabase}, \hyperpage{30}
+    \subitem {User}, \hyperpage{30}
+  \item {user/discounts/discounts.h}, \hyperpage{66, 67}
+  \item {user/premium\_cards/premium\_cards.h}, \hyperpage{67}, 
+		\hyperpage{69}
+  \item {user/professions/profession\_choice.h}, \hyperpage{69}, 
+		\hyperpage{72}
+  \item {user/professions/profession\_handler.h}, \hyperpage{72}, 
+		\hyperpage{75}
+  \item {user/professions/profession\_prints/profession\_prints.h}, 
+		\hyperpage{75, 76}
+  \item {user/professions/user\_profession\_functions.h}, 
+		\hyperpage{77, 78}
+  \item {user/user.h}, \hyperpage{78}
+  \item {user/user\_functions/user\_payments/user\_payment\_functions.h}, 
+		\hyperpage{80, 81}
+  \item {user/user\_functions/user\_prints/user\_prints.h}, 
+		\hyperpage{81}
+  \item {user/user\_functions/user\_settings/user\_settings\_handler.h}, 
+		\hyperpage{81}
+  \item {user/user\_functions/user\_tickets/user\_tickets\_prints.h}, 
+		\hyperpage{82}
+  \item {user\_authentication.h}
+    \subitem {HandleLogin}, \hyperpage{42}
+    \subitem {HandleRegistration}, \hyperpage{42}
+    \subitem {Login}, \hyperpage{42}
+    \subitem {RegisterUser}, \hyperpage{43}
+  \item {user\_payment\_functions.h}
+    \subitem {AuthenticatePayment}, \hyperpage{80}
+    \subitem {HandlePaymentOption}, \hyperpage{81}
+  \item {user\_profession\_functions.h}
+    \subitem {HandleProfession}, \hyperpage{77}
+    \subitem {HandleProfessionChoice}, \hyperpage{77}
+
+  \indexspace
+
+  \item {ValidAnswer}
+    \subitem {profession\_prints.h}, \hyperpage{76}
+  \item {ValidateCity}
+    \subitem {validators.h}, \hyperpage{37}
+  \item {ValidateDate}
+    \subitem {validators.h}, \hyperpage{37}
+  \item {ValidateFlightId}
+    \subitem {validators.h}, \hyperpage{38}
+  \item {ValidateNonEmpty}
+    \subitem {validators.h}, \hyperpage{38}
+  \item {ValidatePrice}
+    \subitem {validators.h}, \hyperpage{38}
+  \item {ValidateSolution}
+    \subitem {validators.h}, \hyperpage{39}
+  \item {ValidateTime}
+    \subitem {validators.h}, \hyperpage{39}
+  \item {validators.h}
+    \subitem {ValidateCity}, \hyperpage{37}
+    \subitem {ValidateDate}, \hyperpage{37}
+    \subitem {ValidateFlightId}, \hyperpage{38}
+    \subitem {ValidateNonEmpty}, \hyperpage{38}
+    \subitem {ValidatePrice}, \hyperpage{38}
+    \subitem {ValidateSolution}, \hyperpage{39}
+    \subitem {ValidateTime}, \hyperpage{39}
+
+\end{theindex}

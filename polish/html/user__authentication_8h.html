@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wolfie Airlines: Dokumentacja pliku authentication/auth_functions/user_authentication.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Wolfie Airlines
+   </div>
+   <div id="projectbrief">Wolfie Airlines is a dream airline company that provides the best services to its customers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_3cdf8ae8d6321b07f7491c2ec09196ac.html">authentication</a></li><li class="navelem"><a class="el" href="dir_11eb1f98ac7e6ae197b78bd0bddb1f64.html">auth_functions</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja pliku user_authentication.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Ten plik zawiera deklaracje funkcji używanych do uwierzytelniania użytkownika.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;string&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &quot;<a class="el" href="user_8h_source.html">../../user/user.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="authentication_8h_source.html">../authentication.h</a>&quot;</code><br />
+</div>
+<p><a href="user__authentication_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a4b2081e00900f457804f1f7a9af1a17f" id="r_a4b2081e00900f457804f1f7a9af1a17f"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; std::string, std::string, std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="user__authentication_8h.html#a4b2081e00900f457804f1f7a9af1a17f">RegisterUser</a> ()</td></tr>
+<tr class="memdesc:a4b2081e00900f457804f1f7a9af1a17f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rejestruje nowego użytkownika.  <br /></td></tr>
+<tr class="separator:a4b2081e00900f457804f1f7a9af1a17f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a527534ae3212e5fccbb3ce39053f554b" id="r_a527534ae3212e5fccbb3ce39053f554b"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; std::string, std::string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="user__authentication_8h.html#a527534ae3212e5fccbb3ce39053f554b">Login</a> ()</td></tr>
+<tr class="memdesc:a527534ae3212e5fccbb3ce39053f554b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loguje użytkownika.  <br /></td></tr>
+<tr class="separator:a527534ae3212e5fccbb3ce39053f554b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac42578d18394839b5aeafbfa00c952a1" id="r_ac42578d18394839b5aeafbfa00c952a1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="user__authentication_8h.html#ac42578d18394839b5aeafbfa00c952a1">HandleRegistration</a> (<a class="el" href="class_authentication.html">Authentication</a> &amp;auth)</td></tr>
+<tr class="memdesc:ac42578d18394839b5aeafbfa00c952a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsługuje proces rejestracji.  <br /></td></tr>
+<tr class="separator:ac42578d18394839b5aeafbfa00c952a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303bb231c1628f9eaaf18516dd3748a8" id="r_a303bb231c1628f9eaaf18516dd3748a8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="user__authentication_8h.html#a303bb231c1628f9eaaf18516dd3748a8">HandleLogin</a> (<a class="el" href="class_authentication.html">Authentication</a> &amp;auth, <a class="el" href="class_user.html">User</a> &amp;user)</td></tr>
+<tr class="memdesc:a303bb231c1628f9eaaf18516dd3748a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obsługuje proces logowania.  <br /></td></tr>
+<tr class="separator:a303bb231c1628f9eaaf18516dd3748a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Ten plik zawiera deklaracje funkcji używanych do uwierzytelniania użytkownika. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a303bb231c1628f9eaaf18516dd3748a8" name="a303bb231c1628f9eaaf18516dd3748a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a303bb231c1628f9eaaf18516dd3748a8">&#9670;&#160;</a></span>HandleLogin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool HandleLogin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_authentication.html">Authentication</a> &amp;&#160;</td>
+          <td class="paramname"><em>auth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="class_user.html">User</a> &amp;&#160;</td>
+          <td class="paramname"><em>user</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obsługuje proces logowania. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auth</td><td>Obiekt <a class="el" href="class_authentication.html" title="Ta klasa obsługuje uwierzytelnianie użytkownika.">Authentication</a>. </td></tr>
+    <tr><td class="paramname">user</td><td>Obiekt <a class="el" href="class_user.html" title="Reprezentuje użytkownika w systemie.">User</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>Wartość logiczna wskazująca, czy logowanie było udane. </dd></dl>
+
+</div>
+</div>
+<a id="ac42578d18394839b5aeafbfa00c952a1" name="ac42578d18394839b5aeafbfa00c952a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac42578d18394839b5aeafbfa00c952a1">&#9670;&#160;</a></span>HandleRegistration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void HandleRegistration </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_authentication.html">Authentication</a> &amp;&#160;</td>
+          <td class="paramname"><em>auth</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Obsługuje proces rejestracji. </p>
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auth</td><td>Obiekt <a class="el" href="class_authentication.html" title="Ta klasa obsługuje uwierzytelnianie użytkownika.">Authentication</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a527534ae3212e5fccbb3ce39053f554b" name="a527534ae3212e5fccbb3ce39053f554b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a527534ae3212e5fccbb3ce39053f554b">&#9670;&#160;</a></span>Login()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; std::string, std::string, bool &gt; Login </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loguje użytkownika. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Krotka zawierająca nazwę użytkownika, hasło i wartość logiczną wskazującą, czy logowanie było udane. </dd></dl>
+
+</div>
+</div>
+<a id="a4b2081e00900f457804f1f7a9af1a17f" name="a4b2081e00900f457804f1f7a9af1a17f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b2081e00900f457804f1f7a9af1a17f">&#9670;&#160;</a></span>RegisterUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::tuple&lt; std::string, std::string, std::string, bool &gt; RegisterUser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Rejestruje nowego użytkownika. </p>
+<dl class="section return"><dt>Zwraca</dt><dd>Krotka zawierająca nazwę użytkownika, hasło, email i wartość logiczną wskazującą, czy rejestracja była udana. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

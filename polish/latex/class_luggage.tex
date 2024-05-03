@@ -1,0 +1,118 @@
+\doxysection{Dokumentacja klasy Luggage}
+\hypertarget{class_luggage}{}\label{class_luggage}\index{Luggage@{Luggage}}
+
+
+Ta klasa reprezentuje bagaż w systemie lotniska.  
+
+
+
+
+{\ttfamily \#include $<$luggage.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_luggage_a838670545b37f34ea3e94f7ac9474dee}{Luggage}} (const std\+::vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \&items, double total\+\_\+weight)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_luggage}{Luggage}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_luggage_a896bd13521d00a262a8fbafb8d221efe}{Process\+Items\+And\+Get\+Weight}} ()
+\begin{DoxyCompactList}\small\item\em Przetwarza przedmioty i pobiera wagę. \end{DoxyCompactList}\item 
+std\+::tuple$<$ bool, std\+::string $>$ \mbox{\hyperlink{class_luggage_a625f25a5bcd92f946a6380208a4c2517}{Confirm\+Items}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Potwierdza przedmioty w bagażu. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_luggage_a9caca953743ddaa52c3ef22c9ef5a2e4}{Calculate\+Overweight\+Fee}} (double weight) const
+\begin{DoxyCompactList}\small\item\em Oblicza opłatę za nadbagaż. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_luggage_a72b3707475afc65d9fc0950c7c65c5eb}\label{class_luggage_a72b3707475afc65d9fc0950c7c65c5eb} 
+const double {\bfseries overweight\+\_\+fee\+\_\+per\+\_\+kg\+\_\+} = 2.\+0
+\begin{DoxyCompactList}\small\item\em Opłata za nadbagaż na kg. \end{DoxyCompactList}\item 
+\Hypertarget{class_luggage_a6a76e617ce52c053e86153ce3d869544}\label{class_luggage_a6a76e617ce52c053e86153ce3d869544} 
+const double {\bfseries euro\+\_\+to\+\_\+pln\+\_\+} = 4.\+32
+\begin{DoxyCompactList}\small\item\em Kurs wymiany euro na pln. \end{DoxyCompactList}\item 
+\Hypertarget{class_luggage_a57550291615c1ccc5c75851f02e20608}\label{class_luggage_a57550291615c1ccc5c75851f02e20608} 
+const double {\bfseries max\+\_\+allowed\+\_\+weight\+\_\+} = 32.\+0
+\begin{DoxyCompactList}\small\item\em Maksymalna dozwolona waga. \end{DoxyCompactList}\item 
+\Hypertarget{class_luggage_a04808a5f9d166102e7b573cb907bbd4b}\label{class_luggage_a04808a5f9d166102e7b573cb907bbd4b} 
+double {\bfseries max\+\_\+weight\+\_\+} = 20.\+0
+\begin{DoxyCompactList}\small\item\em Maksymalna waga. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ta klasa reprezentuje bagaż w systemie lotniska. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_luggage_a838670545b37f34ea3e94f7ac9474dee}\label{class_luggage_a838670545b37f34ea3e94f7ac9474dee} 
+\index{Luggage@{Luggage}!Luggage@{Luggage}}
+\index{Luggage@{Luggage}!Luggage@{Luggage}}
+\doxysubsubsection{\texorpdfstring{Luggage()}{Luggage()}}
+{\footnotesize\ttfamily Luggage\+::\+Luggage (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{class_item}{Item}} $>$ \&}]{items,  }\item[{double}]{total\+\_\+weight }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_luggage}{Luggage}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em items} & Przedmioty w bagażu. \\
+\hline
+{\em total\+\_\+weight} & Całkowita waga bagażu. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_luggage_a9caca953743ddaa52c3ef22c9ef5a2e4}\label{class_luggage_a9caca953743ddaa52c3ef22c9ef5a2e4} 
+\index{Luggage@{Luggage}!CalculateOverweightFee@{CalculateOverweightFee}}
+\index{CalculateOverweightFee@{CalculateOverweightFee}!Luggage@{Luggage}}
+\doxysubsubsection{\texorpdfstring{CalculateOverweightFee()}{CalculateOverweightFee()}}
+{\footnotesize\ttfamily double Luggage\+::\+Calculate\+Overweight\+Fee (\begin{DoxyParamCaption}\item[{double}]{weight }\end{DoxyParamCaption}) const}
+
+
+
+Oblicza opłatę za nadbagaż. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em weight} & Waga bagażu. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Opłata za nadbagaż. 
+\end{DoxyReturn}
+\Hypertarget{class_luggage_a625f25a5bcd92f946a6380208a4c2517}\label{class_luggage_a625f25a5bcd92f946a6380208a4c2517} 
+\index{Luggage@{Luggage}!ConfirmItems@{ConfirmItems}}
+\index{ConfirmItems@{ConfirmItems}!Luggage@{Luggage}}
+\doxysubsubsection{\texorpdfstring{ConfirmItems()}{ConfirmItems()}}
+{\footnotesize\ttfamily std\+::tuple$<$ bool, std\+::string $>$ Luggage\+::\+Confirm\+Items (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Potwierdza przedmioty w bagażu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik potwierdzający przedmioty. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Krotka zawierająca boolean wskazujący, czy potwierdzenie było udane, i wiadomość typu string. 
+\end{DoxyReturn}
+\Hypertarget{class_luggage_a896bd13521d00a262a8fbafb8d221efe}\label{class_luggage_a896bd13521d00a262a8fbafb8d221efe} 
+\index{Luggage@{Luggage}!ProcessItemsAndGetWeight@{ProcessItemsAndGetWeight}}
+\index{ProcessItemsAndGetWeight@{ProcessItemsAndGetWeight}!Luggage@{Luggage}}
+\doxysubsubsection{\texorpdfstring{ProcessItemsAndGetWeight()}{ProcessItemsAndGetWeight()}}
+{\footnotesize\ttfamily double Luggage\+::\+Process\+Items\+And\+Get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Przetwarza przedmioty i pobiera wagę. 
+
+\begin{DoxyReturn}{Zwraca}
+Waga przedmiotów. 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+luggage/\mbox{\hyperlink{luggage_8h}{luggage.\+h}}\item 
+luggage/luggage.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wolfie Airlines: Plik źródłowy tickets/tickets.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Wolfie Airlines
+   </div>
+   <div id="projectbrief">Wolfie Airlines is a dream airline company that provides the best services to its customers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f5dacda0b95845461705bdc94a7159cf.html">tickets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">tickets.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="tickets_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef AIRPORT_TICKETS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define AIRPORT_TICKETS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../flights/flight_connection.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../user/user.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="tickets_8h.html#ac1f7d3da452d96927421aeb716b2c583">   12</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="tickets_8h.html#ac1f7d3da452d96927421aeb716b2c583">MAX_TICKETS</a> = 4; </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="tickets_8h.html#a425f42e65fae69a78cdd1c3e587b8475">   13</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="tickets_8h.html#a425f42e65fae69a78cdd1c3e587b8475">EMERGENCY_SEAT_ONE</a> = 37; </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="tickets_8h.html#a1b3f6763ad3cf2b4bda761f59e02977b">   14</a></span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="tickets_8h.html#a1b3f6763ad3cf2b4bda761f59e02977b">EMERGENCY_SEAT_TWO</a> = 45; </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keywordtype">void</span> <a class="code hl_function" href="tickets_8h.html#ab311dbd7a148d9152e61cb5cb3bee98b">HandleTicketChoice</a>(<a class="code hl_class" href="class_flight_connection.html">FlightConnection</a> &amp;flight_connection, <a class="code hl_class" href="class_user.html">User</a> &amp;user);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keywordtype">void</span> <a class="code hl_function" href="tickets_8h.html#a60519d48e826941568b77d46da7b9b7f">HandleBuyTicket</a>(<span class="keywordtype">int</span> choice, <a class="code hl_class" href="class_flight_connection.html">FlightConnection</a> &amp;flight_connection, <a class="code hl_class" href="class_user.html">User</a> &amp;user);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="tickets_8h.html#aa9f3ad66dd9633141988aef2fe100ae7">HandleFlightById</a>(<a class="code hl_class" href="class_flight_connection.html">FlightConnection</a> &amp;flight_connection, <a class="code hl_class" href="class_user.html">User</a> &amp;user);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keywordtype">void</span> <a class="code hl_function" href="tickets_8h.html#a929107b917134072d1df459b84ffd678">HandleFlightByData</a>(<a class="code hl_class" href="class_flight_connection.html">FlightConnection</a> &amp;flight_connection, <a class="code hl_class" href="class_user.html">User</a> &amp;user);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> <a class="code hl_function" href="tickets_8h.html#a95d2513beb637860b55d0b3be4f7631e">ProcessPurchase</a>(</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_class" href="class_flight_connection.html">FlightConnection</a> &amp;flight_connection,</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_class" href="class_flight_connection.html">FlightConnection</a> &amp;found_connection,</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_class" href="class_user.html">User</a> &amp;user);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#endif  </span><span class="comment">// AIRPORT_TICKETS_H</span></div>
+<div class="ttc" id="aclass_flight_connection_html"><div class="ttname"><a href="class_flight_connection.html">FlightConnection</a></div><div class="ttdoc">Ta klasa obsługuje połączenia lotnicze.</div><div class="ttdef"><b>Definition</b> flight_connection.h:18</div></div>
+<div class="ttc" id="aclass_user_html"><div class="ttname"><a href="class_user.html">User</a></div><div class="ttdoc">Reprezentuje użytkownika w systemie.</div><div class="ttdef"><b>Definition</b> user.h:21</div></div>
+<div class="ttc" id="atickets_8h_html_a1b3f6763ad3cf2b4bda761f59e02977b"><div class="ttname"><a href="tickets_8h.html#a1b3f6763ad3cf2b4bda761f59e02977b">EMERGENCY_SEAT_TWO</a></div><div class="ttdeci">const int EMERGENCY_SEAT_TWO</div><div class="ttdoc">Numer drugiego miejsca awaryjnego.</div><div class="ttdef"><b>Definition</b> tickets.h:14</div></div>
+<div class="ttc" id="atickets_8h_html_a425f42e65fae69a78cdd1c3e587b8475"><div class="ttname"><a href="tickets_8h.html#a425f42e65fae69a78cdd1c3e587b8475">EMERGENCY_SEAT_ONE</a></div><div class="ttdeci">const int EMERGENCY_SEAT_ONE</div><div class="ttdoc">Numer pierwszego miejsca awaryjnego.</div><div class="ttdef"><b>Definition</b> tickets.h:13</div></div>
+<div class="ttc" id="atickets_8h_html_a60519d48e826941568b77d46da7b9b7f"><div class="ttname"><a href="tickets_8h.html#a60519d48e826941568b77d46da7b9b7f">HandleBuyTicket</a></div><div class="ttdeci">void HandleBuyTicket(int choice, FlightConnection &amp;flight_connection, User &amp;user)</div><div class="ttdoc">Obsługuje zakup biletu.</div><div class="ttdef"><b>Definition</b> tickets.cpp:189</div></div>
+<div class="ttc" id="atickets_8h_html_a929107b917134072d1df459b84ffd678"><div class="ttname"><a href="tickets_8h.html#a929107b917134072d1df459b84ffd678">HandleFlightByData</a></div><div class="ttdeci">void HandleFlightByData(FlightConnection &amp;flight_connection, User &amp;user)</div><div class="ttdoc">Obsługuje lot według jego danych.</div><div class="ttdef"><b>Definition</b> tickets.cpp:145</div></div>
+<div class="ttc" id="atickets_8h_html_a95d2513beb637860b55d0b3be4f7631e"><div class="ttname"><a href="tickets_8h.html#a95d2513beb637860b55d0b3be4f7631e">ProcessPurchase</a></div><div class="ttdeci">void ProcessPurchase(FlightConnection &amp;flight_connection, FlightConnection &amp;found_connection, User &amp;user)</div><div class="ttdoc">Przetwarza zakup biletu.</div><div class="ttdef"><b>Definition</b> tickets.cpp:12</div></div>
+<div class="ttc" id="atickets_8h_html_aa9f3ad66dd9633141988aef2fe100ae7"><div class="ttname"><a href="tickets_8h.html#aa9f3ad66dd9633141988aef2fe100ae7">HandleFlightById</a></div><div class="ttdeci">void HandleFlightById(FlightConnection &amp;flight_connection, User &amp;user)</div><div class="ttdoc">Obsługuje lot według jego ID.</div><div class="ttdef"><b>Definition</b> tickets.cpp:113</div></div>
+<div class="ttc" id="atickets_8h_html_ab311dbd7a148d9152e61cb5cb3bee98b"><div class="ttname"><a href="tickets_8h.html#ab311dbd7a148d9152e61cb5cb3bee98b">HandleTicketChoice</a></div><div class="ttdeci">void HandleTicketChoice(FlightConnection &amp;flight_connection, User &amp;user)</div><div class="ttdoc">Obsługuje wybór biletu przez użytkownika.</div><div class="ttdef"><b>Definition</b> tickets.cpp:197</div></div>
+<div class="ttc" id="atickets_8h_html_ac1f7d3da452d96927421aeb716b2c583"><div class="ttname"><a href="tickets_8h.html#ac1f7d3da452d96927421aeb716b2c583">MAX_TICKETS</a></div><div class="ttdeci">const int MAX_TICKETS</div><div class="ttdoc">Maksymalna liczba biletów.</div><div class="ttdef"><b>Definition</b> tickets.h:12</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

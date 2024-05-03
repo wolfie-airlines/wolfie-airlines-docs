@@ -1,0 +1,120 @@
+\doxysection{Dokumentacja klasy Authentication}
+\hypertarget{class_authentication}{}\label{class_authentication}\index{Authentication@{Authentication}}
+
+
+Ta klasa obsługuje uwierzytelnianie użytkownika.  
+
+
+
+
+{\ttfamily \#include $<$authentication.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_authentication_aeb513142e1b4ceadded27540211c6811}{Authentication}} (const std\+::string \&uri\+\_\+str, const std\+::string \&db\+\_\+name, const std\+::string \&collection\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_authentication}{Authentication}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_authentication_aaf499b694a2e055b7538339cc906a843}{Register\+User}} (const std\+::string \&username, const std\+::string \&email, const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Rejestruje nowego użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_authentication_aa0025c6294a8e8e74685560a0bc48e77}{Authenticate\+User}} (const std\+::string \&username, const std\+::string \&password, std\+::promise$<$ bool $>$ \&\&promise, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Uwierzytelnia użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Statyczne metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_authentication_ae642332313d4e8f6b5502fbf12ea020b}{Hash\+Password}} (const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Haszuje hasło. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ta klasa obsługuje uwierzytelnianie użytkownika. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_authentication_aeb513142e1b4ceadded27540211c6811}\label{class_authentication_aeb513142e1b4ceadded27540211c6811} 
+\index{Authentication@{Authentication}!Authentication@{Authentication}}
+\index{Authentication@{Authentication}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{Authentication()}{Authentication()}}
+{\footnotesize\ttfamily Authentication\+::\+Authentication (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{uri\+\_\+str,  }\item[{const std\+::string \&}]{db\+\_\+name,  }\item[{const std\+::string \&}]{collection\+\_\+name }\end{DoxyParamCaption})}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_authentication}{Authentication}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em uri\+\_\+str} & Ciąg URI. \\
+\hline
+{\em db\+\_\+name} & Nazwa bazy danych. \\
+\hline
+{\em collection\+\_\+name} & Nazwa kolekcji. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_authentication_aa0025c6294a8e8e74685560a0bc48e77}\label{class_authentication_aa0025c6294a8e8e74685560a0bc48e77} 
+\index{Authentication@{Authentication}!AuthenticateUser@{AuthenticateUser}}
+\index{AuthenticateUser@{AuthenticateUser}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{AuthenticateUser()}{AuthenticateUser()}}
+{\footnotesize\ttfamily void Authentication\+::\+Authenticate\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{password,  }\item[{std\+::promise$<$ bool $>$ \&\&}]{promise,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Uwierzytelnia użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em username} & Nazwa użytkownika. \\
+\hline
+{\em password} & Hasło użytkownika. \\
+\hline
+{\em promise} & Obietnica wyniku uwierzytelnienia. \\
+\hline
+{\em user} & Obiekt \doxylink{class_user}{User}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_authentication_ae642332313d4e8f6b5502fbf12ea020b}\label{class_authentication_ae642332313d4e8f6b5502fbf12ea020b} 
+\index{Authentication@{Authentication}!HashPassword@{HashPassword}}
+\index{HashPassword@{HashPassword}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{HashPassword()}{HashPassword()}}
+{\footnotesize\ttfamily std\+::string Authentication\+::\+Hash\+Password (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Haszuje hasło. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em password} & Hasło do zahashowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zahashowane hasło. 
+\end{DoxyReturn}
+\Hypertarget{class_authentication_aaf499b694a2e055b7538339cc906a843}\label{class_authentication_aaf499b694a2e055b7538339cc906a843} 
+\index{Authentication@{Authentication}!RegisterUser@{RegisterUser}}
+\index{RegisterUser@{RegisterUser}!Authentication@{Authentication}}
+\doxysubsubsection{\texorpdfstring{RegisterUser()}{RegisterUser()}}
+{\footnotesize\ttfamily bool Authentication\+::\+Register\+User (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{email,  }\item[{const std\+::string \&}]{password }\end{DoxyParamCaption})}
+
+
+
+Rejestruje nowego użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em username} & Nazwa użytkownika. \\
+\hline
+{\em email} & Email użytkownika. \\
+\hline
+{\em password} & Hasło użytkownika. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wartość logiczna wskazująca, czy rejestracja była udana. 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+authentication/\mbox{\hyperlink{authentication_8h}{authentication.\+h}}\item 
+authentication/authentication.\+cpp\end{DoxyCompactItemize}

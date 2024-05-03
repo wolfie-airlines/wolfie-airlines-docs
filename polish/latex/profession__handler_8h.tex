@@ -1,0 +1,115 @@
+\doxysection{Dokumentacja pliku user/professions/profession\+\_\+handler.h}
+\hypertarget{profession__handler_8h}{}\label{profession__handler_8h}\index{user/professions/profession\_handler.h@{user/professions/profession\_handler.h}}
+
+
+Ten plik zawiera deklaracje różnych funkcji obsługujących pytania związane z zawodem.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}../user.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{profession__handler_8h_a49acd07971f54953da850ccacef522f6}{Guess\+Music\+Author}} (const std\+::string \&music\+\_\+link)
+\begin{DoxyCompactList}\small\item\em Próbuje odgadnąć autora utworu muzycznego na podstawie linku. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_a82034183a5cbe6738775643a79f5004e}{Guess\+Doctor\+Question}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Próbuje odgadnąć odpowiedź na pytanie związane z zawodem lekarza. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_ae44803cb78425f23895dbb196f41833f}{Guess\+Informatic\+Question}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Próbuje odgadnąć odpowiedź na pytanie związane z informatyką. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_a12f044b67d50ec3488ed7e8c4affc5d7}{Guess\+Math\+Question}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Próbuje odgadnąć odpowiedź na pytanie związane z matematyką. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{profession__handler_8h_ad375f53cedd1c3dd5d3ec6d8eee0b765}{Display\+Police\+Profession}} ()
+\begin{DoxyCompactList}\small\item\em Wyświetla informacje związane z zawodem policjanta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje różnych funkcji obsługujących pytania związane z zawodem. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{profession__handler_8h_ad375f53cedd1c3dd5d3ec6d8eee0b765}\label{profession__handler_8h_ad375f53cedd1c3dd5d3ec6d8eee0b765} 
+\index{profession\_handler.h@{profession\_handler.h}!DisplayPoliceProfession@{DisplayPoliceProfession}}
+\index{DisplayPoliceProfession@{DisplayPoliceProfession}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{DisplayPoliceProfession()}{DisplayPoliceProfession()}}
+{\footnotesize\ttfamily bool Display\+Police\+Profession (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wyświetla informacje związane z zawodem policjanta. 
+
+\begin{DoxyReturn}{Zwraca}
+Prawda, jeśli operacja jest udana, w przeciwnym razie fałsz. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_a82034183a5cbe6738775643a79f5004e}\label{profession__handler_8h_a82034183a5cbe6738775643a79f5004e} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessDoctorQuestion@{GuessDoctorQuestion}}
+\index{GuessDoctorQuestion@{GuessDoctorQuestion}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessDoctorQuestion()}{GuessDoctorQuestion()}}
+{\footnotesize\ttfamily bool Guess\+Doctor\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Próbuje odgadnąć odpowiedź na pytanie związane z zawodem lekarza. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik, który próbuje odgadnąć. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Prawda, jeśli zgadnięcie jest poprawne, w przeciwnym razie fałsz. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_ae44803cb78425f23895dbb196f41833f}\label{profession__handler_8h_ae44803cb78425f23895dbb196f41833f} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessInformaticQuestion@{GuessInformaticQuestion}}
+\index{GuessInformaticQuestion@{GuessInformaticQuestion}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessInformaticQuestion()}{GuessInformaticQuestion()}}
+{\footnotesize\ttfamily bool Guess\+Informatic\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Próbuje odgadnąć odpowiedź na pytanie związane z informatyką. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik, który próbuje odgadnąć. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Prawda, jeśli zgadnięcie jest poprawne, w przeciwnym razie fałsz. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_a12f044b67d50ec3488ed7e8c4affc5d7}\label{profession__handler_8h_a12f044b67d50ec3488ed7e8c4affc5d7} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessMathQuestion@{GuessMathQuestion}}
+\index{GuessMathQuestion@{GuessMathQuestion}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessMathQuestion()}{GuessMathQuestion()}}
+{\footnotesize\ttfamily bool Guess\+Math\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Próbuje odgadnąć odpowiedź na pytanie związane z matematyką. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik, który próbuje odgadnąć. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Prawda, jeśli zgadnięcie jest poprawne, w przeciwnym razie fałsz. 
+\end{DoxyReturn}
+\Hypertarget{profession__handler_8h_a49acd07971f54953da850ccacef522f6}\label{profession__handler_8h_a49acd07971f54953da850ccacef522f6} 
+\index{profession\_handler.h@{profession\_handler.h}!GuessMusicAuthor@{GuessMusicAuthor}}
+\index{GuessMusicAuthor@{GuessMusicAuthor}!profession\_handler.h@{profession\_handler.h}}
+\doxysubsubsection{\texorpdfstring{GuessMusicAuthor()}{GuessMusicAuthor()}}
+{\footnotesize\ttfamily bool Guess\+Music\+Author (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{music\+\_\+link }\end{DoxyParamCaption})}
+
+
+
+Próbuje odgadnąć autora utworu muzycznego na podstawie linku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em music\+\_\+link} & Link do utworu muzycznego. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Prawda, jeśli zgadnięcie jest poprawne, w przeciwnym razie fałsz. 
+\end{DoxyReturn}

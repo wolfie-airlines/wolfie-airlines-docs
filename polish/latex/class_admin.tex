@@ -1,0 +1,259 @@
+\doxysection{Dokumentacja klasy Admin}
+\hypertarget{class_admin}{}\label{class_admin}\index{Admin@{Admin}}
+
+
+Ta klasa reprezentuje użytkownika admina.  
+
+
+
+
+{\ttfamily \#include $<$admin.\+h$>$}
+
+Diagram dziedziczenia dla Admin\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_admin}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_admin_a1c913b8e687b9a9f6fc789155f217817}{Admin}} (const std\+::string \&username, const std\+::string \&email, double discount, const std\+::string \&discount\+\_\+type, const std\+::string \&premium\+\_\+card, const std\+::string \&payment\+\_\+method, mongocxx\+::client \&client, const std\+::string \&profession, const std\+::string \&registration\+\_\+date, double money\+\_\+spent, double money\+\_\+saved, int ticket\+\_\+bought, const std\+::vector$<$ bsoncxx\+::document\+::value $>$ \&user\+\_\+flights, bool is\+\_\+admin, std\+::string hashed\+\_\+admin\+\_\+password)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_admin}{Admin}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_admin_a373c2e628c82fac5f75bfb5d34bc9411}{Admin}} (const \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_admin}{Admin} z obiektu \doxylink{class_user}{User}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_a126de85f9265d14327b7bd233f3d7ea0}{Add\+Flight}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Dodaje lot. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_a8f5182db2b6ae3573476225089cf429f}{Add\+Verification\+Question}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Dodaje pytanie weryfikacyjne. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_ac0dbb345134f9f8e82578f66554be9b9}{Manage\+Users}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Zarządza użytkownikami. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_admin_aeb9d077d171911c2d72a2f294f9809d1}{Add\+Luggage\+Item}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Dodaje przedmiot bagażu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Metody publiczne dziedziczone z \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_user_a1f2ef1ad9f6e0f6fe9573f4cdfe95a82}{User}} (mongocxx\+::client \&client)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_user}{User}. \end{DoxyCompactList}\item 
+{\bfseries User} (std\+::string username, std\+::string email, double discount, std\+::string discount\+\_\+type, std\+::string premium\+\_\+card, std\+::string payment\+\_\+method, mongocxx\+::client \&client, std\+::string profession, std\+::string registration\+\_\+date, double money\+\_\+spent, double money\+\_\+saved, int ticket\+\_\+bought, std\+::vector$<$ bsoncxx\+::document\+::value $>$ user\+\_\+flights, bool is\+\_\+admin)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_user}{User} z określonymi parametrami. \end{DoxyCompactList}\item 
+void {\bfseries Reset} ()
+\begin{DoxyCompactList}\small\item\em Resetuje użytkownika. \end{DoxyCompactList}\item 
+mongocxx\+::collection \& {\bfseries Get\+Collection} ()
+\begin{DoxyCompactList}\small\item\em Zwraca kolekcję. \end{DoxyCompactList}\item 
+mongocxx\+::collection {\bfseries Get\+Specific\+Collection} (const std\+::string \&collection\+\_\+name)
+\begin{DoxyCompactList}\small\item\em Zwraca określoną kolekcję. \end{DoxyCompactList}\item 
+std\+::string {\bfseries Get\+Password} ()
+\begin{DoxyCompactList}\small\item\em Zwraca hasło. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Password} (const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Ustawia hasło. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Premium\+Card} (\mbox{\hyperlink{class_user}{User}} \&user, const std\+::string \&card)
+\begin{DoxyCompactList}\small\item\em Ustawia kartę premium. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Blik} (const std\+::string \&payment\+\_\+method)
+\begin{DoxyCompactList}\small\item\em Ustawia metodę płatności Blik. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Visa} (const std\+::string \&card\+\_\+number, const std\+::string \&card\+\_\+cvv)
+\begin{DoxyCompactList}\small\item\em Ustawia metodę płatności Visa. \end{DoxyCompactList}\item 
+void {\bfseries Change\+Username} (const std\+::string \&username)
+\begin{DoxyCompactList}\small\item\em Zmienia nazwę użytkownika. \end{DoxyCompactList}\item 
+void {\bfseries Change\+Email} (const std\+::string \&email)
+\begin{DoxyCompactList}\small\item\em Zmienia email. \end{DoxyCompactList}\item 
+void {\bfseries Change\+Password} (const std\+::string \&password)
+\begin{DoxyCompactList}\small\item\em Zmienia hasło. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Discount} (double discount, const std\+::string \&discount\+\_\+type)
+\begin{DoxyCompactList}\small\item\em Ustawia zniżkę. \end{DoxyCompactList}\item 
+double {\bfseries Get\+Discount} () const
+\begin{DoxyCompactList}\small\item\em Zwraca zniżkę. \end{DoxyCompactList}\item 
+std\+::string {\bfseries Recognize\+Discount} () const
+\begin{DoxyCompactList}\small\item\em Rozpoznaje zniżkę. \end{DoxyCompactList}\item 
+void {\bfseries Add\+Ticket\+To\+User} (const std\+::vector$<$ int $>$ \&seats, const \mbox{\hyperlink{class_flight_connection}{Flight\+Connection}} \&flight\+\_\+connection)
+\begin{DoxyCompactList}\small\item\em Dodaje bilet do użytkownika. \end{DoxyCompactList}\item 
+void {\bfseries Update\+Money\+Saved} (double normal\+\_\+price, double discount\+\_\+price)
+\begin{DoxyCompactList}\small\item\em Aktualizuje zaoszczędzone pieniądze. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_admin}{Admin}} \texorpdfstring{$\ast$}{*} {\bfseries Login\+As\+Admin} ()
+\begin{DoxyCompactList}\small\item\em Loguje jako admin. \end{DoxyCompactList}\item 
+bool {\bfseries Check\+If\+Admin} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy użytkownik jest administratorem. \end{DoxyCompactList}\item 
+void {\bfseries Set\+Is\+Admin} (bool is\+\_\+administrator)
+\begin{DoxyCompactList}\small\item\em Ustawia, czy użytkownik jest administratorem. \end{DoxyCompactList}\item 
+void {\bfseries Luggage\+Checkin} (int flight\+\_\+number)
+\begin{DoxyCompactList}\small\item\em Odprawia bagaż. \end{DoxyCompactList}\item 
+mongocxx\+::cursor {\bfseries Find\+User\+In\+Database} ()
+\begin{DoxyCompactList}\small\item\em Znajduje użytkownika w bazie danych. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename T $>$ }\\void \mbox{\hyperlink{class_user_ae787baf324004e9457afb820ae52c325}{Update\+User\+In\+Database}} (const std\+::string \&value\+\_\+in\+\_\+database, const T \&value\+\_\+to\+\_\+set)
+\begin{DoxyCompactList}\small\item\em Aktualizuje użytkownika w bazie danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Atrybuty publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_admin_a56dfe28e922c4f0e09f8897d4f994f05}\label{class_admin_a56dfe28e922c4f0e09f8897d4f994f05} 
+std\+::string {\bfseries hashed\+\_\+admin\+\_\+password\+\_\+}
+\begin{DoxyCompactList}\small\item\em Zaszyfrowane hasło admina. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atrybuty publiczne dziedziczone z \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string {\bfseries username\+\_\+}
+\begin{DoxyCompactList}\small\item\em Nazwa użytkownika. \end{DoxyCompactList}\item 
+std\+::string {\bfseries profession\+\_\+}
+\begin{DoxyCompactList}\small\item\em Zawód użytkownika. \end{DoxyCompactList}\item 
+std\+::string {\bfseries email\+\_\+}
+\begin{DoxyCompactList}\small\item\em Email użytkownika. \end{DoxyCompactList}\item 
+std\+::string {\bfseries discount\+\_\+type\+\_\+}
+\begin{DoxyCompactList}\small\item\em Typ zniżki użytkownika. \end{DoxyCompactList}\item 
+double {\bfseries discount\+\_\+}
+\begin{DoxyCompactList}\small\item\em Wartość zniżki użytkownika. \end{DoxyCompactList}\item 
+std\+::string {\bfseries premium\+\_\+card\+\_\+}
+\begin{DoxyCompactList}\small\item\em Karta premium użytkownika. \end{DoxyCompactList}\item 
+std\+::string {\bfseries payment\+\_\+method\+\_\+}
+\begin{DoxyCompactList}\small\item\em Metoda płatności użytkownika. \end{DoxyCompactList}\item 
+std\+::string {\bfseries registration\+\_\+date\+\_\+}
+\begin{DoxyCompactList}\small\item\em Data rejestracji użytkownika. \end{DoxyCompactList}\item 
+double {\bfseries money\+\_\+spent\+\_\+}
+\begin{DoxyCompactList}\small\item\em Całkowita kwota wydana przez użytkownika. \end{DoxyCompactList}\item 
+double {\bfseries money\+\_\+saved\+\_\+}
+\begin{DoxyCompactList}\small\item\em Całkowita kwota zaoszczędzona przez użytkownika. \end{DoxyCompactList}\item 
+int {\bfseries ticket\+\_\+bought\+\_\+}
+\begin{DoxyCompactList}\small\item\em Całkowita liczba biletów kupionych przez użytkownika. \end{DoxyCompactList}\item 
+std\+::vector$<$ bsoncxx\+::document\+::value $>$ {\bfseries user\+\_\+flights\+\_\+}
+\begin{DoxyCompactList}\small\item\em Loty użytkownika. \end{DoxyCompactList}\item 
+bool {\bfseries is\+\_\+admin\+\_\+}
+\begin{DoxyCompactList}\small\item\em Czy użytkownik jest administratorem. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Dodatkowe Dziedziczone Składowe}
+\doxysubsection*{Atrybuty chronione dziedziczone z \mbox{\hyperlink{class_user}{User}}}
+\begin{DoxyCompactItemize}
+\item 
+mongocxx\+::client \& {\bfseries \+\_\+client}
+\begin{DoxyCompactList}\small\item\em Klient Mongo\+DB. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ta klasa reprezentuje użytkownika admina. 
+
+Dziedziczy po klasie \doxylink{class_user}{User} i dodaje dodatkowe funkcje specyficzne dla adminów. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_admin_a1c913b8e687b9a9f6fc789155f217817}\label{class_admin_a1c913b8e687b9a9f6fc789155f217817} 
+\index{Admin@{Admin}!Admin@{Admin}}
+\index{Admin@{Admin}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{Admin()}{Admin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Admin\+::\+Admin (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{username,  }\item[{const std\+::string \&}]{email,  }\item[{double}]{discount,  }\item[{const std\+::string \&}]{discount\+\_\+type,  }\item[{const std\+::string \&}]{premium\+\_\+card,  }\item[{const std\+::string \&}]{payment\+\_\+method,  }\item[{mongocxx\+::client \&}]{client,  }\item[{const std\+::string \&}]{profession,  }\item[{const std\+::string \&}]{registration\+\_\+date,  }\item[{double}]{money\+\_\+spent,  }\item[{double}]{money\+\_\+saved,  }\item[{int}]{ticket\+\_\+bought,  }\item[{const std\+::vector$<$ bsoncxx\+::document\+::value $>$ \&}]{user\+\_\+flights,  }\item[{bool}]{is\+\_\+admin,  }\item[{std\+::string}]{hashed\+\_\+admin\+\_\+password }\end{DoxyParamCaption})}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_admin}{Admin}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em username} & Nazwa użytkownika admina. \\
+\hline
+{\em email} & Email admina. \\
+\hline
+{\em discount} & Dostępna dla admina zniżka. \\
+\hline
+{\em discount\+\_\+type} & Typ dostępnej dla admina zniżki. \\
+\hline
+{\em premium\+\_\+card} & Karta premium admina. \\
+\hline
+{\em payment\+\_\+method} & Metoda płatności admina. \\
+\hline
+{\em client} & Klient Mongo\+DB. \\
+\hline
+{\em profession} & Zawód admina. \\
+\hline
+{\em registration\+\_\+date} & Data rejestracji admina. \\
+\hline
+{\em money\+\_\+spent} & Kwota wydana przez admina. \\
+\hline
+{\em money\+\_\+saved} & Kwota zaoszczędzona przez admina. \\
+\hline
+{\em ticket\+\_\+bought} & Liczba biletów kupionych przez admina. \\
+\hline
+{\em user\+\_\+flights} & Loty admina. \\
+\hline
+{\em is\+\_\+admin} & Flaga wskazująca, czy użytkownik jest adminem. \\
+\hline
+{\em hashed\+\_\+admin\+\_\+password} & Zaszyfrowane hasło admina. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_admin_a373c2e628c82fac5f75bfb5d34bc9411}\label{class_admin_a373c2e628c82fac5f75bfb5d34bc9411} 
+\index{Admin@{Admin}!Admin@{Admin}}
+\index{Admin@{Admin}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{Admin()}{Admin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Admin\+::\+Admin (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_admin}{Admin} z obiektu \doxylink{class_user}{User}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Obiekt \doxylink{class_user}{User}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_admin_a126de85f9265d14327b7bd233f3d7ea0}\label{class_admin_a126de85f9265d14327b7bd233f3d7ea0} 
+\index{Admin@{Admin}!AddFlight@{AddFlight}}
+\index{AddFlight@{AddFlight}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{AddFlight()}{AddFlight()}}
+{\footnotesize\ttfamily void Admin\+::\+Add\+Flight (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Dodaje lot. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik, do którego dodawany jest lot. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_admin_aeb9d077d171911c2d72a2f294f9809d1}\label{class_admin_aeb9d077d171911c2d72a2f294f9809d1} 
+\index{Admin@{Admin}!AddLuggageItem@{AddLuggageItem}}
+\index{AddLuggageItem@{AddLuggageItem}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{AddLuggageItem()}{AddLuggageItem()}}
+{\footnotesize\ttfamily void Admin\+::\+Add\+Luggage\+Item (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Dodaje przedmiot bagażu. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik, do którego dodawany jest przedmiot bagażu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_admin_a8f5182db2b6ae3573476225089cf429f}\label{class_admin_a8f5182db2b6ae3573476225089cf429f} 
+\index{Admin@{Admin}!AddVerificationQuestion@{AddVerificationQuestion}}
+\index{AddVerificationQuestion@{AddVerificationQuestion}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{AddVerificationQuestion()}{AddVerificationQuestion()}}
+{\footnotesize\ttfamily void Admin\+::\+Add\+Verification\+Question (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Dodaje pytanie weryfikacyjne. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik, do którego dodawane jest pytanie weryfikacyjne. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_admin_ac0dbb345134f9f8e82578f66554be9b9}\label{class_admin_ac0dbb345134f9f8e82578f66554be9b9} 
+\index{Admin@{Admin}!ManageUsers@{ManageUsers}}
+\index{ManageUsers@{ManageUsers}!Admin@{Admin}}
+\doxysubsubsection{\texorpdfstring{ManageUsers()}{ManageUsers()}}
+{\footnotesize\ttfamily void Admin\+::\+Manage\+Users (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Zarządza użytkownikami. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik do zarządzania. \\
+\hline
+\end{DoxyParams}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+admin/\mbox{\hyperlink{admin_8h}{admin.\+h}}\item 
+admin/admin.\+cpp\end{DoxyCompactItemize}

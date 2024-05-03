@@ -1,0 +1,91 @@
+\doxysection{Dokumentacja pliku authentication/auth\+\_\+functions/user\+\_\+authentication.h}
+\hypertarget{user__authentication_8h}{}\label{user__authentication_8h}\index{authentication/auth\_functions/user\_authentication.h@{authentication/auth\_functions/user\_authentication.h}}
+
+
+Ten plik zawiera deklaracje funkcji używanych do uwierzytelniania użytkownika.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include "{}../../user/user.\+h"{}}\newline
+{\ttfamily \#include "{}../authentication.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+std\+::tuple$<$ std\+::string, std\+::string, std\+::string, bool $>$ \mbox{\hyperlink{user__authentication_8h_a4b2081e00900f457804f1f7a9af1a17f}{Register\+User}} ()
+\begin{DoxyCompactList}\small\item\em Rejestruje nowego użytkownika. \end{DoxyCompactList}\item 
+std\+::tuple$<$ std\+::string, std\+::string, bool $>$ \mbox{\hyperlink{user__authentication_8h_a527534ae3212e5fccbb3ce39053f554b}{Login}} ()
+\begin{DoxyCompactList}\small\item\em Loguje użytkownika. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{user__authentication_8h_ac42578d18394839b5aeafbfa00c952a1}{Handle\+Registration}} (\mbox{\hyperlink{class_authentication}{Authentication}} \&auth)
+\begin{DoxyCompactList}\small\item\em Obsługuje proces rejestracji. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{user__authentication_8h_a303bb231c1628f9eaaf18516dd3748a8}{Handle\+Login}} (\mbox{\hyperlink{class_authentication}{Authentication}} \&auth, \mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje proces logowania. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje funkcji używanych do uwierzytelniania użytkownika. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{user__authentication_8h_a303bb231c1628f9eaaf18516dd3748a8}\label{user__authentication_8h_a303bb231c1628f9eaaf18516dd3748a8} 
+\index{user\_authentication.h@{user\_authentication.h}!HandleLogin@{HandleLogin}}
+\index{HandleLogin@{HandleLogin}!user\_authentication.h@{user\_authentication.h}}
+\doxysubsubsection{\texorpdfstring{HandleLogin()}{HandleLogin()}}
+{\footnotesize\ttfamily bool Handle\+Login (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_authentication}{Authentication}} \&}]{auth,  }\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje proces logowania. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em auth} & Obiekt \doxylink{class_authentication}{Authentication}. \\
+\hline
+{\em user} & Obiekt \doxylink{class_user}{User}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wartość logiczna wskazująca, czy logowanie było udane. 
+\end{DoxyReturn}
+\Hypertarget{user__authentication_8h_ac42578d18394839b5aeafbfa00c952a1}\label{user__authentication_8h_ac42578d18394839b5aeafbfa00c952a1} 
+\index{user\_authentication.h@{user\_authentication.h}!HandleRegistration@{HandleRegistration}}
+\index{HandleRegistration@{HandleRegistration}!user\_authentication.h@{user\_authentication.h}}
+\doxysubsubsection{\texorpdfstring{HandleRegistration()}{HandleRegistration()}}
+{\footnotesize\ttfamily void Handle\+Registration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_authentication}{Authentication}} \&}]{auth }\end{DoxyParamCaption})}
+
+
+
+Obsługuje proces rejestracji. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em auth} & Obiekt \doxylink{class_authentication}{Authentication}. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{user__authentication_8h_a527534ae3212e5fccbb3ce39053f554b}\label{user__authentication_8h_a527534ae3212e5fccbb3ce39053f554b} 
+\index{user\_authentication.h@{user\_authentication.h}!Login@{Login}}
+\index{Login@{Login}!user\_authentication.h@{user\_authentication.h}}
+\doxysubsubsection{\texorpdfstring{Login()}{Login()}}
+{\footnotesize\ttfamily std\+::tuple$<$ std\+::string, std\+::string, bool $>$ Login (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loguje użytkownika. 
+
+\begin{DoxyReturn}{Zwraca}
+Krotka zawierająca nazwę użytkownika, hasło i wartość logiczną wskazującą, czy logowanie było udane. 
+\end{DoxyReturn}
+\Hypertarget{user__authentication_8h_a4b2081e00900f457804f1f7a9af1a17f}\label{user__authentication_8h_a4b2081e00900f457804f1f7a9af1a17f} 
+\index{user\_authentication.h@{user\_authentication.h}!RegisterUser@{RegisterUser}}
+\index{RegisterUser@{RegisterUser}!user\_authentication.h@{user\_authentication.h}}
+\doxysubsubsection{\texorpdfstring{RegisterUser()}{RegisterUser()}}
+{\footnotesize\ttfamily std\+::tuple$<$ std\+::string, std\+::string, std\+::string, bool $>$ Register\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Rejestruje nowego użytkownika. 
+
+\begin{DoxyReturn}{Zwraca}
+Krotka zawierająca nazwę użytkownika, hasło, email i wartość logiczną wskazującą, czy rejestracja była udana. 
+\end{DoxyReturn}

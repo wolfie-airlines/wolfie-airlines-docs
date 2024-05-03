@@ -1,0 +1,266 @@
+\doxysection{Dokumentacja klasy Item}
+\hypertarget{class_item}{}\label{class_item}\index{Item@{Item}}
+
+
+Ta klasa reprezentuje przedmiot w systemie lotniska.  
+
+
+
+
+{\ttfamily \#include $<$item.\+h$>$}
+
+\doxysubsubsection*{Metody publiczne}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_item_aebea43b57ab03dc7e61ed0aa6fed21fc}{Item}} (const std\+::string \&item\+\_\+name, const std\+::string \&description, const std\+::vector$<$ std\+::string $>$ \&hints, bool forbidden, bool registered\+\_\+luggage, bool hand\+\_\+luggage, bool pilot\+\_\+allowance, double max\+\_\+count, double weight, std\+::string \&profession, std\+::string \&category)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_item}{Item}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_item_a4bcac89e5cc2de53636f5e25eb039807}{Item}} (const std\+::string \&item\+\_\+name, const std\+::string \&description, const std\+::vector$<$ std\+::string $>$ \&hints, bool forbidden, bool registered\+\_\+luggage, bool hand\+\_\+luggage, bool pilot\+\_\+allowance, double max\+\_\+count, double weight, std\+::string \&category)
+\begin{DoxyCompactList}\small\item\em Konstruuje nowy obiekt \doxylink{class_item}{Item}. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_item_a7c78556e5276f5a8660d48232087a27b}{Get\+Item\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera nazwę przedmiotu. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_item_a66b654e1fdb84208a8d19d0bf544c292}{Get\+Description}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera opis przedmiotu. \end{DoxyCompactList}\item 
+const std\+::string \& \mbox{\hyperlink{class_item_ac8724a58e2a42c7c3ff508f00b4304f8}{Get\+Profession}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera zawód związany z przedmiotem. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \mbox{\hyperlink{class_item_aa3569a91ba8a993ba8babaf22e3b5021}{Get\+Hints}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera wskazówki dotyczące przedmiotu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_item_a95a38d537b0e09a3610c3736ea0f818f}{Is\+Forbidden}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy przedmiot jest zabroniony. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_item_ad05c631742091936d73e7e708067bc3d}{Is\+Registered\+Luggage}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy przedmiot może być transportowany jako bagaż rejestrowany. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_item_a52cc034c5b3810c35979dfcb2f5b42f6}{Is\+Hand\+Luggage}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy przedmiot może być transportowany jako bagaż podręczny. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_item_accba92c163d1931a9f6c1445671e3b84}{Is\+Pilot\+Allowance}} () const
+\begin{DoxyCompactList}\small\item\em Sprawdza, czy przedmiot wymaga zgody pilota do transportu. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_item_af38ed6e20df2d770fe249a35c049b71d}{Get\+Max\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera maksymalną liczbę przedmiotów. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_item_a7c4b1912fe59e4c0e3d45fa6f2444509}{Get\+Weight}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera wagę przedmiotu. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_item_a696e4fd97f91820dc254545177aca109}{Get\+Category}} () const
+\begin{DoxyCompactList}\small\item\em Pobiera kategorię przedmiotu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ta klasa reprezentuje przedmiot w systemie lotniska. 
+
+\doxysubsection{Dokumentacja konstruktora i destruktora}
+\Hypertarget{class_item_aebea43b57ab03dc7e61ed0aa6fed21fc}\label{class_item_aebea43b57ab03dc7e61ed0aa6fed21fc} 
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Item\+::\+Item (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{item\+\_\+name,  }\item[{const std\+::string \&}]{description,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{hints,  }\item[{bool}]{forbidden,  }\item[{bool}]{registered\+\_\+luggage,  }\item[{bool}]{hand\+\_\+luggage,  }\item[{bool}]{pilot\+\_\+allowance,  }\item[{double}]{max\+\_\+count,  }\item[{double}]{weight,  }\item[{std\+::string \&}]{profession,  }\item[{std\+::string \&}]{category }\end{DoxyParamCaption})}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_item}{Item}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em item\+\_\+name} & Nazwa przedmiotu. \\
+\hline
+{\em description} & Opis przedmiotu. \\
+\hline
+{\em hints} & Wskazówki dotyczące przedmiotu. \\
+\hline
+{\em forbidden} & Wskazuje, czy przedmiot jest zabroniony. \\
+\hline
+{\em registered\+\_\+luggage} & Wskazuje, czy przedmiot może być transportowany jako bagaż rejestrowany. \\
+\hline
+{\em hand\+\_\+luggage} & Wskazuje, czy przedmiot może być transportowany jako bagaż podręczny. \\
+\hline
+{\em pilot\+\_\+allowance} & Wskazuje, czy przedmiot wymaga zgody pilota do transportu. \\
+\hline
+{\em max\+\_\+count} & Maksymalna liczba przedmiotów. \\
+\hline
+{\em weight} & Waga przedmiotu. \\
+\hline
+{\em profession} & Zawód związany z przedmiotem. \\
+\hline
+{\em category} & Kategoria przedmiotu. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_item_a4bcac89e5cc2de53636f5e25eb039807}\label{class_item_a4bcac89e5cc2de53636f5e25eb039807} 
+\index{Item@{Item}!Item@{Item}}
+\index{Item@{Item}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{Item()}{Item()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Item\+::\+Item (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{item\+\_\+name,  }\item[{const std\+::string \&}]{description,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{hints,  }\item[{bool}]{forbidden,  }\item[{bool}]{registered\+\_\+luggage,  }\item[{bool}]{hand\+\_\+luggage,  }\item[{bool}]{pilot\+\_\+allowance,  }\item[{double}]{max\+\_\+count,  }\item[{double}]{weight,  }\item[{std\+::string \&}]{category }\end{DoxyParamCaption})}
+
+
+
+Konstruuje nowy obiekt \doxylink{class_item}{Item}. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em item\+\_\+name} & Nazwa przedmiotu. \\
+\hline
+{\em description} & Opis przedmiotu. \\
+\hline
+{\em hints} & Wskazówki dotyczące przedmiotu. \\
+\hline
+{\em forbidden} & Wskazuje, czy przedmiot jest zabroniony. \\
+\hline
+{\em registered\+\_\+luggage} & Wskazuje, czy przedmiot może być transportowany jako bagaż rejestrowany. \\
+\hline
+{\em hand\+\_\+luggage} & Wskazuje, czy przedmiot może być transportowany jako bagaż podręczny. \\
+\hline
+{\em pilot\+\_\+allowance} & Wskazuje, czy przedmiot wymaga zgody pilota do transportu. \\
+\hline
+{\em max\+\_\+count} & Maksymalna liczba przedmiotów. \\
+\hline
+{\em weight} & Waga przedmiotu. \\
+\hline
+{\em category} & Kategoria przedmiotu. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Dokumentacja funkcji składowych}
+\Hypertarget{class_item_a696e4fd97f91820dc254545177aca109}\label{class_item_a696e4fd97f91820dc254545177aca109} 
+\index{Item@{Item}!GetCategory@{GetCategory}}
+\index{GetCategory@{GetCategory}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{GetCategory()}{GetCategory()}}
+{\footnotesize\ttfamily std\+::string Item\+::\+Get\+Category (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera kategorię przedmiotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Kategoria przedmiotu. 
+\end{DoxyReturn}
+\Hypertarget{class_item_a66b654e1fdb84208a8d19d0bf544c292}\label{class_item_a66b654e1fdb84208a8d19d0bf544c292} 
+\index{Item@{Item}!GetDescription@{GetDescription}}
+\index{GetDescription@{GetDescription}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{GetDescription()}{GetDescription()}}
+{\footnotesize\ttfamily const std\+::string \& Item\+::\+Get\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera opis przedmiotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Opis przedmiotu. 
+\end{DoxyReturn}
+\Hypertarget{class_item_aa3569a91ba8a993ba8babaf22e3b5021}\label{class_item_aa3569a91ba8a993ba8babaf22e3b5021} 
+\index{Item@{Item}!GetHints@{GetHints}}
+\index{GetHints@{GetHints}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{GetHints()}{GetHints()}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::string $>$ \& Item\+::\+Get\+Hints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera wskazówki dotyczące przedmiotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Wskazówki dotyczące przedmiotu. 
+\end{DoxyReturn}
+\Hypertarget{class_item_a7c78556e5276f5a8660d48232087a27b}\label{class_item_a7c78556e5276f5a8660d48232087a27b} 
+\index{Item@{Item}!GetItemName@{GetItemName}}
+\index{GetItemName@{GetItemName}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{GetItemName()}{GetItemName()}}
+{\footnotesize\ttfamily const std\+::string \& Item\+::\+Get\+Item\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera nazwę przedmiotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Nazwa przedmiotu. 
+\end{DoxyReturn}
+\Hypertarget{class_item_af38ed6e20df2d770fe249a35c049b71d}\label{class_item_af38ed6e20df2d770fe249a35c049b71d} 
+\index{Item@{Item}!GetMaxCount@{GetMaxCount}}
+\index{GetMaxCount@{GetMaxCount}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{GetMaxCount()}{GetMaxCount()}}
+{\footnotesize\ttfamily double Item\+::\+Get\+Max\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera maksymalną liczbę przedmiotów. 
+
+\begin{DoxyReturn}{Zwraca}
+Maksymalna liczba przedmiotów. 
+\end{DoxyReturn}
+\Hypertarget{class_item_ac8724a58e2a42c7c3ff508f00b4304f8}\label{class_item_ac8724a58e2a42c7c3ff508f00b4304f8} 
+\index{Item@{Item}!GetProfession@{GetProfession}}
+\index{GetProfession@{GetProfession}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{GetProfession()}{GetProfession()}}
+{\footnotesize\ttfamily const std\+::string \& Item\+::\+Get\+Profession (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera zawód związany z przedmiotem. 
+
+\begin{DoxyReturn}{Zwraca}
+Zawód związany z przedmiotem. 
+\end{DoxyReturn}
+\Hypertarget{class_item_a7c4b1912fe59e4c0e3d45fa6f2444509}\label{class_item_a7c4b1912fe59e4c0e3d45fa6f2444509} 
+\index{Item@{Item}!GetWeight@{GetWeight}}
+\index{GetWeight@{GetWeight}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{GetWeight()}{GetWeight()}}
+{\footnotesize\ttfamily double Item\+::\+Get\+Weight (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Pobiera wagę przedmiotu. 
+
+\begin{DoxyReturn}{Zwraca}
+Waga przedmiotu. 
+\end{DoxyReturn}
+\Hypertarget{class_item_a95a38d537b0e09a3610c3736ea0f818f}\label{class_item_a95a38d537b0e09a3610c3736ea0f818f} 
+\index{Item@{Item}!IsForbidden@{IsForbidden}}
+\index{IsForbidden@{IsForbidden}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{IsForbidden()}{IsForbidden()}}
+{\footnotesize\ttfamily bool Item\+::\+Is\+Forbidden (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy przedmiot jest zabroniony. 
+
+\begin{DoxyReturn}{Zwraca}
+True, jeśli przedmiot jest zabroniony, false w przeciwnym razie. 
+\end{DoxyReturn}
+\Hypertarget{class_item_a52cc034c5b3810c35979dfcb2f5b42f6}\label{class_item_a52cc034c5b3810c35979dfcb2f5b42f6} 
+\index{Item@{Item}!IsHandLuggage@{IsHandLuggage}}
+\index{IsHandLuggage@{IsHandLuggage}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{IsHandLuggage()}{IsHandLuggage()}}
+{\footnotesize\ttfamily bool Item\+::\+Is\+Hand\+Luggage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy przedmiot może być transportowany jako bagaż podręczny. 
+
+\begin{DoxyReturn}{Zwraca}
+True, jeśli przedmiot może być transportowany jako bagaż podręczny, false w przeciwnym razie. 
+\end{DoxyReturn}
+\Hypertarget{class_item_accba92c163d1931a9f6c1445671e3b84}\label{class_item_accba92c163d1931a9f6c1445671e3b84} 
+\index{Item@{Item}!IsPilotAllowance@{IsPilotAllowance}}
+\index{IsPilotAllowance@{IsPilotAllowance}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{IsPilotAllowance()}{IsPilotAllowance()}}
+{\footnotesize\ttfamily bool Item\+::\+Is\+Pilot\+Allowance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy przedmiot wymaga zgody pilota do transportu. 
+
+\begin{DoxyReturn}{Zwraca}
+True, jeśli przedmiot wymaga zgody pilota do transportu, false w przeciwnym razie. 
+\end{DoxyReturn}
+\Hypertarget{class_item_ad05c631742091936d73e7e708067bc3d}\label{class_item_ad05c631742091936d73e7e708067bc3d} 
+\index{Item@{Item}!IsRegisteredLuggage@{IsRegisteredLuggage}}
+\index{IsRegisteredLuggage@{IsRegisteredLuggage}!Item@{Item}}
+\doxysubsubsection{\texorpdfstring{IsRegisteredLuggage()}{IsRegisteredLuggage()}}
+{\footnotesize\ttfamily bool Item\+::\+Is\+Registered\+Luggage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Sprawdza, czy przedmiot może być transportowany jako bagaż rejestrowany. 
+
+\begin{DoxyReturn}{Zwraca}
+True, jeśli przedmiot może być transportowany jako bagaż rejestrowany, false w przeciwnym razie. 
+\end{DoxyReturn}
+
+
+Dokumentacja dla tej klasy została wygenerowana z plików\+:\begin{DoxyCompactItemize}
+\item 
+luggage/item/\mbox{\hyperlink{item_8h}{item.\+h}}\item 
+luggage/item/item.\+cpp\end{DoxyCompactItemize}

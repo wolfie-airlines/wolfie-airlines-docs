@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wolfie Airlines: Plik źródłowy admin/admin_functions/validators.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Wolfie Airlines
+   </div>
+   <div id="projectbrief">Wolfie Airlines is a dream airline company that provides the best services to its customers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b56013ff87e0b8a9fb902ef4a07a6990.html">admin</a></li><li class="navelem"><a class="el" href="dir_b91d226db9631e2d5feac7da495bf4ce.html">admin_functions</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">validators.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="validators_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef AIRPORT_ADMIN_ADMIN_FUNCTIONS_VALIDATORS_H_</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define AIRPORT_ADMIN_ADMIN_FUNCTIONS_VALIDATORS_H_</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keywordtype">bool</span> <a class="code hl_function" href="validators_8h.html#ab1283510669750c383b10560f6ebac33">ValidateFlightId</a>(<span class="keyword">const</span> std::string &amp;flight_id);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keywordtype">bool</span> <a class="code hl_function" href="validators_8h.html#ad855631a090fc859655407c1c0e6c5c1">ValidateCity</a>(<span class="keyword">const</span> std::string &amp;city);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keywordtype">bool</span> <a class="code hl_function" href="validators_8h.html#a575aa407ea0eebce6343ba97018c8910">ValidateDate</a>(<span class="keyword">const</span> std::string &amp;date);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keywordtype">bool</span> <a class="code hl_function" href="validators_8h.html#ab55230a03a9d89ae8bf38c09b914d55a">ValidateTime</a>(<span class="keyword">const</span> std::string &amp;time);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="keywordtype">bool</span> <a class="code hl_function" href="validators_8h.html#a4161ab873defb7c74e3bb5513e5bab4a">ValidatePrice</a>(<span class="keyword">const</span> std::string &amp;price);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">bool</span> <a class="code hl_function" href="validators_8h.html#afa2134a3e59e071fad8ae7049167709e">ValidateNonEmpty</a>(<span class="keyword">const</span> std::string &amp;input);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="keywordtype">bool</span> <a class="code hl_function" href="validators_8h.html#a8c5f1f03903e3b9801571a2313a3f428">ValidateSolution</a>(<span class="keyword">const</span> std::string &amp;solution);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif </span><span class="comment">//AIRPORT_ADMIN_ADMIN_FUNCTIONS_VALIDATORS_H_</span></div>
+<div class="ttc" id="avalidators_8h_html_a4161ab873defb7c74e3bb5513e5bab4a"><div class="ttname"><a href="validators_8h.html#a4161ab873defb7c74e3bb5513e5bab4a">ValidatePrice</a></div><div class="ttdeci">bool ValidatePrice(const std::string &amp;price)</div><div class="ttdoc">Waliduje cenę.</div><div class="ttdef"><b>Definition</b> validators.cpp:20</div></div>
+<div class="ttc" id="avalidators_8h_html_a575aa407ea0eebce6343ba97018c8910"><div class="ttname"><a href="validators_8h.html#a575aa407ea0eebce6343ba97018c8910">ValidateDate</a></div><div class="ttdeci">bool ValidateDate(const std::string &amp;date)</div><div class="ttdoc">Waliduje datę.</div><div class="ttdef"><b>Definition</b> validators.cpp:12</div></div>
+<div class="ttc" id="avalidators_8h_html_a8c5f1f03903e3b9801571a2313a3f428"><div class="ttname"><a href="validators_8h.html#a8c5f1f03903e3b9801571a2313a3f428">ValidateSolution</a></div><div class="ttdeci">bool ValidateSolution(const std::string &amp;solution)</div><div class="ttdoc">Waliduje rozwiązanie.</div><div class="ttdef"><b>Definition</b> validators.cpp:33</div></div>
+<div class="ttc" id="avalidators_8h_html_ab1283510669750c383b10560f6ebac33"><div class="ttname"><a href="validators_8h.html#ab1283510669750c383b10560f6ebac33">ValidateFlightId</a></div><div class="ttdeci">bool ValidateFlightId(const std::string &amp;flight_id)</div><div class="ttdoc">Waliduje ID lotu.</div><div class="ttdef"><b>Definition</b> validators.cpp:4</div></div>
+<div class="ttc" id="avalidators_8h_html_ab55230a03a9d89ae8bf38c09b914d55a"><div class="ttname"><a href="validators_8h.html#ab55230a03a9d89ae8bf38c09b914d55a">ValidateTime</a></div><div class="ttdeci">bool ValidateTime(const std::string &amp;time)</div><div class="ttdoc">Waliduje czas.</div><div class="ttdef"><b>Definition</b> validators.cpp:16</div></div>
+<div class="ttc" id="avalidators_8h_html_ad855631a090fc859655407c1c0e6c5c1"><div class="ttname"><a href="validators_8h.html#ad855631a090fc859655407c1c0e6c5c1">ValidateCity</a></div><div class="ttdeci">bool ValidateCity(const std::string &amp;city)</div><div class="ttdoc">Waliduje nazwę miasta.</div><div class="ttdef"><b>Definition</b> validators.cpp:8</div></div>
+<div class="ttc" id="avalidators_8h_html_afa2134a3e59e071fad8ae7049167709e"><div class="ttname"><a href="validators_8h.html#afa2134a3e59e071fad8ae7049167709e">ValidateNonEmpty</a></div><div class="ttdeci">bool ValidateNonEmpty(const std::string &amp;input)</div><div class="ttdoc">Waliduje, czy dane wejściowe nie są puste.</div><div class="ttdef"><b>Definition</b> validators.cpp:29</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Wolfie Airlines: Plik źródłowy user/user_functions/user_tickets/user_tickets_prints.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectlogo"><img alt="Logo" src="logo.ico"/></td>
+  <td id="projectalign">
+   <div id="projectname">Wolfie Airlines
+   </div>
+   <div id="projectbrief">Wolfie Airlines is a dream airline company that provides the best services to its customers.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Wczytywanie...</div>
+<div class="SRStatus" id="Searching">Szukanie...</div>
+<div class="SRStatus" id="NoMatches">Brak dopasowań</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_111cd2f11cffd6d6d28d89ee0389ee9e.html">user</a></li><li class="navelem"><a class="el" href="dir_d9e68d3685c23beedc2f830a75d077a0.html">user_functions</a></li><li class="navelem"><a class="el" href="dir_c799b3f85011705f07e9b7a4f839ee20.html">user_tickets</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">user_tickets_prints.h</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#ifndef AIRPORT_USER_TICKETS_PRINT_FUNCTIONS_H</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#define AIRPORT_USER_TICKETS_PRINT_FUNCTIONS_H</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;../../user.h&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">const</span> <span class="keywordtype">int</span> PAGE_SIZE = 4;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00021" data-start="{" data-end="};">
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="struct_flight_info.html">   21</a></span><span class="keyword">struct </span><a class="code hl_struct" href="struct_flight_info.html">FlightInfo</a> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="struct_flight_info.html#aee25b877b786e5b94dcf0ad1ef5c4389">   22</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="struct_flight_info.html#aee25b877b786e5b94dcf0ad1ef5c4389">flight_number</a>; </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="struct_flight_info.html#acf09514fb7a19df2bbccec0b8ff0766f">   23</a></span>  std::string <a class="code hl_variable" href="struct_flight_info.html#acf09514fb7a19df2bbccec0b8ff0766f">flight_id</a>; </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="struct_flight_info.html#afcc03e5d08b11504b52944c1833d49a2">   24</a></span>  std::string <a class="code hl_variable" href="struct_flight_info.html#afcc03e5d08b11504b52944c1833d49a2">departure</a>; </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="struct_flight_info.html#a2266ce71a3931db3293e8f4a4e411658">   25</a></span>  std::string <a class="code hl_variable" href="struct_flight_info.html#a2266ce71a3931db3293e8f4a4e411658">destination</a>; </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="struct_flight_info.html#a081741958fa09aa800ea75acaa3085a4">   26</a></span>  std::string <a class="code hl_variable" href="struct_flight_info.html#a081741958fa09aa800ea75acaa3085a4">departure_time</a>; </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="struct_flight_info.html#ab1ffc9952f6ff50596087786699d5278">   27</a></span>  <span class="keywordtype">double</span> <a class="code hl_variable" href="struct_flight_info.html#ab1ffc9952f6ff50596087786699d5278">price</a>; </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="struct_flight_info.html#adbbc4d49a588ea050b356eae1513d871">   28</a></span>  std::vector&lt;int&gt; <a class="code hl_variable" href="struct_flight_info.html#adbbc4d49a588ea050b356eae1513d871">seats</a>; </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="struct_flight_info.html#af4223c2ad5826f665ee06ebc0be7d96b">   29</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_flight_info.html#af4223c2ad5826f665ee06ebc0be7d96b">checkin</a>; </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="struct_flight_info.html#a45771a7104e1019efaf41034563bc046">   30</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="struct_flight_info.html#a45771a7104e1019efaf41034563bc046">luggage_checkin</a>; </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>std::optional&lt;std::string&gt; CreateTicketsScreen(<a class="code hl_class" href="class_user.html">User</a> &amp;user, <span class="keywordtype">bool</span> is_checkin = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif  </span><span class="comment">// AIRPORT_USER_TICKETS_PRINT_FUNCTIONS_H</span></div>
+<div class="ttc" id="aclass_user_html"><div class="ttname"><a href="class_user.html">User</a></div><div class="ttdoc">Reprezentuje użytkownika w systemie.</div><div class="ttdef"><b>Definition</b> user.h:21</div></div>
+<div class="ttc" id="astruct_flight_info_html"><div class="ttname"><a href="struct_flight_info.html">FlightInfo</a></div><div class="ttdoc">Zawiera informacje o locie.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:21</div></div>
+<div class="ttc" id="astruct_flight_info_html_a081741958fa09aa800ea75acaa3085a4"><div class="ttname"><a href="struct_flight_info.html#a081741958fa09aa800ea75acaa3085a4">FlightInfo::departure_time</a></div><div class="ttdeci">std::string departure_time</div><div class="ttdoc">Czas odlotu.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:26</div></div>
+<div class="ttc" id="astruct_flight_info_html_a2266ce71a3931db3293e8f4a4e411658"><div class="ttname"><a href="struct_flight_info.html#a2266ce71a3931db3293e8f4a4e411658">FlightInfo::destination</a></div><div class="ttdeci">std::string destination</div><div class="ttdoc">Miejsce docelowe.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:25</div></div>
+<div class="ttc" id="astruct_flight_info_html_a45771a7104e1019efaf41034563bc046"><div class="ttname"><a href="struct_flight_info.html#a45771a7104e1019efaf41034563bc046">FlightInfo::luggage_checkin</a></div><div class="ttdeci">bool luggage_checkin</div><div class="ttdoc">Czy użytkownik odprawił bagaż.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:30</div></div>
+<div class="ttc" id="astruct_flight_info_html_ab1ffc9952f6ff50596087786699d5278"><div class="ttname"><a href="struct_flight_info.html#ab1ffc9952f6ff50596087786699d5278">FlightInfo::price</a></div><div class="ttdeci">double price</div><div class="ttdoc">Cena lotu.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:27</div></div>
+<div class="ttc" id="astruct_flight_info_html_acf09514fb7a19df2bbccec0b8ff0766f"><div class="ttname"><a href="struct_flight_info.html#acf09514fb7a19df2bbccec0b8ff0766f">FlightInfo::flight_id</a></div><div class="ttdeci">std::string flight_id</div><div class="ttdoc">ID lotu.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:23</div></div>
+<div class="ttc" id="astruct_flight_info_html_adbbc4d49a588ea050b356eae1513d871"><div class="ttname"><a href="struct_flight_info.html#adbbc4d49a588ea050b356eae1513d871">FlightInfo::seats</a></div><div class="ttdeci">std::vector&lt; int &gt; seats</div><div class="ttdoc">Miejsca w locie.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:28</div></div>
+<div class="ttc" id="astruct_flight_info_html_aee25b877b786e5b94dcf0ad1ef5c4389"><div class="ttname"><a href="struct_flight_info.html#aee25b877b786e5b94dcf0ad1ef5c4389">FlightInfo::flight_number</a></div><div class="ttdeci">int flight_number</div><div class="ttdoc">Numer lotu.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:22</div></div>
+<div class="ttc" id="astruct_flight_info_html_af4223c2ad5826f665ee06ebc0be7d96b"><div class="ttname"><a href="struct_flight_info.html#af4223c2ad5826f665ee06ebc0be7d96b">FlightInfo::checkin</a></div><div class="ttdeci">bool checkin</div><div class="ttdoc">Czy użytkownik odprawił się.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:29</div></div>
+<div class="ttc" id="astruct_flight_info_html_afcc03e5d08b11504b52944c1833d49a2"><div class="ttname"><a href="struct_flight_info.html#afcc03e5d08b11504b52944c1833d49a2">FlightInfo::departure</a></div><div class="ttdeci">std::string departure</div><div class="ttdoc">Miejsce odlotu.</div><div class="ttdef"><b>Definition</b> user_tickets_prints.h:24</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

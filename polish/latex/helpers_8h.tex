@@ -1,0 +1,103 @@
+\doxysection{Dokumentacja pliku functions/helpers.h}
+\hypertarget{helpers_8h}{}\label{helpers_8h}\index{functions/helpers.h@{functions/helpers.h}}
+
+
+Ten plik zawiera deklaracje różnych funkcji pomocniczych.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}ftxui/dom/table.\+hpp"{}}\newline
+{\ttfamily \#include "{}ftxui/screen/color.\+hpp"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{helpers_8h_a19f2a9200b0a719eb40545c9b0ccc703}{Extract\+File\+Name}} (const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Wyodrębnia nazwę pliku z ścieżki. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8h_a7ae6aedfc08cd7f6dabd083ce0a8ee4a}{Countdown}} (int seconds, const std\+::string \&type)
+\begin{DoxyCompactList}\small\item\em Wykonuje odliczanie. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{helpers_8h_a728e742402ca16b9254150be442cd2dc}{Hash\+String}} (const std\+::string \&string\+\_\+to\+\_\+hash)
+\begin{DoxyCompactList}\small\item\em Hashuje ciąg znaków. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{helpers_8h_a727d1fb0a358dc58ddf7909929c88f17}{Set\+Cell\+Color}} (ftxui\+::\+Table \&table, int col, int row, ftxui\+::\+Color color)
+\begin{DoxyCompactList}\small\item\em Ustawia kolor komórki w tabeli. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje różnych funkcji pomocniczych. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{helpers_8h_a7ae6aedfc08cd7f6dabd083ce0a8ee4a}\label{helpers_8h_a7ae6aedfc08cd7f6dabd083ce0a8ee4a} 
+\index{helpers.h@{helpers.h}!Countdown@{Countdown}}
+\index{Countdown@{Countdown}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{Countdown()}{Countdown()}}
+{\footnotesize\ttfamily void Countdown (\begin{DoxyParamCaption}\item[{int}]{seconds,  }\item[{const std\+::string \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Wykonuje odliczanie. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em seconds} & Liczba sekund do odliczenia. \\
+\hline
+{\em type} & Typ odliczania. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{helpers_8h_a19f2a9200b0a719eb40545c9b0ccc703}\label{helpers_8h_a19f2a9200b0a719eb40545c9b0ccc703} 
+\index{helpers.h@{helpers.h}!ExtractFileName@{ExtractFileName}}
+\index{ExtractFileName@{ExtractFileName}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{ExtractFileName()}{ExtractFileName()}}
+{\footnotesize\ttfamily std\+::string Extract\+File\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})}
+
+
+
+Wyodrębnia nazwę pliku z ścieżki. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em path} & Ścieżka, z której wyodrębniana jest nazwa pliku. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Wyodrębniona nazwa pliku. 
+\end{DoxyReturn}
+\Hypertarget{helpers_8h_a728e742402ca16b9254150be442cd2dc}\label{helpers_8h_a728e742402ca16b9254150be442cd2dc} 
+\index{helpers.h@{helpers.h}!HashString@{HashString}}
+\index{HashString@{HashString}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{HashString()}{HashString()}}
+{\footnotesize\ttfamily std\+::string Hash\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{string\+\_\+to\+\_\+hash }\end{DoxyParamCaption})}
+
+
+
+Hashuje ciąg znaków. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em string\+\_\+to\+\_\+hash} & Ciąg znaków do zahashowania. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zahashowany ciąg znaków. 
+\end{DoxyReturn}
+\Hypertarget{helpers_8h_a727d1fb0a358dc58ddf7909929c88f17}\label{helpers_8h_a727d1fb0a358dc58ddf7909929c88f17} 
+\index{helpers.h@{helpers.h}!SetCellColor@{SetCellColor}}
+\index{SetCellColor@{SetCellColor}!helpers.h@{helpers.h}}
+\doxysubsubsection{\texorpdfstring{SetCellColor()}{SetCellColor()}}
+{\footnotesize\ttfamily void Set\+Cell\+Color (\begin{DoxyParamCaption}\item[{ftxui\+::\+Table \&}]{table,  }\item[{int}]{col,  }\item[{int}]{row,  }\item[{ftxui\+::\+Color}]{color }\end{DoxyParamCaption})}
+
+
+
+Ustawia kolor komórki w tabeli. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em table} & Tabela zawierająca komórkę. \\
+\hline
+{\em col} & Kolumna komórki. \\
+\hline
+{\em row} & Rząd komórki. \\
+\hline
+{\em color} & Kolor, na który ma zostać ustawiona komórka. \\
+\hline
+\end{DoxyParams}

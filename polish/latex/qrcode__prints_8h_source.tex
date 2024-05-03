@@ -1,0 +1,24 @@
+\doxysection{qrcode\+\_\+prints.\+h}
+\hypertarget{qrcode__prints_8h_source}{}\label{qrcode__prints_8h_source}\index{qr\_code/qrcode\_prints.h@{qr\_code/qrcode\_prints.h}}
+\mbox{\hyperlink{qrcode__prints_8h}{Idź do dokumentacji tego pliku.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ AIRPORT\_QRCODE\_PRINTS\_H}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ AIRPORT\_QRCODE\_PRINTS\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}qrcodegen.hpp"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{using\ }qrcodegen::QrCode;}
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ }qrcodegen::QrSegment;}
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ }std::uint8\_t;}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{qrcode__prints_8h_aa602133eab4f5e43f67422289808d77a}{CreateQr}}(\textcolor{keyword}{const}\ std::string\ \&email,}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&username,}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keyword}{const}\ std::string\ \&flight\_id,}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ std::vector<int>\ seats);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00031\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{qrcode__prints_8h_acaff92a2727b8494d88510dbaf1f43a3}{PrintQr}}(\textcolor{keyword}{const}\ QrCode\ \&qr);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00033\ \textcolor{preprocessor}{\#endif\ \ }\textcolor{comment}{//\ AIRPORT\_QRCODE\_PRINTS\_H}}
+
+\end{DoxyCode}

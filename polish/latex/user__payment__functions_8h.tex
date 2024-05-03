@@ -1,0 +1,63 @@
+\doxysection{Dokumentacja pliku user/user\+\_\+functions/user\+\_\+payments/user\+\_\+payment\+\_\+functions.h}
+\hypertarget{user__payment__functions_8h}{}\label{user__payment__functions_8h}\index{user/user\_functions/user\_payments/user\_payment\_functions.h@{user/user\_functions/user\_payments/user\_payment\_functions.h}}
+
+
+Ten plik zawiera deklaracje funkcji obsługujących płatności użytkownika.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}../../user.\+h"{}}\newline
+\doxysubsubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{user__payment__functions_8h_a13de813fe9f97a890b5f1434e1d46146}{Handle\+Payment\+Option}} (\mbox{\hyperlink{class_user}{User}} \&user)
+\begin{DoxyCompactList}\small\item\em Obsługuje opcję płatności użytkownika. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{user__payment__functions_8h_aa3bbeac8cd35a4e80c84530b85e0fd6f}{Authenticate\+Payment}} (\mbox{\hyperlink{class_user}{User}} \&user, const std\+::string \&payment\+\_\+method, const std\+::string \&title\+\_\+message, int target\+\_\+price)
+\begin{DoxyCompactList}\small\item\em Autentykuje płatność dokonaną przez użytkownika. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Ten plik zawiera deklaracje funkcji obsługujących płatności użytkownika. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\Hypertarget{user__payment__functions_8h_aa3bbeac8cd35a4e80c84530b85e0fd6f}\label{user__payment__functions_8h_aa3bbeac8cd35a4e80c84530b85e0fd6f} 
+\index{user\_payment\_functions.h@{user\_payment\_functions.h}!AuthenticatePayment@{AuthenticatePayment}}
+\index{AuthenticatePayment@{AuthenticatePayment}!user\_payment\_functions.h@{user\_payment\_functions.h}}
+\doxysubsubsection{\texorpdfstring{AuthenticatePayment()}{AuthenticatePayment()}}
+{\footnotesize\ttfamily bool Authenticate\+Payment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user,  }\item[{const std\+::string \&}]{payment\+\_\+method,  }\item[{const std\+::string \&}]{title\+\_\+message,  }\item[{int}]{target\+\_\+price }\end{DoxyParamCaption})}
+
+
+
+Autentykuje płatność dokonaną przez użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik dokonujący płatności. \\
+\hline
+{\em payment\+\_\+method} & Metoda płatności używana przez użytkownika. \\
+\hline
+{\em title\+\_\+message} & Tytuł wiadomości dla płatności. \\
+\hline
+{\em target\+\_\+price} & Docelowa cena płatności. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Prawda, jeśli płatność jest uwierzytelniona, w przeciwnym razie fałsz. 
+\end{DoxyReturn}
+\Hypertarget{user__payment__functions_8h_a13de813fe9f97a890b5f1434e1d46146}\label{user__payment__functions_8h_a13de813fe9f97a890b5f1434e1d46146} 
+\index{user\_payment\_functions.h@{user\_payment\_functions.h}!HandlePaymentOption@{HandlePaymentOption}}
+\index{HandlePaymentOption@{HandlePaymentOption}!user\_payment\_functions.h@{user\_payment\_functions.h}}
+\doxysubsubsection{\texorpdfstring{HandlePaymentOption()}{HandlePaymentOption()}}
+{\footnotesize\ttfamily void Handle\+Payment\+Option (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_user}{User}} \&}]{user }\end{DoxyParamCaption})}
+
+
+
+Obsługuje opcję płatności użytkownika. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em user} & Użytkownik dokonujący płatności. \\
+\hline
+\end{DoxyParams}
